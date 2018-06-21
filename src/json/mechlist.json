@@ -1,0 +1,202 @@
+{
+    "light": [
+        {
+         "name": "Commando",
+         "variant": "COM-1B"
+        },
+        {
+         "name": "Commando",
+         "variant": "COM-2D"
+        },
+        {
+         "name": "Locust",
+         "variant": "LCT-1M"
+        },
+        {
+         "name": "Locust",
+         "variant": "LCT-1V"
+        },
+        {
+         "name": "Firestarter",
+         "variant": "FS9-H"
+        },
+        {
+         "name": "Jenner",
+         "variant": "JR7-D"
+        },
+        {
+         "name": "Panther",
+         "variant": "PNT-9R"
+        },
+        {
+         "name": "Spider",
+         "variant": "SDR-5V"
+        },
+        {
+         "name": "UrbanMech",
+         "variant": "UM-R60"
+        }
+    ],
+    "medium": [
+        {
+         "name": "Blackjack",
+         "variant": "BJ-1"
+        },
+        {
+         "name": "Centurion",
+         "variant": "CN9-A"
+        },
+        {
+         "name": "Cicada",
+         "variant": "CDA-2A"
+        },
+        {
+         "name": "Cicada",
+         "variant": "CDA-3C"
+        },
+        {
+         "name": "Enforcer",
+         "variant": "ENF-4R"
+        },
+        {
+         "name": "Griffin",
+         "variant": "GRF-1N"
+        },
+        {
+         "name": "Hunchback",
+         "variant": "HBK-4G"
+        },
+        {
+         "name": "Hunchback",
+         "variant": "HBK-4P"
+        },
+        {
+         "name": "Kintaro",
+         "variant": "KTO-18"
+        },
+        {
+         "name": "Shadow Hawk",
+         "variant": "SHD-2D"
+        },
+        {
+         "name": "Shadow Hawk",
+         "variant": "SHD-2H"
+        },
+        {
+         "name": "Trebuchet",
+         "variant": "TBT-5N"
+        },
+        {
+         "name": "Vindicator",
+         "variant": "VND-1R"
+        },
+        {
+         "name": "Wolverine",
+         "variant": "WVR-6R"
+        }
+    ],
+    "heavy": [
+        {
+         "name": "Black Knight",
+         "variant": "BL-6-KNT"
+        },
+        {
+         "name": "Cataphract",
+         "variant": "CTF-1X"
+        },
+        {
+         "name": "Catapult",
+         "variant": "CPLT-C1"
+        },
+        {
+         "name": "Catapult",
+         "variant": "CPLT-K2"
+        },
+        {
+         "name": "Dragon",
+         "variant": "DRG-1N"
+        },
+        {
+         "name": "Grasshopper",
+         "variant": "GHR-5H"
+        },
+        {
+         "name": "Jagermech",
+         "variant": "JM6-A"
+        },
+        {
+         "name": "Jagermech",
+         "variant": "JM6-S"
+        },
+        {
+         "name": "Orion",
+         "variant": "ON1-K"
+        },
+        {
+         "name": "Orion",
+         "variant": "ON1-V"
+        },
+        {
+         "name": "Quickdraw",
+         "variant": "QKD-4G"
+        },
+        {
+         "name": "Quickdraw",
+         "variant": "QKD-5A"
+        },
+        {
+         "name": "Thunderbolt",
+         "variant": "TDR-5S"
+        },
+        {
+         "name": "Thunderbolt",
+         "variant": "TDR-5SE"
+        },
+        {
+         "name": "Thunderbolt",
+         "variant": "TDR-5SS"
+        }
+    ],
+    "assault": [
+        {
+         "name": "Atlas II",
+         "variant": "AS7-D-HT"
+        },
+        {
+         "name": "Awesome",
+         "variant": "AWS-8T"
+        },
+        {
+         "name": "Banshee",
+         "variant": "BNC-3M"
+        },
+        {
+         "name": "Battlemaster",
+         "variant": "BLR-1G"
+        },
+        {
+         "name": "Highlander",
+         "variant": "HGN-732b"
+        },
+        {
+         "name": "Highlander",
+         "variant": "HGN-733"
+        },
+        {
+         "name": "King Crab",
+         "variant": "KGC-0000"
+        },
+        {
+         "name": "Stalker",
+         "variant": "STK-3F"
+        },
+        {
+         "name": "Victor",
+         "variant": "VTR-9S"
+        },
+        {
+         "name": "Zeus",
+         "variant": "ZEU-6S"
+        }
+    ]
+}

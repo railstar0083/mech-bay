@@ -1,0 +1,594 @@
+{
+    "energy": [
+        {
+         "name": "Medium Laser",
+         "type": "mediumLaser0",
+         "manufacturer": "Hellion",
+         "range": "standard",
+         "weight": 1,
+         "slots": 1,
+         "shots": 1,
+         "damage": 25,
+         "stabdamage": 0,
+         "heat": 10,
+         "modifier1": "",
+         "modifier2": ""
+        },
+        {
+         "name": "Med Pulse Laser",
+         "type": "mediumPulseLaser0",
+         "manufacturer": "SCI",
+         "range": "standard",
+         "weight": 2,
+         "slots": 1,
+         "shots": 1,
+         "damage": 30,
+         "stabdamage": 0,
+         "heat": 20,
+         "modifier1": "",
+         "modifier2": ""
+        },
+        {
+         "name": "Large Laser",
+         "type": "largeLaser0",
+         "manufacturer": "Krupp",
+         "range": "long",
+         "weight": 5,
+         "slots": 2,
+         "shots": 1,
+         "damage": 40,
+         "stabdamage": 0,
+         "heat": 30,
+         "modifier1": "",
+         "modifier2": ""
+        },
+        {
+         "name": "ER Large Laser",
+         "type": "largeERLaser0",
+         "manufacturer": "SCI",
+         "range": "very long",
+         "weight": 5,
+         "slots": 2,
+         "shots": 1,
+         "damage": 40,
+         "stabdamage": 0,
+         "heat": 45,
+         "modifier1": "",
+         "modifier2": ""
+        },
+        {
+         "name": "PPC",
+         "type": "ppc0",
+         "manufacturer": "Magna",
+         "range": "very long",
+         "weight": 7,
+         "slots": 3,
+         "shots": 1,
+         "damage": 50,
+         "stabdamage": 20,
+         "heat": 40,
+         "modifier1": "",
+         "modifier2": ""
+        }
+    ],
+    "ballistic": [
+        {
+         "name": "AC/2",
+         "type": "ac2-0",
+         "manufacturer": "GM",
+         "range": "extreme",
+         "weight": 6,
+         "slots": 1,
+         "shots": 1,
+         "damage": 25,
+         "stabdamage": 5,
+         "heat": 5,
+         "modifier1": "",
+         "modifier2": ""
+        },
+        {
+         "name": "AC/2 Ammo",
+         "type": "ac2ammo",
+         "manufacturer": "generic",
+         "range": 0,
+         "weight": 1,
+         "slots": 1,
+         "shotsper": 25
+        },
+        {
+         "name": "AC/5",
+         "type": "ac5-0",
+         "manufacturer": "GM",
+         "range": "very long",
+         "weight": 8,
+         "slots": 2,
+         "shots": 1,
+         "damage": 45,
+         "stabdamage": 10,
+         "heat": 10,
+         "modifier1": "",
+         "modifier2": ""
+        },
+        {
+         "name": "AC/5 Ammo",
+         "type": "ac5ammo",
+         "manufacturer": "generic",
+         "range": 0,
+         "weight": 1,
+         "slots": 1,
+         "shotsper": 15
+        },
+        {
+         "name": "AC/10",
+         "type": "ac10-0",
+         "manufacturer": "Western",
+         "range": "long",
+         "weight": 12,
+         "slots": 3,
+         "shots": 1,
+         "damage": 60,
+         "stabdamage": 20,
+         "heat": 15,
+         "modifier1": "",
+         "modifier2": ""
+        },
+        {
+         "name": "AC/10 Ammo",
+         "type": "ac10ammo",
+         "manufacturer": "generic",
+         "range": 0,
+         "weight": 1,
+         "slots": 1,
+         "shotsper": 8
+        },
+        {
+         "name": "AC/20",
+         "type": "ac20-0",
+         "manufacturer": "Kali Yama",
+         "range": "standard",
+         "weight": 14,
+         "slots": 4,
+         "shots": 1,
+         "damage": 100,
+         "stabdamage": 40,
+         "heat": 25,
+         "modifier1": "",
+         "modifier2": ""
+        },
+        {
+         "name": "AC/20 Ammo",
+         "type": "ac20ammo",
+         "manufacturer": "generic",
+         "range": 0,
+         "weight": 1,
+         "shotsper": 5
+        },
+        {
+         "name": "Guass Rifle",
+         "type": "gaussRifle0",
+         "manufacturer": "SCI",
+         "range": "extreme",
+         "weight": 15,
+         "slots": 5,
+         "shots": 1,
+         "damage": 75,
+         "stabdamage": 40,
+         "heat": 5,
+         "modifier1": "",
+         "modifier2": ""
+        },
+        {
+         "name": "Gauss Ammo",
+         "type": "gaussAmmo",
+         "manufacturer": "generic",
+         "range": 0,
+         "weight": 1,
+         "shotsper": 8
+        }
+    ],
+    "missile": [
+        {
+         "name": "SRM-2",
+         "type": "srm2-0",
+         "manufacturer": "Holly",
+         "range": "standard",
+         "weight": 1,
+         "slots": 1,
+         "shots": 2,
+         "damage": 8,
+         "stabdamage": 3,
+         "heat": 6,
+         "modifier1": "",
+         "modifier2": ""
+        },
+        {
+         "name": "SRM-4",
+         "type": "srm4-0",
+         "manufacturer": "TharHes",
+         "range": "standard",
+         "weight": 2,
+         "slots": 1,
+         "shots": 4,
+         "damage": 8,
+         "stabdamage": 3,
+         "heat": 8,
+         "modifier1": "",
+         "modifier2": ""
+        },
+        {
+         "name": "SRM-6",
+         "type": "srm6-0",
+         "manufacturer": "TharHes",
+         "range": "standard",
+         "weight": 3,
+         "slots": 2,
+         "shots": 6,
+         "damage": 8,
+         "stabdamage": 3,
+         "heat": 14,
+         "modifier1": "",
+         "modifier2": ""
+        },
+        {
+         "name": "SRM Ammo",
+         "type": "srmAmmo",
+         "manufacturer": "generic",
+         "range": 0,
+         "weight": 1,
+         "slots": 1,
+         "shotsper": 100,
+         "heat": 0
+        },
+        {
+         "name": "LRM-5",
+         "type": "lrm5-0",
+         "manufacturer": "Irian",
+         "range": "extreme",
+         "weight": 2,
+         "slots": 1,
+         "shots": 5,
+         "damage": 4,
+         "stabdamage": 2,
+         "heat": 6,
+         "modifier1": "",
+         "modifier2": ""
+        },
+        {
+         "name": "LRM-10",
+         "type": "lrm10-0",
+         "manufacturer": "Jackson",
+         "range": "extreme",
+         "weight": 5,
+         "slots": 2,
+         "shots": 10,
+         "damage": 4,
+         "stabdamage": 2,
+         "heat": 12,
+         "modifier1": "",
+         "modifier2": ""
+        },
+        {
+         "name": "LRM-15",
+         "type": "lrm15-0",
+         "manufacturer": "Irian",
+         "range": "extreme",
+         "weight": 7,
+         "slots": 3,
+         "shots": 15,
+         "damage": 4,
+         "stabdamage": 2,
+         "heat": 15,
+         "modifier1": "",
+         "modifier2": ""
+        },
+        {
+         "name": "LRM-20",
+         "type": "lrm20-0",
+         "manufacturer": "Jackson",
+         "range": "extreme",
+         "weight": 10,
+         "slots": 4,
+         "shots": 20,
+         "damage": 4,
+         "stabdamage": 2,
+         "heat": 18,
+         "modifier1": "",
+         "modifier2": ""
+        },
+        {
+         "name": "LRM Ammo",
+         "type": "lrmAmmo",
+         "manufacturer": "generic",
+         "range": 0,
+         "weight": 1,
+         "slots": 1,
+         "shotsper": 120,
+         "heat": 0
+        }
+    ],
+    "support": [
+        {
+         "name": "Machine Gun",
+         "type": "machineGun",
+         "manufacturer": "Sperry Browning",
+         "range": "close",
+         "weight": 0.5,
+         "slots": 1,
+         "shots": 5,
+         "damage": 3,
+         "stabdamage": 0,
+         "heat": 0,
+         "modifier1": "",
+         "modifier2": ""
+        },
+        {
+         "name": "Machine Gun Ammo",
+         "type": "machineGunAmmo",
+         "manufacturer": "generic",
+         "range": 0,
+         "weight": 1,
+         "slots": 1,
+         "shotsper": 200,
+         "heat": 0
+        },
+        {
+         "name": "Small Laser",
+         "type": "smallLaser0",
+         "manufacturer": "Martel",
+         "range": "close",
+         "weight": 1,
+         "slots": 1,
+         "shots": 1,
+         "damage": 20,
+         "stabdamage": 0,
+         "heat": 5,
+         "modifier1": "",
+         "modifier2": ""
+        },
+        {
+         "name": "Flamer",
+         "type": "flamer0",
+         "manufacturer": "Skylight",
+         "range": "close",
+         "weight": 1,
+         "slots": 1,
+         "shots": 1,
+         "damage": 5,
+         "stabdamage": 0,
+         "heat": 0,
+         "modifier1": "",
+         "modifier2": ""
+        }
+    ],
+    "heatsinks": [
+        {
+         "name": "Heat Sink",
+         "type": "heatSink0",
+         "manufacturer": "generic",
+         "weight": 1,
+         "slots": 1,
+         "heat": 0,
+         "modifier1": "-3 Heat/Turn",
+         "modifier2": ""
+        },
+        {
+         "name": "Double Heat Sink",
+         "type": "doubleHeatSink0",
+         "manufacturer": "SCI",
+         "weight": 1,
+         "slots": 3,
+         "heat": 0,
+         "modifier1": "-6 Heat/Turn",
+         "modifier2": ""
+        },
+        {
+         "name": "Heat Bank",
+         "type": "heatbank0",
+         "manufacturer": "Generic",
+         "weight": 1,
+         "slots": 2,
+         "heat": 0,
+         "modifier1": "+10 Max Heat",
+         "modifier2": "+5 Overheat Threshold"
+        }
+    ],
+    "jumpjets": [
+        {
+         "name": "Jump Jet(S)",
+         "type": "jumpJet-S",
+         "manufacturer": "",
+         "range": 0,
+         "weight": 0.5,
+         "slots": 1,
+         "heat": 0
+        },
+        {
+         "name": "Jump Jet(H)",
+         "type": "jumpJet-H",
+         "manufacturer": "",
+         "range": 0,
+         "weight": 1,
+         "slots": 1,
+         "heat": 0
+        },
+        {
+         "name": "Jump Jet(A)",
+         "type": "jumpJet-A",
+         "manufacturer": "",
+         "range": 0,
+         "weight": 2,
+         "slots": 1,
+         "heat": 0
+        }
+    ],
+    "misc": [
+        {
+         "name": "Cockpit Mod",
+         "type": "cockpitMod0",
+         "manufacturer": "Ceres Metals",
+         "weight": 0,
+         "slots": 1,
+         "restricted": "head",
+         "modifier1": "+1 Injury Resist",
+         "modifier2": ""
+        },
+        {
+         "name": "Cockpit Mod +",
+         "type": "cockpitMod1",
+         "manufacturer": "Ceres Metals",
+         "weight": 0,
+         "slots": 1,
+         "restricted": "head",
+         "modifier1": "+2 Injury Resist",
+         "modifier2": ""
+        },
+        {
+         "name": "Cockpit Mod ++",
+         "type": "cockpitMod2",
+         "manufacturer": "Ceres Metals",
+         "weight": 0,
+         "slots": 1,
+         "restricted": "head",
+         "modifier1": "+3 Injury Resist",
+         "modifier2": ""
+        },
+        {
+         "name": "Rangefinder",
+         "type": "rangefinder0",
+         "manufacturer": "Majesty M M",
+         "weight": 0,
+         "slots": 1,
+         "restricted": "head",
+         "modifier1": "+25M View Distance",
+         "modifier2": ""
+        },
+        {
+         "name": "Comms System",
+         "type": "commssystem0",
+         "manufacturer": "StarCorps",
+         "weight": 0,
+         "slots": 1,
+         "restricted": "head",
+         "modifier1": "+1 Morale",
+         "modifier2": ""
+        },
+        {
+         "name": "Comms System +",
+         "type": "commssystem0",
+         "manufacturer": "StarCorps",
+         "weight": 0,
+         "slots": 1,
+         "restricted": "head",
+         "modifier1": "+2 Morale",
+         "modifier2": ""
+        },
+        {
+         "name": "Comms System ++",
+         "type": "commssystem0",
+         "manufacturer": "StarCorps",
+         "weight": 0,
+         "slots": 1,
+         "restricted": "head",
+         "modifier1": "+3 Morale",
+         "modifier2": ""
+        },
+        {
+         "name": "Arm Mod",
+         "type": "armmod0",
+         "manufacturer": "Coventry",
+         "weight": 2,
+         "slots": 1,
+         "restricted": "arm",
+         "modifier1": "+5 Melee Damage",
+         "modifier2": ""
+        },
+        {
+         "name": "Arm Mod",
+         "type": "armmod1",
+         "manufacturer": "Friedhof",
+         "weight": 2,
+         "slots": 1,
+         "restricted": "arm",
+         "modifier1": "+10 Melee Stability Damage",
+         "modifier2": ""
+        },
+        {
+         "name": "Leg Mod",
+         "type": "legmod0",
+         "manufacturer": "Rawlings",
+         "weight": 1,
+         "slots": 3,
+         "restricted": "leg",
+         "modifier1": "+5 DFA Damage",
+         "modifier2": ""
+        },
+        {
+         "name": "Leg Mod",
+         "type": "legmod1",
+         "manufacturer": "Pitban",
+         "weight": 2,
+         "slots": 3,
+         "restricted": "leg",
+         "modifier1": "-10 DFA Self-Damage",
+         "modifier2": ""
+        },
+        {
+         "name": "Gyro",
+         "type": "gyro0",
+         "manufacturer": "Rawlings",
+         "weight": 0,
+         "slots": 3,
+         "restricted": "centerTorso",
+         "modifier1": "-10% Stability Damage",
+         "modifier2": ""
+        },
+        {
+         "name": "Gyro",
+         "type": "gyro1",
+         "manufacturer": "Coventry",
+         "weight": 0,
+         "slots": 3,
+         "restricted": "centerTorso",
+         "modifier1": "+1 Melee Attack",
+         "modifier2": ""
+        },
+        {
+         "name": "Gyro",
+         "type": "gyro2",
+         "manufacturer": "Friedhof",
+         "weight": 0,
+         "slots": 3,
+         "restricted": "centerTorso",
+         "modifier1": "+1 Hit Defense",
+         "modifier2": ""
+        },
+        {
+         "name": "TTS (Energy)",
+         "type": "tts0",
+         "manufacturer": "RCA",
+         "weight": 1,
+         "slots": 2,
+         "modifier1": "+1 Accuracy Energy Weapons",
+         "modifier2": ""
+        },
+        {
+         "name": "TTS (Ballistic)",
+         "type": "tts1",
+         "manufacturer": "Kallon",
+         "weight": 1,
+         "slots": 2,
+         "modifier1": "+1 Accuracy Ballistic Weapons",
+         "modifier2": ""
+        },
+        {
+         "name": "TTS (Missile)",
+         "type": "tts2",
+         "manufacturer": "Hartford",
+         "weight": 1,
+         "slots": 2,
+         "modifier1": "+1 Accuracy Missile Weapons",
+         "modifier2": ""
+        }
+    ]
+    
+}
