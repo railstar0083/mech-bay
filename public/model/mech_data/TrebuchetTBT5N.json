@@ -1,0 +1,176 @@
+{
+    "name": "Trebuchet",
+    "variant": "TBT-5N",
+    "maxTons": 50,
+    "currentTons": 50,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 110,
+        "centerTorsoMax": 160,
+        "centerTorsoRear": 35,
+        "centerTorsoRearMax": 80,
+        "rightTorso": 55,
+        "rightTorsoMax": 120,
+        "rightTorsoRear": 25,
+        "rightTorsoRearMax": 60,
+        "leftTorso": 55,
+        "leftTorsoMax": 120,
+        "leftTorsoRear": 25,
+        "leftTorsoRearMax": 60,
+        "rightArm": 50,
+        "rightArmMax": 80,
+        "leftArm": 50,
+        "leftArmMax": 80,
+        "rightLeg": 75,
+        "rightLegMax": 120,
+        "leftLeg": 75,
+        "leftLegMax": 120
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "centerTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 1,
+            "support": 0
+        },
+        "leftTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightArm": {
+            "energy": 3,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftArm": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 1,
+            "support": 0
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "centerTorso": [
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM Ammo",
+                "weight": 1
+            }
+        ],
+        "rightTorso": [
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "lrm15-0",
+                "origin": "default",
+                "slots": 3,
+                "title": "LRM-15",
+                "weight": 7
+            }
+        ],
+        "leftArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "lrm15-0",
+                "origin": "default",
+                "slots": 3,
+                "title": "LRM-15",
+                "weight": 7
+            }
+        ],
+        "rightArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }
+        ]
+    }
+}

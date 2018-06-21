@@ -1,0 +1,196 @@
+{
+    "name": "Catapult",
+    "variant": "CPLT-C1",
+    "maxTons": 65,
+    "currentTons": 65,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 120,
+        "centerTorsoMax": 210,
+        "centerTorsoRear": 55,
+        "centerTorsoRearMax": 105,
+        "rightTorso": 95,
+        "rightTorsoMax": 150,
+        "rightTorsoRear": 40,
+        "rightTorsoRearMax": 75,
+        "leftTorso": 95,
+        "leftTorsoMax": 150,
+        "leftTorsoRear": 40,
+        "leftTorsoRearMax": 75,
+        "rightArm": 65,
+        "rightArmMax": 100,
+        "leftArm": 65,
+        "leftArmMax": 100,
+        "rightLeg": 90,
+        "rightLegMax": 150,
+        "leftLeg": 90,
+        "leftLegMax": 150
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "centerTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightTorso": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "leftTorso": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "rightArm": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 1,
+            "support": 0
+        },
+        "leftArm": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 1,
+            "support": 0
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 1,
+        "rightTorso": 1,
+        "leftTorso": 1,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 1,
+        "leftLeg": 1
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 2,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 1,
+        "leftLeg": 1
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "centerTorso": [
+            {
+                "ammo": "true",
+                "category": "support",
+                "name": "machineGunAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "Machine Gun Ammo",
+                "weight": 1
+            }
+        ],
+        "rightTorso": [
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "support",
+                "name": "machineGun",
+                "origin": "default",
+                "slots": 1,
+                "title": "Machine Gun",
+                "weight": 1
+            }
+        ],
+        "leftTorso": [
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "support",
+                "name": "machineGun",
+                "origin": "default",
+                "slots": 1,
+                "title": "Machine Gun",
+                "weight": 1
+            }
+        ],
+        "rightArm": [
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "lrm15-0",
+                "origin": "default",
+                "slots": 3,
+                "title": "LRM-15",
+                "weight": 7
+            }
+        ],
+        "leftArm": [
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "lrm15-0",
+                "origin": "default",
+                "slots": 3,
+                "title": "LRM-15",
+                "weight": 7
+            }
+        ]
+    }
+}

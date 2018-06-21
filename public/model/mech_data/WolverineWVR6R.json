@@ -1,0 +1,156 @@
+{
+    "name": "Wolverine",
+    "variant": "WVR-6R",
+    "maxTons": 55,
+    "currentTons": 55,
+    "armor": {
+        "head": 40,
+        "headMax": 45,
+        "centerTorso": 100,
+        "centerTorsoMax": 180,
+        "centerTorsoRear": 40,
+        "centerTorsoRearMax": 90,
+        "rightTorso": 100,
+        "rightTorsoMax": 130,
+        "rightTorsoRear": 30,
+        "rightTorsoRearMax": 65,
+        "leftTorso": 100,
+        "leftTorsoMax": 130,
+        "leftTorsoRear": 30,
+        "leftTorsoRearMax": 65,
+        "rightArm": 80,
+        "rightArmMax": 90,
+        "leftArm": 80,
+        "leftArmMax": 90,
+        "rightLeg": 80,
+        "rightLegMax": 130,
+        "leftLeg": 80,
+        "leftLegMax": 130
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "centerTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 3,
+            "support": 0
+        },
+        "rightArm": {
+            "energy": 0,
+            "ballistic": 2,
+            "missile": 0,
+            "support": 0
+        },
+        "leftArm": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 1,
+        "leftLeg": 1
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 1,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 2,
+        "leftLeg": 2
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "head": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }
+        ],
+        "leftTorso": [
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "srm6-0",
+                "origin": "default",
+                "slots": 2,
+                "title": "SRM-6",
+                "weight": 3
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "srmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "SRM Ammo",
+                "weight": 1
+            }
+        ],
+        "rightArm": [
+            {
+                "ammo": "false",
+                "category": "ballistic",
+                "name": "ac5-0",
+                "origin": "default",
+                "slots": 2,
+                "title": "AC/5",
+                "weight": 8
+            },
+            {
+                "ammo": "true",
+                "category": "ballistic",
+                "name": "ac5ammo",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/5 Ammo",
+                "weight": 1
+            }
+        ]
+    }
+}

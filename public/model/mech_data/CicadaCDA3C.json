@@ -1,0 +1,158 @@
+{
+    "name": "Cicada",
+    "variant": "CDA-3C",
+    "maxTons": 40,
+    "currentTons": 40,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 55,
+        "centerTorsoMax": 120,
+        "centerTorsoRear": 30,
+        "centerTorsoRearMax": 60,
+        "rightTorso": 30,
+        "rightTorsoMax": 100,
+        "rightTorsoRear": 15,
+        "rightTorsoRearMax": 50,
+        "leftTorso": 30,
+        "leftTorsoMax": 100,
+        "leftTorsoRear": 15,
+        "leftTorsoRearMax": 50,
+        "rightArm": 20,
+        "rightArmMax": 60,
+        "leftArm": 20,
+        "leftArmMax": 60,
+        "rightLeg": 30,
+        "rightLegMax": 100,
+        "leftLeg": 30,
+        "leftLegMax": 100
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "centerTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightTorso": {
+            "energy": 1,
+            "ballistic": 2,
+            "missile": 0,
+            "support": 1
+        },
+        "leftTorso": {
+            "energy": 1,
+            "ballistic": 2,
+            "missile": 0,
+            "support": 0
+        },
+        "rightArm": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftArm": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "centerTorso": [
+            {
+                "ammo": "true",
+                "category": "support",
+                "name": "machineGunAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "Machine Gun Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "true",
+                "category": "support",
+                "name": "machineGunAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "Machine Gun Ammo",
+                "weight": 1
+            }
+        ],
+        "rightTorso": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "ppc0",
+                "origin": "default",
+                "slots": 3,
+                "title": "PPC",
+                "weight": 7
+            }
+        ],
+        "leftLeg": [
+            {
+                "ammo": "false",
+                "category": "support",
+                "name": "machineGun",
+                "origin": "default",
+                "slots": 1,
+                "title": "Machine Gun",
+                "weight": 0.5
+            }
+        ],
+        "rightLeg": [
+            {
+                "ammo": "false",
+                "category": "support",
+                "name": "machineGun",
+                "origin": "default",
+                "slots": 1,
+                "title": "Machine Gun",
+                "weight": 0.5
+            }
+        ]
+    }
+}

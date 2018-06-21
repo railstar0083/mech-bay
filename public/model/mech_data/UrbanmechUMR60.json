@@ -1,0 +1,138 @@
+{
+    "name": "UrbanMech",
+    "variant": "UM-R60",
+    "maxTons": 30,
+    "currentTons": 30,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 55,
+        "centerTorsoMax": 100,
+        "centerTorsoRear": 40,
+        "centerTorsoRearMax": 50,
+        "rightTorso": 40,
+        "rightTorsoMax": 70,
+        "rightTorsoRear": 20,
+        "rightTorsoRearMax": 35,
+        "leftTorso": 40,
+        "leftTorsoMax": 70,
+        "leftTorsoRear": 20,
+        "leftTorsoRearMax": 35,
+        "rightArm": 50,
+        "rightArmMax": 50,
+        "leftArm": 50,
+        "leftArmMax": 50,
+        "rightLeg": 60,
+        "rightLegMax": 70,
+        "leftLeg": 60,
+        "leftLegMax": 70
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "centerTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightArm": {
+            "energy": 0,
+            "ballistic": 4,
+            "missile": 0,
+            "support": 0
+        },
+        "leftArm": {
+            "energy": 2,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 2
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 1,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 2,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "rightTorso": [
+            {
+                "ammo": "true",
+                "category": "ballistic",
+                "name": "ac10ammo",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/10 Ammo",
+                "weight": 1
+            }
+        ],
+        "leftArm": [
+            {
+                "ammo": "false",
+                "category": "support",
+                "name": "smallLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Small Laser",
+                "weight": 1
+            }
+        ],
+        "rightArm": [
+            {
+                "ammo": "false",
+                "category": "ballistic",
+                "name": "ac10-0",
+                "origin": "default",
+                "slots": 3,
+                "title": "AC/10",
+                "weight": 12
+            }
+        ]
+    }
+}

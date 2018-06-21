@@ -1,0 +1,178 @@
+{
+    "name": "Catapult",
+    "variant": "CPLT-K2",
+    "maxTons": 65,
+    "currentTons": 65,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 120,
+        "centerTorsoMax": 210,
+        "centerTorsoRear": 55,
+        "centerTorsoRearMax": 105,
+        "rightTorso": 100,
+        "rightTorsoMax": 150,
+        "rightTorsoRear": 40,
+        "rightTorsoRearMax": 75,
+        "leftTorso": 100,
+        "leftTorsoMax": 150,
+        "leftTorsoRear": 40,
+        "leftTorsoRearMax": 75,
+        "rightArm": 90,
+        "rightArmMax": 100,
+        "leftArm": 90,
+        "leftArmMax": 100,
+        "rightLeg": 100,
+        "rightLegMax": 150,
+        "leftLeg": 100,
+        "leftLegMax": 150
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "centerTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightTorso": {
+            "energy": 1,
+            "ballistic": 1,
+            "missile": 0,
+            "support": 2
+        },
+        "leftTorso": {
+            "energy": 1,
+            "ballistic": 1,
+            "missile": 0,
+            "support": 2
+        },
+        "rightArm": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftArm": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 2,
+        "rightTorso": 2,
+        "leftTorso": 2,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 2,
+        "leftLeg": 2
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "centerTorso": [
+            {
+                "ammo": "true",
+                "category": "support",
+                "name": "machineGunAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "Machine Gun Ammo",
+                "weight": 1
+            }
+        ],
+        "rightTorso": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "support",
+                "name": "machineGun",
+                "origin": "default",
+                "slots": 1,
+                "title": "Machine Gun",
+                "weight": 1
+            }
+        ],
+        "leftTorso": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "support",
+                "name": "machineGun",
+                "origin": "default",
+                "slots": 1,
+                "title": "Machine Gun",
+                "weight": 1
+            }
+        ],
+        "rightArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "ppc0",
+                "origin": "default",
+                "slots": 3,
+                "title": "PPC",
+                "weight": 7
+            }    
+        ],
+        "leftArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "ppc0",
+                "origin": "default",
+                "slots": 3,
+                "title": "PPC",
+                "weight": 7
+            }    
+        ]
+    }
+}

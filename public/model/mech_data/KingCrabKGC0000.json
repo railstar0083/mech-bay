@@ -1,0 +1,176 @@
+{
+    "name": "King Crab",
+    "variant": "KGC-0000",
+    "maxTons": 100,
+    "currentTons": 100,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 195,
+        "centerTorsoMax": 310,
+        "centerTorsoRear": 60,
+        "centerTorsoRearMax": 155,
+        "rightTorso": 145,
+        "rightTorsoMax": 210,
+        "rightTorsoRear": 50,
+        "rightTorsoRearMax": 105,
+        "leftTorso": 145,
+        "leftTorsoMax": 210,
+        "leftTorsoRear": 50,
+        "leftTorsoRearMax": 105,
+        "rightArm": 165,
+        "rightArmMax": 170,
+        "leftArm": 165,
+        "leftArmMax": 170,
+        "rightLeg": 170,
+        "rightLegMax": 210,
+        "leftLeg": 170,
+        "leftLegMax": 210
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "centerTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightTorso": {
+            "energy": 4,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 4,
+            "support": 0
+        },
+        "rightArm": {
+            "energy": 0,
+            "ballistic": 1,
+            "missile": 0,
+            "support": 2
+        },
+        "leftArm": {
+            "energy": 0,
+            "ballistic": 1,
+            "missile": 0,
+            "support": 2
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 1,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 2,
+        "leftLeg": 2
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "leftTorso": [
+            {
+                "ammo": "true",
+                "category": "ballistic",
+                "name": "ac20ammo",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/20 Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "lrm15-0",
+                "origin": "default",
+                "slots": 3,
+                "title": "LRM-15",
+                "weight": 7
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM Ammo",
+                "weight": 1
+            }
+        ],
+        "rightTorso": [
+            {
+                "ammo": "true",
+                "category": "ballistic",
+                "name": "ac20ammo",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/20 Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "largeLaser0",
+                "origin": "default",
+                "slots": 2,
+                "title": "Large Laser",
+                "weight": 5
+            }
+        ],
+        "leftArm": [
+            {
+                "ammo": "false",
+                "category": "ballistic",
+                "name": "ac20-0",
+                "origin": "default",
+                "slots": 4,
+                "title": "AC/20",
+                "weight": 14
+            }
+        ],
+        "rightArm": [
+             {
+                "ammo": "false",
+                "category": "ballistic",
+                "name": "ac20-0",
+                "origin": "default",
+                "slots": 4,
+                "title": "AC/20",
+                "weight": 14
+            }
+        ]
+    }
+}

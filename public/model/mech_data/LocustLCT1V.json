@@ -1,0 +1,147 @@
+{
+    "name": "Locust",
+    "variant": "LCT-1V",
+    "maxTons": 20,
+    "currentTons": 20,
+    "armor": {
+        "head": 40,
+        "headMax": 45,
+        "centerTorso": 50,
+        "centerTorsoMax": 60,
+        "centerTorsoRear": 10,
+        "centerTorsoRearMax": 30,
+        "rightTorso": 40,
+        "rightTorsoMax": 50,
+        "rightTorsoRear": 10,
+        "rightTorsoRearMax": 25,
+        "leftTorso": 40,
+        "leftTorsoMax": 50,
+        "leftTorsoRear": 10,
+        "leftTorsoRearMax": 25,
+        "rightArm": 20,
+        "rightArmMax": 30,
+        "leftArm": 20,
+        "leftArmMax": 30,
+        "rightLeg": 40,
+        "rightLegMax": 40,
+        "leftLeg": 40,
+        "leftLegMax": 40
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "centerTorso": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "rightTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightArm": {
+            "energy": 0,
+            "ballistic": 1,
+            "missile": 0,
+            "support": 1
+        },
+        "leftArm": {
+            "energy": 0,
+            "ballistic": 1,
+            "missile": 0,
+            "support": 1
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "centerTorso": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            },
+            {
+                "ammo": "true",
+                "category": "support",
+                "name": "machineGunAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "Machine Gun Ammo",
+                "weight": 1
+            }
+        ],
+        "leftArm": [
+            {
+                "ammo": "false",
+                "category": "support",
+                "name": "machineGun",
+                "origin": "default",
+                "slots": 1,
+                "title": "Machine Gun",
+                "weight": 1
+            }
+        ],
+        "rightArm": [
+            {
+                "ammo": "false",
+                "category": "support",
+                "name": "machineGun",
+                "origin": "default",
+                "slots": 1,
+                "title": "Machine Gun",
+                "weight": 1
+            }
+        ]
+    }
+}

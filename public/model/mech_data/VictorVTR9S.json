@@ -1,0 +1,183 @@
+{
+    "name": "Victor",
+    "variant": "VTR-9S",
+    "maxTons": 80,
+    "currentTons": 80,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 140,
+        "centerTorsoMax": 250,
+        "centerTorsoRear": 55,
+        "centerTorsoRearMax": 125,
+        "rightTorso": 85,
+        "rightTorsoMax": 170,
+        "rightTorsoRear": 40,
+        "rightTorsoRearMax": 85,
+        "leftTorso": 85,
+        "leftTorsoMax": 170,
+        "leftTorsoRear": 40,
+        "leftTorsoRearMax": 85,
+        "rightArm": 75,
+        "rightArmMax": 130,
+        "leftArm": 75,
+        "leftArmMax": 130,
+        "rightLeg": 100,
+        "rightLegMax": 170,
+        "leftLeg": 100,
+        "leftLegMax": 170
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "centerTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 3,
+            "support": 0
+        },
+        "rightArm": {
+            "energy": 0,
+            "ballistic": 2,
+            "missile": 0,
+            "support": 0
+        },
+        "leftArm": {
+            "energy": 2,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 1,
+        "rightTorso": 1,
+        "leftTorso": 1,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 1,
+        "leftLeg": 1
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 2,
+        "rightTorso": 1,
+        "leftTorso": 1,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "leftTorso": [
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "srm6-0",
+                "origin": "default",
+                "slots": 2,
+                "title": "SRM-6",
+                "weight": 3
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "srmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "SRM Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "srmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "SRM Ammo",
+                "weight": 1
+            }
+        ],
+        "leftArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }
+        ],
+        "rightArm": [
+             {
+                "ammo": "false",
+                "category": "ballistic",
+                "name": "ac20-0",
+                "origin": "default",
+                "slots": 4,
+                "title": "AC/20",
+                "weight": 14
+            },
+            {
+                "ammo": "true",
+                "category": "ballistic",
+                "name": "ac20ammo",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/20 Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "true",
+                "category": "ballistic",
+                "name": "ac20ammo",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/20 Ammo",
+                "weight": 1
+            }
+        ]
+    }
+}

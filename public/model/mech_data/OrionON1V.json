@@ -1,0 +1,221 @@
+{
+    "name": "Orion",
+    "variant": "ON1-V",
+    "maxTons": 75,
+    "currentTons": 75,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 160,
+        "centerTorsoMax": 230,
+        "centerTorsoRear": 45,
+        "centerTorsoRearMax": 115,
+        "rightTorso": 100,
+        "rightTorsoMax": 160,
+        "rightTorsoRear": 40,
+        "rightTorsoRearMax": 80,
+        "leftTorso": 100,
+        "leftTorsoMax": 160,
+        "leftTorsoRear": 40,
+        "leftTorsoRearMax": 80,
+        "rightArm": 95,
+        "rightArmMax": 120,
+        "leftArm": 95,
+        "leftArmMax": 120,
+        "rightLeg": 100,
+        "rightLegMax": 160,
+        "leftLeg": 100,
+        "leftLegMax": 160
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 1,
+            "support": 0
+        },
+        "centerTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightTorso": {
+            "energy": 0,
+            "ballistic": 2,
+            "missile": 0,
+            "support": 0
+        },
+        "leftTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 1,
+            "support": 0
+        },
+        "rightArm": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 1,
+            "support": 0
+        },
+        "leftArm": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 1,
+            "support": 0
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "rightTorso": [
+            {
+                "ammo": "false",
+                "category": "ballistic",
+                "name": "ac10-0",
+                "origin": "default",
+                "slots": 3,
+                "title": "AC/10",
+                "weight": 12
+            },
+            {
+                "ammo": "true",
+                "category": "ballistic",
+                "name": "ac10ammo",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/10 Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "true",
+                "category": "ballistic",
+                "name": "ac10ammo",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/10 Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "srmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "SRM Ammo",
+                "weight": 1
+            }
+        ],
+        "leftTorso": [
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "lrm15-0",
+                "origin": "default",
+                "slots": 3,
+                "title": "LRM-15",
+                "weight": 7
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "srmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "SRM Ammo",
+                "weight": 1
+            }
+        ],
+        "leftArm": [
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "srm4-0",
+                "origin": "default",
+                "slots": 1,
+                "title": "SRM-4",
+                "weight": 2
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }
+        ],
+        "rightArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "srm4-0",
+                "origin": "default",
+                "slots": 1,
+                "title": "SRM-4",
+                "weight": 2
+            }
+        ]
+    }
+}

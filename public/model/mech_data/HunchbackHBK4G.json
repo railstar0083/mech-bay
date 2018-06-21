@@ -1,0 +1,158 @@
+{
+    "name": "Hunchback",
+    "variant": "HBK-4G",
+    "maxTons": 50,
+    "currentTons": 50,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 130,
+        "centerTorsoMax": 160,
+        "centerTorsoRear": 25,
+        "centerTorsoRearMax": 80,
+        "rightTorso": 100,
+        "rightTorsoMax": 120,
+        "rightTorsoRear": 20,
+        "rightTorsoRearMax": 60,
+        "leftTorso": 100,
+        "leftTorsoMax": 120,
+        "leftTorsoRear": 20,
+        "leftTorsoRearMax": 60,
+        "rightArm": 80,
+        "rightArmMax": 80,
+        "leftArm": 80,
+        "leftArmMax": 80,
+        "rightLeg": 100,
+        "rightLegMax": 120,
+        "leftLeg": 100,
+        "leftLegMax": 120
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "centerTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightTorso": {
+            "energy": 0,
+            "ballistic": 3,
+            "missile": 0,
+            "support": 0
+        },
+        "leftTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightArm": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftArm": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 1,
+        "rightTorso": 1,
+        "leftTorso": 1,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "rightTorso": [
+            {
+                "ammo": "false",
+                "category": "ballistic",
+                "name": "ac20-0",
+                "origin": "default",
+                "slots": 4,
+                "title": "AC/20",
+                "weight": 14
+            }
+        ],
+        "leftTorso": [
+            {
+                "ammo": "true",
+                "category": "ballistic",
+                "name": "ac20ammo",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/20 Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "true",
+                "category": "ballistic",
+                "name": "ac20ammo",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/20 Ammo",
+                "weight": 1
+            }
+        ],
+        "leftArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }
+        ],
+        "rightArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }
+        ]
+    }
+}

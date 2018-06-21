@@ -1,0 +1,277 @@
+{
+    "name": "Highlander",
+    "variant": "HGN-732b",
+    "maxTons": 90,
+    "currentTons": 90,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 210,
+        "centerTorsoMax": 290,
+        "centerTorsoRear": 85,
+        "centerTorsoRearMax": 145,
+        "rightTorso": 140,
+        "rightTorsoMax": 190,
+        "rightTorsoRear": 50,
+        "rightTorsoRearMax": 95,
+        "leftTorso": 140,
+        "leftTorsoMax": 190,
+        "leftTorsoRear": 50,
+        "leftTorsoRearMax": 95,
+        "rightArm": 150,
+        "rightArmMax": 150,
+        "leftArm": 150,
+        "leftArmMax": 150,
+        "rightLeg": 190,
+        "rightLegMax": 190,
+        "leftLeg": 190,
+        "leftLegMax": 190
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "centerTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightTorso": {
+            "energy": 3,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 3
+        },
+        "leftTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 1,
+            "support": 0
+        },
+        "rightArm": {
+            "energy": 0,
+            "ballistic": 2,
+            "missile": 0,
+            "support": 0
+        },
+        "leftArm": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 1,
+            "support": 0
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 1,
+        "rightTorso": 1,
+        "leftTorso": 1,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultEquipment": {
+        "centerTorso": [
+            {
+                "ammo": "false",
+                "category": "equipment",
+                "name": "doubleHeatSink0",
+                "origin": "default",
+                "slots": 3,
+                "title": "Double Heat Sink",
+                "weight": 1
+            }
+        ],
+        "leftTorso": [
+            {
+                "ammo": "false",
+                "category": "equipment",
+                "name": "doubleHeatSink0",
+                "origin": "default",
+                "slots": 3,
+                "title": "Double Heat Sink",
+                "weight": 1
+            }
+        ],
+        "rightTorso": [
+            {
+                "ammo": "false",
+                "category": "equipment",
+                "name": "doubleHeatSink0",
+                "origin": "default",
+                "slots": 3,
+                "title": "Double Heat Sink",
+                "weight": 1
+            }
+        ],
+        "leftArm": [
+            {
+                "ammo": "false",
+                "category": "equipment",
+                "name": "doubleHeatSink0",
+                "origin": "default",
+                "slots": 3,
+                "title": "Double Heat Sink",
+                "weight": 1
+            }
+        ],
+        "leftLeg": [
+            {
+                "ammo": "false",
+                "category": "equipment",
+                "name": "doubleHeatSink0",
+                "origin": "default",
+                "slots": 3,
+                "title": "Double Heat Sink",
+                "weight": 1
+            }
+        ],
+        "rightLeg": [
+            {
+                "ammo": "false",
+                "category": "equipment",
+                "name": "doubleHeatSink0",
+                "origin": "default",
+                "slots": 3,
+                "title": "Double Heat Sink",
+                "weight": 1
+            }
+        ]
+    },
+    "defaultWeapons": {
+        "leftTorso": [
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "lrm20-0",
+                "origin": "default",
+                "slots": 4,
+                "title": "LRM-20",
+                "weight": 10
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM Ammo",
+                "weight": 1
+            }
+        ],
+        "rightTorso": [
+            {
+                "ammo": "true",
+                "category": "ballistic",
+                "name": "gaussAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "Gauss Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }
+        ],
+        "leftArm": [
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "srm6-0",
+                "origin": "default",
+                "slots": 2,
+                "title": "SRM 6",
+                "weight": 3
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "srmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "SRM Ammo",
+                "weight": 1
+            }
+        ],
+        "rightArm": [
+             {
+                "ammo": "false",
+                "category": "ballistic",
+                "name": "gaussRifle0",
+                "origin": "default",
+                "slots": 5,
+                "title": "Gauss Rifle",
+                "weight": 15
+            },
+            {
+                "ammo": "true",
+                "category": "ballistic",
+                "name": "gaussAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "Gauss Ammo",
+                "weight": 1
+            }
+        ]
+    }
+}

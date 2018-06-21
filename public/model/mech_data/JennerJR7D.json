@@ -1,0 +1,167 @@
+{
+    "name": "Jenner",
+    "variant": "JR7-D",
+    "maxTons": 35,
+    "currentTons": 35,
+    "armor": {
+        "head": 35,
+        "headMax": 45,
+        "centerTorso": 50,
+        "centerTorsoMax": 110,
+        "centerTorsoRear": 15,
+        "centerTorsoRearMax": 55,
+        "rightTorso": 40,
+        "rightTorsoMax": 80,
+        "rightTorsoRear": 20,
+        "rightTorsoRearMax": 40,
+        "leftTorso": 40,
+        "leftTorsoMax": 80,
+        "leftTorsoRear": 20,
+        "leftTorsoRearMax": 40,
+        "rightArm": 20,
+        "rightArmMax": 60,
+        "leftArm": 20,
+        "leftArmMax": 60,
+        "rightLeg": 30,
+        "rightLegMax": 80,
+        "leftLeg": 30,
+        "leftLegMax": 80
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "centerTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 2,
+            "support": 0
+        },
+        "rightTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightArm": {
+            "energy": 2,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftArm": {
+            "energy": 2,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 1,
+        "rightTorso": 2,
+        "leftTorso": 2,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "centerTorso": [
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "srm4-0",
+                "origin": "default",
+                "slots": 1,
+                "title": "SRM-4",
+                "weight": 2
+            }
+        ],
+        "rightTorso": [
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "srmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "SRM Ammo",
+                "weight": 1
+            }
+        ],
+        "leftArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }
+        ],
+        "rightArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }
+        ]
+    }
+}

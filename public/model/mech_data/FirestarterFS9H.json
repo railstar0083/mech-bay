@@ -1,0 +1,197 @@
+{
+    "name": "Firestarter",
+    "variant": "FS9-H",
+    "maxTons": 35,
+    "currentTons": 35,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 65,
+        "centerTorsoMax": 110,
+        "centerTorsoRear": 30,
+        "centerTorsoRearMax": 55,
+        "rightTorso": 55,
+        "rightTorsoMax": 80,
+        "rightTorsoRear": 25,
+        "rightTorsoRearMax": 40,
+        "leftTorso": 55,
+        "leftTorsoMax": 80,
+        "leftTorsoRear": 25,
+        "leftTorsoRearMax": 40,
+        "rightArm": 30,
+        "rightArmMax": 60,
+        "leftArm": 30,
+        "leftArmMax": 60,
+        "rightLeg": 40,
+        "rightLegMax": 80,
+        "leftLeg": 40,
+        "leftLegMax": 80
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "centerTorso": {
+            "energy": 2,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 2
+        },
+        "rightTorso": {
+            "energy": 0,
+            "ballistic": 1,
+            "missile": 0,
+            "support": 1
+        },
+        "leftTorso": {
+            "energy": 0,
+            "ballistic": 1,
+            "missile": 0,
+            "support": 1
+        },
+        "rightArm": {
+            "energy": 2,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "leftArm": {
+            "energy": 2,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 1,
+        "leftTorso": 1,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 2,
+        "leftLeg": 2
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "centerTorso": [
+            {
+                "ammo": "false",
+                "category": "support",
+                "name": "flamer0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Flamer",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "support",
+                "name": "flamer0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Flamer",
+                "weight": 1
+            },
+            {
+                "ammo": "true",
+                "category": "support",
+                "name": "machineGunAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "Machine Gun Ammo",
+                "weight": 1
+            }
+        ],
+        "leftTorso": [
+            {
+                "ammo": "false",
+                "category": "support",
+                "name": "machineGun",
+                "origin": "default",
+                "slots": 1,
+                "title": "Machine Gun",
+                "weight": 1
+            }
+        ],
+        "rightTorso": [
+            {
+                "ammo": "false",
+                "category": "support",
+                "name": "machineGun",
+                "origin": "default",
+                "slots": 1,
+                "title": "Machine Gun",
+                "weight": 1
+            }
+        ],
+        "leftArm": [
+            {
+                "ammo": "false",
+                "category": "support",
+                "name": "flamer0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Flamer",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }
+        ],
+        "rightArm": [
+            {
+                "ammo": "false",
+                "category": "support",
+                "name": "flamer0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Flamer",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }
+        ]
+        
+    }
+}

@@ -1,0 +1,187 @@
+{
+    "name": "Dragon",
+    "variant": "DRG-1N",
+    "maxTons": 60,
+    "currentTons": 60,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 135,
+        "centerTorsoMax": 200,
+        "centerTorsoRear": 60,
+        "centerTorsoRearMax": 100,
+        "rightTorso": 80,
+        "rightTorsoMax": 140,
+        "rightTorsoRear": 40,
+        "rightTorsoRearMax": 70,
+        "leftTorso": 80,
+        "leftTorsoMax": 140,
+        "leftTorsoRear": 40,
+        "leftTorsoRearMax": 70,
+        "rightArm": 70,
+        "rightArmMax": 100,
+        "leftArm": 70,
+        "leftArmMax": 100,
+        "rightLeg": 80,
+        "rightLegMax": 140,
+        "leftLeg": 80,
+        "leftLegMax": 140
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "centerTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 2,
+            "support": 0
+        },
+        "rightTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftTorso": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "rightArm": {
+            "energy": 0,
+            "ballistic": 2,
+            "missile": 0,
+            "support": 0
+        },
+        "leftArm": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "centerTorso": [
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "lrm10-0",
+                "origin": "default",
+                "slots": 2,
+                "title": "LRM 10",
+                "weight": 5
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM Ammo",
+                "weight": 1
+            }
+        ],
+        "rightTorso": [
+            {
+                "ammo": "true",
+                "category": "ballistic",
+                "name": "ac5ammo",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/5 Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "true",
+                "category": "ballistic",
+                "name": "ac5ammo",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/5 Ammo",
+                "weight": 1
+            }
+        ],
+        "leftTorso": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }
+        ],
+        "leftArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }   
+        ],
+        "rightArm": [
+            {
+                "ammo": "false",
+                "category": "ballistic",
+                "name": "ac5-0",
+                "origin": "default",
+                "slots": 2,
+                "title": "AC/5",
+                "weight": 8
+            }    
+        ]
+    }
+}

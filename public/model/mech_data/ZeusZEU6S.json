@@ -1,0 +1,176 @@
+{
+    "name": "Zeus",
+    "variant": "ZEU-6S",
+    "maxTons": 80,
+    "currentTons": 80,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 130,
+        "centerTorsoMax": 250,
+        "centerTorsoRear": 45,
+        "centerTorsoRearMax": 125,
+        "rightTorso": 90,
+        "rightTorsoMax": 170,
+        "rightTorsoRear": 30,
+        "rightTorsoRearMax": 85,
+        "leftTorso": 90,
+        "leftTorsoMax": 170,
+        "leftTorsoRear": 30,
+        "leftTorsoRearMax": 85,
+        "rightArm": 110,
+        "rightArmMax": 130,
+        "leftArm": 110,
+        "leftArmMax": 130,
+        "rightLeg": 120,
+        "rightLegMax": 170,
+        "leftLeg": 120,
+        "leftLegMax": 170
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "centerTorso": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "rightTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftTorso": {
+            "energy": 3,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightArm": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 1,
+            "support": 0
+        },
+        "leftArm": {
+            "energy": 0,
+            "ballistic": 2,
+            "missile": 0,
+            "support": 0
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 1,
+        "rightTorso": 1,
+        "leftTorso": 1,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 2,
+        "leftLeg": 2
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "centerTorso": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }
+        ],
+        "leftTorso": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "largeLaser0",
+                "origin": "default",
+                "slots": 2,
+                "title": "Large Laser",
+                "weight": 5
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }
+        ],
+        "leftArm": [
+            {
+                "ammo": "false",
+                "category": "ballistic",
+                "name": "ac5-0",
+                "origin": "default",
+                "slots": 2,
+                "title": "AC/5",
+                "weight": 8
+            },
+            {
+                "ammo": "true",
+                "category": "ballistic",
+                "name": "ac5ammo",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/5 Ammo",
+                "weight": 1
+            }
+        ],
+        "rightArm": [
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "lrm15-0",
+                "origin": "default",
+                "slots": 3,
+                "title": "LRM-15",
+                "weight": 7
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM Ammo",
+                "weight": 1
+            }
+        ]
+    }
+}

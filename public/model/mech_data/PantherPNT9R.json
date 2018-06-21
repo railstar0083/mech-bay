@@ -1,0 +1,138 @@
+{
+    "name": "Panther",
+    "variant": "PNT-9R",
+    "maxTons": 35,
+    "currentTons": 35,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 70,
+        "centerTorsoMax": 110,
+        "centerTorsoRear": 35,
+        "centerTorsoRearMax": 55,
+        "rightTorso": 50,
+        "rightTorsoMax": 80,
+        "rightTorsoRear": 25,
+        "rightTorsoRearMax": 40,
+        "leftTorso": 50,
+        "leftTorsoMax": 80,
+        "leftTorsoRear": 25,
+        "leftTorsoRearMax": 40,
+        "rightArm": 50,
+        "rightArmMax": 60,
+        "leftArm": 50,
+        "leftArmMax": 60,
+        "rightLeg": 60,
+        "rightLegMax": 80,
+        "leftLeg": 60,
+        "leftLegMax": 80
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "centerTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 1,
+            "support": 0
+        },
+        "rightTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightArm": {
+            "energy": 4,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftArm": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 1,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 1,
+        "leftLeg": 1
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 2,
+        "leftLeg": 2
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "centerTorso": [
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "srm4-0",
+                "origin": "default",
+                "slots": 1,
+                "title": "SRM-4",
+                "weight": 2
+            }
+        ],
+        "leftTorso": [
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "srmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "SRM Ammo",
+                "weight": 1
+            }
+        ],
+        "rightArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "ppc0",
+                "origin": "default",
+                "slots": 3,
+                "title": "PPC",
+                "weight": 7
+            }
+        ]
+    }
+}

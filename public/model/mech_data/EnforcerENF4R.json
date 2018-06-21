@@ -1,0 +1,149 @@
+{
+    "name": "Enforcer",
+    "variant": "ENF-4R",
+    "maxTons": 50,
+    "currentTons": 50,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 115,
+        "centerTorsoMax": 160,
+        "centerTorsoRear": 20,
+        "centerTorsoRearMax": 80,
+        "rightTorso": 85,
+        "rightTorsoMax": 120,
+        "rightTorsoRear": 15,
+        "rightTorsoRearMax": 60,
+        "leftTorso": 85,
+        "leftTorsoMax": 120,
+        "leftTorsoRear": 15,
+        "leftTorsoRearMax": 60,
+        "rightArm": 70,
+        "rightArmMax": 80,
+        "leftArm": 70,
+        "leftArmMax": 80,
+        "rightLeg": 100,
+        "rightLegMax": 120,
+        "leftLeg": 100,
+        "leftLegMax": 120
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "centerTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftTorso": {
+            "energy": 2,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "rightArm": {
+            "energy": 0,
+            "ballistic": 1,
+            "missile": 0,
+            "support": 0
+        },
+        "leftArm": {
+            "energy": 3,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 1,
+        "leftTorso": 1,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 1,
+        "leftTorso": 1,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "rightTorso": [
+            {
+                "ammo": "true",
+                "category": "ballistic",
+                "name": "ac10ammo",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/10 Ammo",
+                "weight": 1
+            }
+        ],
+        "leftTorso": [
+            {
+                "ammo": "false",
+                "category": "support",
+                "name": "smallLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Small Laser",
+                "weight": 1
+            }
+        ],
+        "leftArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "largeLaser0",
+                "origin": "default",
+                "slots": 2,
+                "title": "Large Laser",
+                "weight": 5
+            }
+        ],
+        "rightArm": [
+            {
+                "ammo": "false",
+                "category": "ballistic",
+                "name": "ac10-0",
+                "origin": "default",
+                "slots": 3,
+                "title": "AC/10",
+                "weight": 12
+            }
+        ]
+    }
+}

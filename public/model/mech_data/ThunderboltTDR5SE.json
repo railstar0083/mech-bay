@@ -1,0 +1,174 @@
+{
+    "name": "Thunderbolt",
+    "variant": "TDR-5SE",
+    "maxTons": 65,
+    "currentTons": 65,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 150,
+        "centerTorsoMax": 210,
+        "centerTorsoRear": 55,
+        "centerTorsoRearMax": 105,
+        "rightTorso": 120,
+        "rightTorsoMax": 150,
+        "rightTorsoRear": 30,
+        "rightTorsoRearMax": 75,
+        "leftTorso": 120,
+        "leftTorsoMax": 150,
+        "leftTorsoRear": 30,
+        "leftTorsoRearMax": 75,
+        "rightArm": 100,
+        "rightArmMax": 100,
+        "leftArm": 100,
+        "leftArmMax": 100,
+        "rightLeg": 145,
+        "rightLegMax": 150,
+        "leftLeg": 145,
+        "leftLegMax": 150
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "centerTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftTorso": {
+            "energy": 3,
+            "ballistic": 0,
+            "missile": 2,
+            "support": 3
+        },
+        "rightArm": {
+            "energy": 2,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftArm": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 1,
+        "rightTorso": 1,
+        "leftTorso": 1,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 2,
+        "leftLeg": 2
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 1,
+        "leftTorso": 1,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 1,
+        "leftLeg": 1
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "centerTorso": [
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM Ammo",
+                "weight": 1
+            }
+        ],
+        "leftTorso": [
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "lrm10-0",
+                "origin": "default",
+                "slots": 2,
+                "title": "LRM-10",
+                "weight": 5
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }
+        ],
+        "rightArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "largeLaser0",
+                "origin": "default",
+                "slots": 2,
+                "title": "Large Laser",
+                "weight": 5
+            }    
+        ]
+    }
+}

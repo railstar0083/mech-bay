@@ -1,0 +1,187 @@
+{
+    "name": "Blackjack",
+    "variant": "BJ-1",
+    "maxTons": 45,
+    "currentTons": 45,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 90,
+        "centerTorsoMax": 140,
+        "centerTorsoRear": 45,
+        "centerTorsoRearMax": 70,
+        "rightTorso": 75,
+        "rightTorsoMax": 110,
+        "rightTorsoRear": 30,
+        "rightTorsoRearMax": 55,
+        "leftTorso": 75,
+        "leftTorsoMax": 110,
+        "leftTorsoRear": 30,
+        "leftTorsoRearMax": 55,
+        "rightArm": 60,
+        "rightArmMax": 70,
+        "leftArm": 60,
+        "leftArmMax": 70,
+        "rightLeg": 85,
+        "rightLegMax": 110,
+        "leftLeg": 85,
+        "leftLegMax": 110
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "centerTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightTorso": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "leftTorso": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "rightArm": {
+            "energy": 1,
+            "ballistic": 1,
+            "missile": 0,
+            "support": 0
+        },
+        "leftArm": {
+            "energy": 1,
+            "ballistic": 1,
+            "missile": 0,
+            "support": 0
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 1,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 1,
+        "leftLeg": 1
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "centerTorso": [
+            {
+                "ammo": "true",
+                "category": "ballistic",
+                "name": "ac2ammo",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/2 Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "true",
+                "category": "ballistic",
+                "name": "ac2ammo",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/2 Ammo",
+                "weight": 1
+            }
+        ],
+        "leftTorso": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }
+        ],
+        "rightTorso": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }
+        ],
+        "leftArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "ballistic",
+                "name": "ac2-0",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/2",
+                "weight": 6
+            }
+        ],
+        "rightArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "ballistic",
+                "name": "ac2-0",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/2",
+                "weight": 6
+            }
+        ]
+    }
+}

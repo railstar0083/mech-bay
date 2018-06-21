@@ -1,0 +1,180 @@
+{
+    "name": "Grasshopper",
+    "variant": "GHR-5H",
+    "maxTons": 70,
+    "currentTons": 70,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 85,
+        "centerTorsoMax": 220,
+        "centerTorsoRear": 40,
+        "centerTorsoRearMax": 110,
+        "rightTorso": 70,
+        "rightTorsoMax": 150,
+        "rightTorsoRear": 35,
+        "rightTorsoRearMax": 75,
+        "leftTorso": 70,
+        "leftTorsoMax": 150,
+        "leftTorsoRear": 35,
+        "leftTorsoRearMax": 75,
+        "rightArm": 55,
+        "rightArmMax": 110,
+        "leftArm": 55,
+        "leftArmMax": 110,
+        "rightLeg": 75,
+        "rightLegMax": 150,
+        "leftLeg": 75,
+        "leftLegMax": 150
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 1,
+            "support": 0
+        },
+        "centerTorso": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightTorso": {
+            "energy": 2,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 2
+        },
+        "leftTorso": {
+            "energy": 2,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 2
+        },
+        "rightArm": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "leftArm": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 2,
+        "rightTorso": 3,
+        "leftTorso": 3,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 2,
+        "leftLeg": 2
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 2,
+        "leftLeg": 2
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "head": [
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "lrm5-0",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM-5",
+                "weight": 2
+            }
+        ],
+        "centerTorso": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "largeLaser0",
+                "origin": "default",
+                "slots": 2,
+                "title": "Large Laser",
+                "weight": 5
+            }
+        ],
+        "rightTorso": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM Ammo",
+                "weight": 1
+            }
+        ],
+        "leftTorso": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }
+        ],
+        "leftArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }   
+        ],
+        "rightArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }  
+        ]
+    }
+}

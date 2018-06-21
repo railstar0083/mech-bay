@@ -1,0 +1,239 @@
+{
+    "name": "Stalker",
+    "variant": "STK-3F",
+    "maxTons": 85,
+    "currentTons": 85,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 180,
+        "centerTorsoMax": 270,
+        "centerTorsoRear": 55,
+        "centerTorsoRearMax": 135,
+        "rightTorso": 125,
+        "rightTorsoMax": 180,
+        "rightTorsoRear": 35,
+        "rightTorsoRearMax": 90,
+        "leftTorso": 125,
+        "leftTorsoMax": 180,
+        "leftTorsoRear": 35,
+        "leftTorsoRearMax": 90,
+        "rightArm": 115,
+        "rightArmMax": 140,
+        "leftArm": 115,
+        "leftArmMax": 140,
+        "rightLeg": 125,
+        "rightLegMax": 180,
+        "leftLeg": 125,
+        "leftLegMax": 180
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "centerTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightTorso": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 1,
+            "support": 0
+        },
+        "leftTorso": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 1,
+            "support": 0
+        },
+        "rightArm": {
+            "energy": 2,
+            "ballistic": 0,
+            "missile": 1,
+            "support": 0
+        },
+        "leftArm": {
+            "energy": 2,
+            "ballistic": 0,
+            "missile": 1,
+            "support": 0
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 2,
+        "rightTorso": 2,
+        "leftTorso": 2,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 2,
+        "leftLeg": 2
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "leftTorso": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "largeLaser0",
+                "origin": "default",
+                "slots": 2,
+                "title": "Large Laser",
+                "weight": 5
+            },
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "lrm10-0",
+                "origin": "default",
+                "slots": 2,
+                "title": "LRM 10",
+                "weight": 5
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM Ammo",
+                "weight": 1
+            }
+        ],
+        "rightTorso": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "largeLaser0",
+                "origin": "default",
+                "slots": 2,
+                "title": "Large Laser",
+                "weight": 5
+            },
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "lrm10-0",
+                "origin": "default",
+                "slots": 2,
+                "title": "LRM 10",
+                "weight": 5
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM Ammo",
+                "weight": 1
+            }
+        ],
+        "leftArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "srm6-0",
+                "origin": "default",
+                "slots": 2,
+                "title": "SRM 6",
+                "weight": 3
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "srmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "SRM Ammo",
+                "weight": 1
+            }
+        ],
+        "rightArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "srm6-0",
+                "origin": "default",
+                "slots": 2,
+                "title": "SRM 6",
+                "weight": 3
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "srmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "SRM Ammo",
+                "weight": 1
+            }
+        ]
+    }
+}

@@ -1,0 +1,145 @@
+{
+    "name": "Griffin",
+    "variant": "GRF-1N",
+    "maxTons": 55,
+    "currentTons": 55,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 100,
+        "centerTorsoMax": 180,
+        "centerTorsoRear": 35,
+        "centerTorsoRearMax": 90,
+        "rightTorso": 100,
+        "rightTorsoMax": 130,
+        "rightTorsoRear": 30,
+        "rightTorsoRearMax": 65,
+        "leftTorso": 100,
+        "leftTorsoMax": 130,
+        "leftTorsoRear": 30,
+        "leftTorsoRearMax": 65,
+        "rightArm": 70,
+        "rightArmMax": 90,
+        "leftArm": 70,
+        "leftArmMax": 90,
+        "rightLeg": 90,
+        "rightLegMax": 130,
+        "leftLeg": 90,
+        "leftLegMax": 130
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "centerTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 3,
+            "support": 0
+        },
+        "leftTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightArm": {
+            "energy": 3,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "leftArm": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 1,
+        "leftLeg": 1
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 1,
+        "rightTorso": 2,
+        "leftTorso": 2,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "rightTorso": [
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "lrm10-0",
+                "origin": "default",
+                "slots": 2,
+                "title": "LRM-10",
+                "weight": 5
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM Ammo",
+                "weight": 1
+            }
+        ],
+        "rightArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "ppc0",
+                "origin": "default",
+                "slots": 3,
+                "title": "PPC",
+                "weight": 7
+            }
+        ]
+    }
+}

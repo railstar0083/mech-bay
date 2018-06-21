@@ -1,0 +1,156 @@
+{
+    "name": "Banshee",
+    "variant": "BNC-3M",
+    "maxTons": 95,
+    "currentTons": 95,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 200,
+        "centerTorsoMax": 300,
+        "centerTorsoRear": 85,
+        "centerTorsoRearMax": 150,
+        "rightTorso": 150,
+        "rightTorsoMax": 200,
+        "rightTorsoRear": 50,
+        "rightTorsoRearMax": 100,
+        "leftTorso": 150,
+        "leftTorsoMax": 200,
+        "leftTorsoRear": 50,
+        "leftTorsoRearMax": 100,
+        "rightArm": 105,
+        "rightArmMax": 160,
+        "leftArm": 105,
+        "leftArmMax": 160,
+        "rightLeg": 130,
+        "rightLegMax": 200,
+        "leftLeg": 130,
+        "leftLegMax": 200
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "centerTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightTorso": {
+            "energy": 4,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 2
+        },
+        "leftTorso": {
+            "energy": 3,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 3
+        },
+        "rightArm": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftArm": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 2,
+        "rightTorso": 1,
+        "leftTorso": 1,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 1,
+        "leftLeg": 1
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "head": [
+            {
+                "ammo": "false",
+                "category": "support",
+                "name": "smallLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Small Laser",
+                "weight": 1
+            }
+        ],
+        "leftTorso": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "ppc0",
+                "origin": "default",
+                "slots": 3,
+                "title": "PPC",
+                "weight": 7
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }
+        ],
+        "rightTorso": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "ppc0",
+                "origin": "default",
+                "slots": 3,
+                "title": "PPC",
+                "weight": 7
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }
+        ]
+    }
+}

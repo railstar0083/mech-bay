@@ -1,0 +1,423 @@
+/*Main Body and Type Styles*/
+body{
+    color: #ffffff;
+    background:#000000;
+    font-size: 14px;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */      
+}
+
+#AppWrapper {
+    max-width: 100%;
+    min-width: 400px;
+}
+
+#mainContainer {
+    /*border: 1px dotted red;*/
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row
+}
+
+
+/*Component positioning*/
+#leftFrame{
+    order: 1;
+    /*border: 1px dotted blue;*/
+}
+
+#rightFrame{
+    order: 2;
+    /*border: 1px dotted green;*/
+    width: 100%;
+    padding: 0;
+    position: relative;
+}
+
+#mechWireframeInnerWrapper{
+    padding: 0;
+}
+
+.tonnage-display {
+    margin-left: 15px;
+    margin-bottom: 0;
+    position: absolute;
+    top: 62px;
+}
+
+.status-icon{
+    position: absolute;
+    top: 15px;
+    left: 298px;
+}
+
+/*Mech Selection*/
+
+#mechClassSelect {
+    margin: 0 0 5px 0; 
+}
+
+#mechSelectWrapper {
+    margin: 0 0 15px 0;   
+}
+
+/*Armory*/
+
+.green {
+    background-color: #66784e;
+}
+
+.blue {
+    background-color: #5b888e;
+}
+
+.purple {
+    background-color: #7d607a;
+}
+
+.tan {
+    background-color: #8f7950;
+}
+
+.grey {
+    background-color: #454b52;
+}
+
+#mechArmory {
+    width: 500px;
+    height: 700px;
+    /*border: 2px solid #cccccc;*/
+}
+
+.inventorySelector button {
+    border: 1px solid #ffffff;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: 0;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+}
+
+.inventorySelector button.selected {
+    background: #ffffff;
+    color: #000000;
+}
+
+.inventoryFilter {
+    padding: 15px 0 10px 0;
+}
+
+.inventoryFilter button,
+.counter-buttons button{
+    border: none;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: 0;
+}
+
+.counter-buttons button {
+    padding: 0;
+}
+
+.weapon-filter, .equipment-filter {
+    cursor: pointer;
+}
+
+.weaponRack {
+    width: 500px;
+    height: 565px;
+    overflow-y: scroll;
+}
+
+.inventory-slide{
+    margin-left: 5px;
+    margin-bottom: 10px;
+    height: 54px;
+    background-color: #242428;
+    margin-bottom: 15px;
+    width: 475px;
+}
+
+.inventory-slide div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.inventory-slide .slide-icon {
+    width: 54px;
+}
+
+.inventory-slide .slide-icon img {
+    border: 2px solid #ffffff;
+}
+
+.inventory-slide .slide-left {
+    width: 165px;
+    vertical-align: top;
+}
+
+.inventory-slide .slide-manufacture,
+.inventory-slide .slide-name{
+    width: 100%;
+    display: block;
+}
+
+.inventory-slide .slide-manufacture{
+    height: 19px;
+}
+
+.inventory-slide .slide-manufacture-name {
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 9px;
+    color: #020202;
+    text-transform: uppercase;
+    width: 146px;
+}
+
+.inventory-slide .slide-manufacture-endcap {
+    width: 6px;
+    height: 19px;
+    border-left: 3px solid #242428;
+}
+
+.inventory-slide .slide-name{
+    height: 35px;
+}
+
+.inventory-slide .slide-name span{
+    padding-left: 10px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.inventory-slide .slide-mods {
+    width: 95px;
+    height: 54px;
+    text-align: right;
+    padding-top: 10px;
+}
+
+.inventory-slide .slide-mods.equipment-mods {
+    width: 165px;
+}
+
+.inventory-slide .slide-mods span {
+    color: orange;
+    font-size: 9px;
+}
+
+.inventory-slide .slide-stats {
+    padding-top: 10px;
+    width: 160px;
+    text-align: center;
+}
+
+.inventory-slide .slide-stats span {
+    color: #c4c4c4;
+    text-align: center;
+    font-size: 10px;
+}
+
+.slide-stats-stab, .slide-stats-damage {
+    margin-right: 5px;
+}
+
+
+/*Paper Doll*/
+.paper-doll{
+    position: relative;
+    height: 840px;
+    width: 100%;
+    margin-top: 62px;
+}
+
+#mechWireframeInnerWrapper h1,
+#mechWireframeInnerWrapper h3{
+     padding-left: 15px;
+     position: absolute;
+}
+
+#mechWireframeInnerWrapper h1 {
+    top: 0px;
+}
+
+#mechWireframeInnerWrapper h3 {
+    top: 35px;
+}
+
+.component-box{
+    position: absolute;   
+}
+
+.inventory-plate {
+    width: 175px;
+    text-align: left;
+    margin-bottom: 1px;
+}
+
+.inventory-plate span {
+    display: block;
+    padding: 5px 0 0 5px;
+}
+
+.front-armor-counter div.counter-buttons, 
+.rear-armor-counter div.counter-buttons{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.front-armor-counter span, 
+.rear-armor-counter span{
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.front-armor-counter span:first-child, 
+.rear-armor-counter span:first-child{
+    font-size: 10px;
+}
+
+p.component-name {
+    margin: 0;
+}
+
+.hardpoints-wrapper {
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+.hardpoint-counter {
+    display: inline-block;
+}
+
+.hardpoint-counter img {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 15px;
+}
+
+.hardpoint-counter span {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 5px 15px 5px;
+}
+
+.hardpoint-counter.hardpoint-inactive {
+    color: #cccccc;
+    opacity: 0.6;
+}
+
+#trashcan.component-box {
+    top: 15px;
+    right: 15px;
+    height: 50px;
+    width: 50px;
+    background: url('../img/trashcan.png') top center no-repeat;
+    background-size: cover;
+    z-index: 400;
+}
+
+#headBox.component-box {
+    top: 0;
+    left: 250px;
+    text-align: center;
+}
+
+#centerTorsoBox.component-box {
+    top: 395px;
+    left: 250px;
+    text-align: center;
+}
+
+#rightTorsoBox.component-box {
+    top: 45px;
+    left: 90px;
+}
+
+#leftTorsoBox.component-box {
+    top: 45px;
+    left: 410px;
+    text-align: right;
+}
+
+#rightArmBox.component-box {
+    top: 400px;
+    left: 10px;
+}
+
+#leftArmBox.component-box {
+    top: 400px;
+    left: 495px;
+    text-align: right;
+}
+
+#rightLegBox.component-box {
+    top: 660px;
+    left: 145px;
+    text-align: right;
+}
+
+#leftLegBox.component-box {
+    top: 660px;
+    left: 370px;
+}
+
+.box-slots {
+    width: 175px;
+    border-width: 2px 2px 2px 2px;
+    border-color: #ffffff;
+    border-style: solid;
+    background-image: url("../img/inventory-bkgrd.png");
+    background-repeat: repeat-y;
+    /*background-position-y: -1px;*/
+    overflow: hidden;
+}
+
+#head-inventory.box-slots {
+    height: 25px;
+}
+
+#centerTorso-inventory.box-slots {
+    height: 100px;
+}
+
+#rightTorso-inventory.box-slots {
+    height: 250px;
+}
+
+#leftTorso-inventory.box-slots {
+    height: 250px;
+}
+
+#rightArm-inventory.box-slots {
+    height: 200px;
+}
+
+#leftArm-inventory.box-slots {
+    height: 200px;
+}
+
+#rightLeg-inventory.box-slots {
+    height: 100px;
+}
+
+#leftLeg-inventory.box-slots {
+    height: 100px;
+}

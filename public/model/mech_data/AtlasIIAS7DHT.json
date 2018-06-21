@@ -1,0 +1,273 @@
+{
+    "name": "Atlas II",
+    "variant": "AS7-D-HT",
+    "maxTons": 100,
+    "currentTons": 100,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 235,
+        "centerTorsoMax": 320,
+        "centerTorsoRear": 70,
+        "centerTorsoRearMax": 160,
+        "rightTorso": 160,
+        "rightTorsoMax": 210,
+        "rightTorsoRear": 50,
+        "rightTorsoRearMax": 105,
+        "leftTorso": 160,
+        "leftTorsoMax": 210,
+        "leftTorsoRear": 50,
+        "leftTorsoRearMax": 105,
+        "rightArm": 170,
+        "rightArmMax": 170,
+        "leftArm": 170,
+        "leftArmMax": 170,
+        "rightLeg": 205,
+        "rightLegMax": 210,
+        "leftLeg": 205,
+        "leftLegMax": 210
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "centerTorso": {
+            "energy": 2,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 2
+        },
+        "rightTorso": {
+            "energy": 0,
+            "ballistic": 2,
+            "missile": 0,
+            "support": 0
+        },
+        "leftTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 2,
+            "support": 0
+        },
+        "rightArm": {
+            "energy": 2,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "leftArm": {
+            "energy": 2,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 4,
+        "leftLeg": 4
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultEquipment": {
+        "rightTorso": [
+            {
+                "ammo": "false",
+                "category": "equipment",
+                "name": "doubleHeatSink0",
+                "origin": "default",
+                "slots": 3,
+                "title": "Double Heat Sink",
+                "weight": 1
+            }
+        ],
+        "rightArm": [
+            {
+                "ammo": "false",
+                "category": "equipment",
+                "name": "doubleHeatSink0",
+                "origin": "default",
+                "slots": 3,
+                "title": "Double Heat Sink",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "equipment",
+                "name": "doubleHeatSink0",
+                "origin": "default",
+                "slots": 3,
+                "title": "Double Heat Sink",
+                "weight": 1
+            }
+        ],
+        "leftArm": [
+            {
+                "ammo": "false",
+                "category": "equipment",
+                "name": "doubleHeatSink0",
+                "origin": "default",
+                "slots": 3,
+                "title": "Double Heat Sink",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "equipment",
+                "name": "doubleHeatSink0",
+                "origin": "default",
+                "slots": 3,
+                "title": "Double Heat Sink",
+                "weight": 1
+            }
+        ]
+    },
+    "defaultWeapons": {
+        "centerTorso": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumPulseLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Pulse Laser",
+                "weight": 2
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumPulseLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Pulse Laser",
+                "weight": 2
+            }
+        ],
+        "leftTorso": [
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "lrm20-0",
+                "origin": "default",
+                "slots": 4,
+                "title": "LRM 20",
+                "weight": 10
+            },
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "srm6-0",
+                "origin": "default",
+                "slots": 2,
+                "title": "SRM 6",
+                "weight": 3
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "srmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "SRM Ammo",
+                "weight": 1
+            }
+        ],
+        "rightTorso": [
+            {
+                "ammo": "false",
+                "category": "ballistic",
+                "name": "ac20-0",
+                "origin": "default",
+                "slots": 4,
+                "title": "AC/20",
+                "weight": 14
+            },
+            {
+                "ammo": "true",
+                "category": "ballistic",
+                "name": "ac20ammo",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/20 Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "true",
+                "category": "ballistic",
+                "name": "ac20ammo",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/20 Ammo",
+                "weight": 1
+            }
+        ],
+        "leftArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "largeERLaser0",
+                "origin": "default",
+                "slots": 2,
+                "title": "ER Large Laser",
+                "weight": 5
+            }
+        ],
+        "rightArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "largeERLaser0",
+                "origin": "default",
+                "slots": 2,
+                "title": "ER Large Laser",
+                "weight": 5
+            }
+        ]
+    }
+}

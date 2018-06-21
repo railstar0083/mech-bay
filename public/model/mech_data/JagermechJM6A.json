@@ -1,0 +1,196 @@
+{
+    "name": "Jagermech",
+    "variant": "JM6-A",
+    "maxTons": 65,
+    "currentTons": 65,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 100,
+        "centerTorsoMax": 210,
+        "centerTorsoRear": 25,
+        "centerTorsoRearMax": 105,
+        "rightTorso": 85,
+        "rightTorsoMax": 150,
+        "rightTorsoRear": 15,
+        "rightTorsoRearMax": 75,
+        "leftTorso": 85,
+        "leftTorsoMax": 150,
+        "leftTorsoRear": 15,
+        "leftTorsoRearMax": 75,
+        "rightArm": 55,
+        "rightArmMax": 100,
+        "leftArm": 55,
+        "leftArmMax": 100,
+        "rightLeg": 80,
+        "rightLegMax": 150,
+        "leftLeg": 80,
+        "leftLegMax": 150
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "centerTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightTorso": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "leftTorso": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "rightArm": {
+            "energy": 0,
+            "ballistic": 1,
+            "missile": 2,
+            "support": 0
+        },
+        "leftArm": {
+            "energy": 0,
+            "ballistic": 1,
+            "missile": 2,
+            "support": 0
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "centerTorso": [
+            {
+                "ammo": "true",
+                "category": "ballistic",
+                "name": "ac2ammo",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/2 Ammo",
+                "weight": 1
+            }
+        ],
+        "rightTorso": [
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }
+        ],
+        "leftTorso": [
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1
+            }
+        ],
+        "rightArm": [
+            {
+                "ammo": "false",
+                "category": "ballistic",
+                "name": "ac2-0",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/2",
+                "weight": 6
+            },
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "lrm15-0",
+                "origin": "default",
+                "slots": 3,
+                "title": "LRM-15",
+                "weight": 7
+            } 
+        ],
+        "leftArm": [
+            {
+                "ammo": "false",
+                "category": "ballistic",
+                "name": "ac2-0",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/2",
+                "weight": 6
+            },
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "lrm15-0",
+                "origin": "default",
+                "slots": 3,
+                "title": "LRM-15",
+                "weight": 7
+            }
+        ]
+    }
+}
