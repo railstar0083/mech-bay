@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import EquipmentSlots from '../components/paper-doll-box.js';
+import Trashcan from '../components/trashcan.js';
 import {energy} from '../json/armory.json';
 import {ballistic} from '../json/armory.json';
 import {missile} from '../json/armory.json';
@@ -8,8 +9,7 @@ import {heatsinks} from '../json/armory.json';
 import {jumpjets} from '../json/armory.json';
 import {misc} from '../json/armory.json';
 import {initializeHardpoints} from '../json/initialize.js'
-//import Rack from '../components/armory-rack-draggable.js';
-//import { fetchMechData } from '../async/mech-data.async.js';
+
 
 const inventoryLocation = (index) => {
     switch(index){
@@ -61,8 +61,7 @@ class MechWireframe extends Component {
         this.updateHardpoints = this.updateHardpoints.bind(this);
         this.calculateTonnage = this.calculateTonnage.bind(this);
         this.createDefaultLoadout= this.createDefaultLoadout.bind(this);
-        this.transferOn = this.transferOn.bind(this);
-        this.transferReset = this.transferReset.bind(this);
+        this.validDropToggle = this.validDropToggle.bind(this);
     }
     
     componentDidMount() {
@@ -89,6 +88,7 @@ class MechWireframe extends Component {
                 currentRightLegArmor: this.props.currentMechData.armor.rightLeg,
                 currentHardpoints: initializeHardpoints,
                 transferActive: false,
+                validDrop: false,
                 defaultLoadout: []
             }, function(){
                 this.createDefaultLoadout();
@@ -184,12 +184,15 @@ class MechWireframe extends Component {
        })
     }
     
-    transferOn(evt){
-        this.setState({ transferActive: true })
-    }
-    
-    transferReset(evt){
-        this.setState({ transferActive: false })
+    validDropToggle(evt, action){
+        //Toggle state that tells wether a location is a valid drop point (Inventory or Trashcan)
+        if(action === "enter"){
+            this.setState({ validDrop: true })
+            return true;
+        } else if (action === "exit"){
+            this.setState({ validDrop: false })
+            return true;
+        }
     }
     
     calculateTonnage(operation, weight){
@@ -288,6 +291,7 @@ class MechWireframe extends Component {
                currentVariant,
                currentHardpoints,
                transferActive,
+               validDrop,
                defaultLoadout} = this.state;
         const redText = {
             color: "red"
@@ -310,7 +314,7 @@ class MechWireframe extends Component {
                         <span className="status-icon"><img src="img/lightwarning.png" alt="Battlemech Is Too Light" /></span>}
                         <p className="tonnage-display" style={currentTons > currentMechData.maxTons ? redText : null}>Tonnage: {currentTons}/{currentMechData.maxTons}</p>
                         <div className="paper-doll">
-                            <div id="trashcan" className="component-box" onDragEnter={(evt) => this.transferOn(evt)}></div>
+                            <Trashcan  isDropValid={validDrop} validDropToggle={this.validDropToggle} />
                             <div id="headBox" className="component-box">
                                 <p className="component-name">Head</p>
                                 <div className="front-armor-counter">
@@ -343,9 +347,8 @@ class MechWireframe extends Component {
                                                 currentHardpoints={currentHardpoints} 
                                                 updateHardpoints={this.updateHardpoints} 
                                                 calculateTonnage={this.calculateTonnage} 
-                                                transferActive={transferActive} 
-                                                transferReset={this.transferReset} 
-                                                transferOn={this.transferOn}
+                                                isDropValid={validDrop}
+                                                validDropToggle={this.validDropToggle}
                                                 defaultLoadout={defaultLoadout[0]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -388,10 +391,9 @@ class MechWireframe extends Component {
                                                                  hardPoints.centerTorso.support]} 
                                                 currentHardpoints={currentHardpoints} 
                                                 updateHardpoints={this.updateHardpoints} 
-                                                calculateTonnage={this.calculateTonnage} 
-                                                transferActive={transferActive} 
-                                                transferReset={this.transferReset} 
-                                                transferOn={this.transferOn} 
+                                                calculateTonnage={this.calculateTonnage}
+                                                isDropValid={validDrop}
+                                                validDropToggle={this.validDropToggle}
                                                 defaultLoadout={this.state.defaultLoadout[1]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -434,10 +436,9 @@ class MechWireframe extends Component {
                                                                  hardPoints.rightTorso.support]} 
                                                 currentHardpoints={currentHardpoints} 
                                                 updateHardpoints={this.updateHardpoints} 
-                                                calculateTonnage={this.calculateTonnage} 
-                                                transferActive={transferActive} 
-                                                transferReset={this.transferReset} 
-                                                transferOn={this.transferOn} 
+                                                calculateTonnage={this.calculateTonnage}
+                                                isDropValid={validDrop}
+                                                validDropToggle={this.validDropToggle}
                                                 defaultLoadout={this.state.defaultLoadout[2]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -480,10 +481,9 @@ class MechWireframe extends Component {
                                                                  hardPoints.leftTorso.support]} 
                                                 currentHardpoints={currentHardpoints} 
                                                 updateHardpoints={this.updateHardpoints} 
-                                                calculateTonnage={this.calculateTonnage} 
-                                                transferActive={transferActive} 
-                                                transferReset={this.transferReset} 
-                                                transferOn={this.transferOn} 
+                                                calculateTonnage={this.calculateTonnage}
+                                                isDropValid={validDrop}
+                                                validDropToggle={this.validDropToggle}
                                                 defaultLoadout={this.state.defaultLoadout[3]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -519,10 +519,9 @@ class MechWireframe extends Component {
                                                                  hardPoints.leftArm.support]} 
                                                 currentHardpoints={currentHardpoints} 
                                                 updateHardpoints={this.updateHardpoints} 
-                                                calculateTonnage={this.calculateTonnage} 
-                                                transferActive={transferActive} 
-                                                transferReset={this.transferReset} 
-                                                transferOn={this.transferOn} 
+                                                calculateTonnage={this.calculateTonnage}
+                                                isDropValid={validDrop}
+                                                validDropToggle={this.validDropToggle}
                                                 defaultLoadout={this.state.defaultLoadout[5]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -558,10 +557,9 @@ class MechWireframe extends Component {
                                                                  hardPoints.rightArm.support]} 
                                                 currentHardpoints={currentHardpoints} 
                                                 updateHardpoints={this.updateHardpoints} 
-                                                calculateTonnage={this.calculateTonnage} 
-                                                transferActive={transferActive} 
-                                                transferReset={this.transferReset} 
-                                                transferOn={this.transferOn} 
+                                                calculateTonnage={this.calculateTonnage}
+                                                isDropValid={validDrop}
+                                                validDropToggle={this.validDropToggle}
                                                 defaultLoadout={this.state.defaultLoadout[4]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -597,10 +595,9 @@ class MechWireframe extends Component {
                                                                  hardPoints.leftLeg.support]} 
                                                 currentHardpoints={currentHardpoints} 
                                                 updateHardpoints={this.updateHardpoints} 
-                                                calculateTonnage={this.calculateTonnage} 
-                                                transferActive={transferActive} 
-                                                transferReset={this.transferReset} 
-                                                transferOn={this.transferOn} 
+                                                calculateTonnage={this.calculateTonnage}
+                                                isDropValid={validDrop}
+                                                validDropToggle={this.validDropToggle}
                                                 defaultLoadout={this.state.defaultLoadout[7]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -636,10 +633,9 @@ class MechWireframe extends Component {
                                                                  hardPoints.rightLeg.support]} 
                                                 currentHardpoints={currentHardpoints} 
                                                 updateHardpoints={this.updateHardpoints} 
-                                                calculateTonnage={this.calculateTonnage} 
-                                                transferActive={transferActive} 
-                                                transferReset={this.transferReset} 
-                                                transferOn={this.transferOn} 
+                                                calculateTonnage={this.calculateTonnage}
+                                                isDropValid={validDrop}
+                                                validDropToggle={this.validDropToggle}
                                                 defaultLoadout={this.state.defaultLoadout[6]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
