@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-//import Rack from './armory-rack-draggable.js';
-//https://medium.freecodecamp.org/reactjs-implement-drag-and-drop-feature-without-using-external-libraries-ad8994429f1a
 
 
 class EquipmentSlots extends Component {
@@ -16,7 +14,6 @@ class EquipmentSlots extends Component {
             currentVariant: ""
         }
         this.isWeaponWithHardpoint = this.isWeaponWithHardpoint.bind(this);
-        this.onDragEnter = this.onDragEnter.bind(this);
         this.onDragStart = this.onDragStart.bind(this);
         this.onDragEnd = this.onDragEnd.bind(this);
         this.onDrop = this.onDrop.bind(this);
@@ -126,12 +123,13 @@ class EquipmentSlots extends Component {
     onDragStart(evt, index){
         let element = JSON.stringify(index);
         evt.dataTransfer.setData("text/html",element);
-        //console.log(evt.dataTransfer.getData("text/html"))
+        console.log(evt.dataTransfer.getData("text/html"))
     }
     
     onDragEnd(evt, index, category, weight, ammo){
-        const {updateHardpoints, transferReset, calculateTonnage} = this.props;
-        if(/*this.props.transferActive*/ true){
+        console.log(evt.target)
+        const {updateHardpoints, isDropValid, calculateTonnage} = this.props;
+        if(isDropValid === true){
             let newInventory = this.state.currentInventory;
             newInventory.splice(index, 1);
             this.setState({
@@ -142,7 +140,6 @@ class EquipmentSlots extends Component {
               updateHardpoints(category, this.props.slotType, "subtract");
             }
             calculateTonnage("subtract", weight)
-            //transferReset();
             return true;
         } else {
           return false;
@@ -150,13 +147,8 @@ class EquipmentSlots extends Component {
         
     }
     
-    onDragEnter(evt, index, category){
-        //Trashcan code, not wroking as intended
-        //this.props.transferOn();
-    }
-    
     onDrop(evt, location){
-        const {updateHardpoints, transferReset, calculateTonnage} = this.props;
+        const {updateHardpoints, calculateTonnage} = this.props;
         //Do Slots remain?
         if(this.state.slotsRemaining > 0){
           let id = JSON.parse(evt.dataTransfer.getData("text/html"));
@@ -173,10 +165,6 @@ class EquipmentSlots extends Component {
                   })
                   updateHardpoints(id.category, this.props.slotType, "add");
                   calculateTonnage("add", id.weight);
-                  //Trashcan code, not wroking as intended
-                  if(id.origin !== "rack"){
-                    //transferReset();
-                  }
               }
               
           }
@@ -239,7 +227,7 @@ class EquipmentSlots extends Component {
         let boxLocation = this.props.slotType + "-inventory";
         
         return (
-            <div id={boxLocation} className="box-slots droppable" onDragEnter={(e)=>this.onDragEnter(e)} onDragOver={(e)=>e.preventDefault()} onDrop={(e)=>this.onDrop(e, "inventory")}>
+            <div id={boxLocation} className="box-slots droppable" onDragEnter={(e)=>this.props.validDropToggle(e, "enter")} onDragLeave={(e)=>this.props.validDropToggle(e, "exit")} onDragOver={(e)=>e.preventDefault()} onDrop={(e)=>this.onDrop(e, "inventory")}>
                 { currentInventory[0] !== undefined && slotsRemaining >= 0 && 
                     this.renderEquipment(boxLocation)
                 }
