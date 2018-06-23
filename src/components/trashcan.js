@@ -22,7 +22,7 @@ class Trashcan extends Component {
         
         return (
         
-            <div id="trashcan" className="component-box" onDrop={(evt)=> evt.preventDefault()} onDragEnter={(evt) => this.props.validDropToggle(evt, "enter")} onDragLeave={(evt) => this.handleDragLeave(evt) }></div>
+            <div id="trashcan" className="component-box" onDrop={(evt)=> evt.preventDefault()} onDragOver={(e)=>e.preventDefault()} onDragEnter={(evt) => this.props.validDropToggle(evt, "enter")} onDragLeave={(evt) => this.handleDragLeave(evt) }></div>
         
         )
         

@@ -44,6 +44,7 @@ export const mechMAP = {
     "BLR-1G": "BattlemasterBLR1G.json",
     "HGN-732b": "HighlanderHGN732B.json",
     "HGN-733": "HighlanderHGN733.json",
+    "HGN-733P": "HighlanderHGN733P.json",
     "KGC-0000": "KingCrabKGC0000.json",
     "STK-3F": "StalkerSTK3F.json",
     "VTR-9S": "VictorVTR9S.json",

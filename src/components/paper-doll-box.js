@@ -14,6 +14,7 @@ class EquipmentSlots extends Component {
             currentVariant: ""
         }
         this.isWeaponWithHardpoint = this.isWeaponWithHardpoint.bind(this);
+        this.isSlotsFull = this.isSlotsFull.bind(this);
         this.onDragStart = this.onDragStart.bind(this);
         this.onDragEnd = this.onDragEnd.bind(this);
         this.onDrop = this.onDrop.bind(this);
@@ -120,6 +121,17 @@ class EquipmentSlots extends Component {
         }
     }
     
+    isSlotsFull(evt){
+      this.props.validDropToggle(evt, "enter");
+      /*console.log(evt.target.className)
+      if (evt.target.className.indexOf("slots0" === -1)){
+        this.props.validDropToggle(evt, "enter");
+      } else {
+        this.props.validDropToggle(evt, "exit");
+      }*/
+      
+    }
+    
     onDragStart(evt, index){
         let element = JSON.stringify(index);
         evt.dataTransfer.setData("text/html",element);
@@ -127,6 +139,7 @@ class EquipmentSlots extends Component {
     }
     
     onDragEnd(evt, index, category, weight, ammo){
+        //evt.stopPropagation();
         console.log(evt.target)
         const {updateHardpoints, isDropValid, calculateTonnage} = this.props;
         if(isDropValid === true){
@@ -225,9 +238,10 @@ class EquipmentSlots extends Component {
     render() {
         const {currentInventory, slotsRemaining} = this.state;
         let boxLocation = this.props.slotType + "-inventory";
+        let thisClass = "box-slots droppable slots" + slotsRemaining;
         
         return (
-            <div id={boxLocation} className="box-slots droppable" onDragEnter={(e)=>this.props.validDropToggle(e, "enter")} onDragLeave={(e)=>this.props.validDropToggle(e, "exit")} onDragOver={(e)=>e.preventDefault()} onDrop={(e)=>this.onDrop(e, "inventory")}>
+            <div id={boxLocation} className={thisClass} onDragEnter={(e)=>this.isSlotsFull(e)} onDragLeave={(e)=>this.props.validDropToggle(e, "exit")} onDragOver={(e)=>e.preventDefault()} onDrop={(e)=>this.onDrop(e, "inventory")}>
                 { currentInventory[0] !== undefined && slotsRemaining >= 0 && 
                     this.renderEquipment(boxLocation)
                 }
