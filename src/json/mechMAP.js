@@ -39,6 +39,7 @@ export const mechMAP = {
     "TDR-5SE": "ThunderboltTDR5SE.json",
     "TDR-5SS": "ThunderboltTDR5SS.json",
     "AS7-D-HT": "AtlasIIAS7DHT.json",
+    "AWS-8Q": "AwesomeAWS8Q.json",
     "AWS-8T": "AwesomeAWS8T.json",
     "BNC-3M": "BansheeBNC3M.json",
     "BLR-1G": "BattlemasterBLR1G.json",
