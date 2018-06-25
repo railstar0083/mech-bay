@@ -1,0 +1,149 @@
+{
+    "name": "Awesome",
+    "variant": "AWS-8Q",
+    "maxTons": 80,
+    "currentTons": 80,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 150,
+        "centerTorsoMax": 250,
+        "centerTorsoRear": 95,
+        "centerTorsoRearMax": 125,
+        "rightTorso": 120,
+        "rightTorsoMax": 170,
+        "rightTorsoRear": 50,
+        "rightTorsoRearMax": 85,
+        "leftTorso": 120,
+        "leftTorsoMax": 170,
+        "leftTorsoRear": 50,
+        "leftTorsoRearMax": 85,
+        "rightArm": 120,
+        "rightArmMax": 130,
+        "leftArm": 120,
+        "leftArmMax": 130,
+        "rightLeg": 165,
+        "rightLegMax": 170,
+        "leftLeg": 165,
+        "leftLegMax": 170
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "centerTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightTorso": {
+            "energy": 2,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftTorso": {
+            "energy": 2,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightArm": {
+            "energy": 2,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftArm": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 2
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 1,
+        "rightTorso": 3,
+        "leftTorso": 5,
+        "rightArm": 5,
+        "leftArm": 0,
+        "rightLeg": 2,
+        "leftLeg": 2
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "head": [
+            {
+                "ammo": "false",
+                "category": "support",
+                "name": "smallLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Small Laser",
+                "weight": 1
+            }
+        ],
+        "leftTorso": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "ppc0",
+                "origin": "default",
+                "slots": 3,
+                "title": "PPC",
+                "weight": 7
+            }
+        ],
+        "rightTorso": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "ppc0",
+                "origin": "default",
+                "slots": 3,
+                "title": "PPC",
+                "weight": 7
+            }
+        ],
+        "rightArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "ppc0",
+                "origin": "default",
+                "slots": 3,
+                "title": "PPC",
+                "weight": 7
+            }
+        ]
+    }
+}
