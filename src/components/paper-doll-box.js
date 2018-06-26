@@ -122,13 +122,15 @@ class EquipmentSlots extends Component {
     }
     
     isSlotsFull(evt){
-      this.props.validDropToggle(evt, "enter");
-      /*console.log(evt.target.className)
-      if (evt.target.className.indexOf("slots0" === -1)){
-        this.props.validDropToggle(evt, "enter");
-      } else {
+      //this.props.validDropToggle(evt, "enter");
+      console.log(evt.target.className)
+      if (evt.target.className.indexOf("slots0") === 0 || evt.target.className.indexOf("inventory-plate") === 0){
+        console.log("pip")
         this.props.validDropToggle(evt, "exit");
-      }*/
+      } else {
+        console.log("pop")
+        this.props.validDropToggle(evt, "enter");
+      }
       
     }
     
@@ -162,25 +164,35 @@ class EquipmentSlots extends Component {
     
     onDrop(evt, location){
         const {updateHardpoints, calculateTonnage} = this.props;
+        let id = JSON.parse(evt.dataTransfer.getData("text/html"));
+        let thisSlot = this.props.slotType.toLowerCase();
         //Do Slots remain?
         if(this.state.slotsRemaining > 0){
-          let id = JSON.parse(evt.dataTransfer.getData("text/html"));
-          //Is the item slot restricted?
-          let thisSlot = this.props.slotType.toLowerCase();
-          if(id.restricted === undefined || thisSlot.includes(id.restricted.toLowerCase())) {
-              //Is the item equipment or a weapon (not ammo) with an available hardpoint?
-              if(id.category === "equipment" || (this.isWeaponWithHardpoint(id.category, this.props.slotType)) && (id.ammo === ("false" || undefined))){
-                  let newInventory = this.state.currentInventory;
-                  newInventory.push(id);
-                  this.setState({
-                    currentInventory: newInventory,
-                    slotsRemaining: this.state.slotsRemaining - 1
-                  })
-                  updateHardpoints(id.category, this.props.slotType, "add");
-                  calculateTonnage("add", id.weight);
-              }
-              
+          //Does the item fit?
+          if(id.slots <= this.state.slotsRemaining){
+            //Is the item slot restricted?
+            if(id.restricted === undefined || thisSlot.includes(id.restricted.toLowerCase())) {
+                //Is the item equipment or a weapon (not ammo) with an available hardpoint?
+                if(id.category === "equipment" || (this.isWeaponWithHardpoint(id.category, this.props.slotType)) && (id.ammo === ("false" || undefined))){
+                    let newInventory = this.state.currentInventory;
+                    newInventory.push(id);
+                    this.setState({
+                      currentInventory: newInventory,
+                      slotsRemaining: this.state.slotsRemaining - 1
+                    })
+                    updateHardpoints(id.category, this.props.slotType, "add");
+                    calculateTonnage("add", id.weight);
+                } else {
+                  //No hardpoint is available
+                }
+                
+            } else {
+              //item is slot restricted
+            }
+          } else {
+            //does not fit
           }
+          
           //exempt ammo, it goes anywhere.
           if(id.ammo === "true"){
               let newInventory = this.state.currentInventory;
@@ -192,6 +204,8 @@ class EquipmentSlots extends Component {
               calculateTonnage("add", id.weight);
           }
           
+        } else {
+          //no slots remain
         }
     }
     

@@ -28,7 +28,11 @@ class MechArmory extends Component {
             currentInventory: "weapons",
             heatsinksSelected: true,
             jumpjetsSelected: true,
-            miscSelected: true
+            miscSelected: true,
+            uncommonSelected: true,
+            rareSelected: true,
+            epicSelected: true,
+            stockSelected: true
         }
         this.buildInventoryList = this.buildInventoryList.bind(this);
         this.handleInventorySelection = this.handleInventorySelection.bind(this);
@@ -133,6 +137,46 @@ class MechArmory extends Component {
                 miscSelected: !this.state.miscSelected
              })
              break;
+          case "filterUncommon":
+             this.setState({
+                miscSelected: !this.state.uncommonSelected
+             })
+             break;
+          case "filterUncommonImg":
+             this.setState({
+                miscSelected: !this.state.uncommonSelected
+             })
+             break;
+          case "filterRare":
+             this.setState({
+                miscSelected: !this.state.rareSelected
+             })
+             break;
+          case "filterRareImg":
+             this.setState({
+                miscSelected: !this.state.rareSelected
+             })
+             break;
+          case "filterEpic":
+             this.setState({
+                miscSelected: !this.state.epicSelected
+             })
+             break;
+          case "filterEpicImg":
+             this.setState({
+                miscSelected: !this.state.epicSelected
+             })
+             break;
+          case "filterStock":
+             this.setState({
+                miscSelected: !this.state.stockSelected
+             })
+             break;
+          case "filterStockImg":
+             this.setState({
+                miscSelected: !this.state.stockSelected
+             })
+             break;
           default:
              break;
         }
@@ -147,7 +191,11 @@ class MechArmory extends Component {
                 currentInventory,
                 heatsinksSelected,
                 jumpjetsSelected,
-                miscSelected } = this.state;
+                miscSelected,
+                uncommonSelected,
+                rareSelected,
+                epicSelected,
+                stockSelected} = this.state;
         const { maxTons } = this.props;
         //set tonnage for jumpjet render
         let thisJumpJetType = "small";
