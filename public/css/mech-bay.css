@@ -92,6 +92,14 @@ body{
     /*border: 2px solid #cccccc;*/
 }
 
+.rarityGroupWrapper, .inventoryGroupWrapper {
+    display: inline-block;
+}
+
+.rarityGroupWrapper {
+    float: right;
+}
+
 .inventorySelector button {
     border: 1px solid #ffffff;
     background: transparent;
@@ -127,7 +135,7 @@ body{
     padding: 0;
 }
 
-.weapon-filter, .equipment-filter {
+.weapon-filter, .equipment-filter, .rarity-filter {
     cursor: pointer;
 }
 
@@ -139,7 +147,6 @@ body{
 
 .inventory-slide{
     margin-left: 5px;
-    margin-bottom: 10px;
     height: 54px;
     background-color: #242428;
     margin-bottom: 15px;
@@ -293,6 +300,14 @@ p.component-name {
     margin: 0;
 }
 
+.slide-icon img {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 .hardpoints-wrapper {
     height: 25px;
     margin-bottom: 5px;
@@ -390,34 +405,34 @@ p.component-name {
     overflow: hidden;
 }
 
-#head-inventory.box-slots {
+#headInventory.box-slots {
     height: 25px;
 }
 
-#centerTorso-inventory.box-slots {
+#centerTorsoInventory.box-slots {
     height: 100px;
 }
 
-#rightTorso-inventory.box-slots {
+#rightTorsoInventory.box-slots {
     height: 250px;
 }
 
-#leftTorso-inventory.box-slots {
+#leftTorsoInventory.box-slots {
     height: 250px;
 }
 
-#rightArm-inventory.box-slots {
+#rightArmInventory.box-slots {
     height: 200px;
 }
 
-#leftArm-inventory.box-slots {
+#leftArmInventory.box-slots {
     height: 200px;
 }
 
-#rightLeg-inventory.box-slots {
+#rightLegInventory.box-slots {
     height: 100px;
 }
 
-#leftLeg-inventory.box-slots {
+#leftLegInventory.box-slots {
     height: 100px;
 }
