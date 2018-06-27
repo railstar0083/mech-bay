@@ -19,7 +19,7 @@ export class Rack extends Component {
     }
     
   render() {
-    return (
+    return this.props.children ?
         <div 
           draggable 
           className=" rack draggable inventory-slide" 
@@ -35,10 +35,8 @@ export class Rack extends Component {
               "origin": "rack"
           })}
           >
-              {this.props.children}
-        </div>
-    );
-    
+              {this.props.children ? this.props.children : null}
+        </div> : null 
   }
 }
 

@@ -11,7 +11,9 @@ class EquipmentSlots extends Component {
             currentInventory: [],
             slotsRemaining: parseInt(props.maxSlots, 10),
             defaultRender: false,
-            currentVariant: ""
+            currentVariant: "",
+            origin: "",
+            destination: ""
         }
         this.isWeaponWithHardpoint = this.isWeaponWithHardpoint.bind(this);
         this.isSlotsFull = this.isSlotsFull.bind(this);
@@ -92,7 +94,7 @@ class EquipmentSlots extends Component {
                   className="inventory-plate" 
                   style={plateStyle} index={index} 
                   location={location} 
-                  onDragStart={(evt)=>this.onDragStart(evt, { 
+                  onDragStart={(evt)=>{this.onDragStart(evt, { 
                     "name": name,
                     "title": title,
                     "category": category, 
@@ -100,9 +102,13 @@ class EquipmentSlots extends Component {
                     "weight": weight,
                     "slots": slots,
                     "ammo": ammo,
-                    "origin": "doll"
-                  })}
-                  onDragEnd={(evt)=>this.onDragEnd(evt, index, category, weight, ammo)}><span>{title}</span></div>
+                    "origin": "doll",
+                    "location": location
+                  }); this.props.validDropToggle(evt, "exit")}}
+                  onDragEnd={(evt)=>this.onDragEnd(evt, index, category, weight, ammo, location)}
+                  onDragEnter={(evt)=>this.props.validDropToggle(evt, "exit")} 
+                  onDragLeave={(evt)=>this.props.validDropToggle(evt, "enter")}
+                  onDrop={(evt)=>evt.preventDefault()}><span>{title}</span></div>
     }
     
     isWeaponWithHardpoint(category, location){
@@ -122,13 +128,15 @@ class EquipmentSlots extends Component {
     }
     
     isSlotsFull(evt){
-      //this.props.validDropToggle(evt, "enter");
-      console.log(evt.target.className)
-      if (evt.target.className.indexOf("slots0") === 0 || evt.target.className.indexOf("inventory-plate") === 0){
-        console.log("pip")
+      console.log(evt.target.id)
+      this.setState({
+          destination: evt.target.id
+      }, function(){
+        console.log(this.state.destination)
+      })
+      if (evt.target.className.indexOf("slots0") > -1){
         this.props.validDropToggle(evt, "exit");
-      } else {
-        console.log("pop")
+      } else if (evt.target.className.indexOf("slots0") === -1) {
         this.props.validDropToggle(evt, "enter");
       }
       
@@ -137,13 +145,18 @@ class EquipmentSlots extends Component {
     onDragStart(evt, index){
         let element = JSON.stringify(index);
         evt.dataTransfer.setData("text/html",element);
-        console.log(evt.dataTransfer.getData("text/html"))
+        //console.log(evt.dataTransfer.getData("text/html"))
+        this.setState({
+          origin: index.location
+        })
     }
     
-    onDragEnd(evt, index, category, weight, ammo){
-        //evt.stopPropagation();
-        console.log(evt.target)
+    onDragEnd(evt, index, category, weight, ammo, location){
+        console.log(location)
+        //why is this state changing on drop?
+        console.log(this.state.destination)
         const {updateHardpoints, isDropValid, calculateTonnage} = this.props;
+        let boxLocation = this.props.slotType + "Inventory";
         if(isDropValid === true){
             let newInventory = this.state.currentInventory;
             newInventory.splice(index, 1);
@@ -157,17 +170,18 @@ class EquipmentSlots extends Component {
             calculateTonnage("subtract", weight)
             return true;
         } else {
-          return false;
+          //return false;
         }
         
     }
     
     onDrop(evt, location){
         const {updateHardpoints, calculateTonnage} = this.props;
+        let boxLocation = this.props.slotType + "Inventory";
         let id = JSON.parse(evt.dataTransfer.getData("text/html"));
         let thisSlot = this.props.slotType.toLowerCase();
         //Do Slots remain?
-        if(this.state.slotsRemaining > 0){
+        if(this.state.slotsRemaining > 0 && id.location !== boxLocation){
           //Does the item fit?
           if(id.slots <= this.state.slotsRemaining){
             //Is the item slot restricted?
@@ -194,7 +208,7 @@ class EquipmentSlots extends Component {
           }
           
           //exempt ammo, it goes anywhere.
-          if(id.ammo === "true"){
+          if(id.ammo === "true" && id.location !== boxLocation){
               let newInventory = this.state.currentInventory;
               newInventory.push(id);
               this.setState({
@@ -251,7 +265,7 @@ class EquipmentSlots extends Component {
     
     render() {
         const {currentInventory, slotsRemaining} = this.state;
-        let boxLocation = this.props.slotType + "-inventory";
+        let boxLocation = this.props.slotType + "Inventory";
         let thisClass = "box-slots droppable slots" + slotsRemaining;
         
         return (

@@ -20,8 +20,22 @@ function modType(type) {
     }
 }
 
-export const energySlide = (type, name, manufacture, damage, stab, heat, mods, mods2, slots, weight) => {
-    return (
+function rarity(name) {
+    if(name.includes("+++")){
+        return "epic"
+    } else if (name.includes("++")){
+        return "rare"
+    } else if (name.includes("+")){
+        return "uncommon"
+    } else {
+        return "stock"
+    }
+}
+
+export const energySlide = (type, name, manufacture, damage, stab, heat, mods, mods2, slots, weight, rarityFilters) => {
+    let thisRarity = rarity(name);
+    let slide =
+        rarityFilters[thisRarity] === true ?
         <div className={type} title={name} slidetype="energy" ammo="false" weight={weight} slots={slots}>
             <div className="slide-icon"><img src="img/EnergyWeaponSymbol.png" alt="Energy Icon" /></div>
             <div className="slide-left">
@@ -48,12 +62,16 @@ export const energySlide = (type, name, manufacture, damage, stab, heat, mods, m
                     <div className="slide-stats-heat"><span>HEAT</span><br/>{heat}</div>
                 </div>
             </div>
-        </div>
-    )
+        </div> : null
+        
+     
+     return slide;
 }
 
-export const ballisticSlide = (type, name, manufacture, damage, stab, heat, mods, mods2, slots, weight, isAmmo) => {
-    return (
+export const ballisticSlide = (type, name, manufacture, damage, stab, heat, mods, mods2, slots, weight, isAmmo, rarityFilters) => {
+    let thisRarity = rarity(name);
+    let slide =
+        rarityFilters[thisRarity] === true ?
         <div className={type} title={name} slidetype="ballistic" ammo={isAmmo? "true" : "false"} weight={weight} slots={slots}>
             <div className="slide-icon">{isAmmo ? <img src="img/BallisticAmmoSymbol.png" alt="Ballistic Icon" /> : <img src="img/BallisticWeaponSymbol.png" alt="Ballistic Icon" />}</div>
             <div className="slide-left">
@@ -82,12 +100,15 @@ export const ballisticSlide = (type, name, manufacture, damage, stab, heat, mods
                     <div className="slide-stats-heat"><span>HEAT</span><br/>{heat}</div>
                 </div>
             </div>}
-        </div>
-    )
+        </div> : null
+    
+    return slide
 }
 
-export const missileSlide = (type, name, manufacture, damage, stab, heat, mods, mods2, slots, weight, isAmmo) => {
-    return (
+export const missileSlide = (type, name, manufacture, damage, stab, heat, mods, mods2, slots, weight, isAmmo, rarityFilters) => {
+    let thisRarity = rarity(name);
+    let slide =
+        rarityFilters[thisRarity] === true ?
         <div className={type} title={name} slidetype="missile" ammo={isAmmo? "true" : "false"} weight={weight} slots={slots}>
             <div className="slide-icon">{isAmmo ? <img src="img/MissileAmmoSymbol.png" alt="Missile Icon" /> : <img src="img/MissileWeaponSymbol.png" alt="Missile Icon" />}</div>
             <div className="slide-left">
@@ -116,12 +137,16 @@ export const missileSlide = (type, name, manufacture, damage, stab, heat, mods, 
                     <div className="slide-stats-heat"><span>HEAT</span><br/>{heat}</div>
                 </div>
             </div>}
-        </div>
-    )
+        </div> : null
+    
+    
+    return slide
 }
 
-export const supportSlide = (type, name, manufacture, damage, stab, heat, mods, mods2, slots, weight, isAmmo) => {
-    return (
+export const supportSlide = (type, name, manufacture, damage, stab, heat, mods, mods2, slots, weight, isAmmo, rarityFilters) => {
+    let thisRarity = rarity(name);
+    let slide =
+        rarityFilters[thisRarity] === true ?
         <div className={type} title={name} slidetype="support" ammo={isAmmo? "true" : "false"} weight={weight} slots={slots}>
             <div className="slide-icon">{isAmmo ? <img src="img/SupportAmmoSymbol.png" alt="Support Icon" /> : <img src="img/SupportWeaponSymbol.png" alt="Support Icon" />}</div>
             <div className="slide-left">
@@ -150,12 +175,16 @@ export const supportSlide = (type, name, manufacture, damage, stab, heat, mods, 
                     <div className="slide-stats-heat"><span>HEAT</span><br/>{heat}</div>
                 </div>
             </div>}
-        </div>
-    )
+        </div> : null
+    
+    
+    return slide
 }
 
-export const heatsinkSlide = (type, name, manufacture, mods, mods2, slots, weight) => {
-    return (
+export const heatsinkSlide = (type, name, manufacture, mods, mods2, slots, weight, rarityFilters) => {
+    let thisRarity = rarity(name);
+    let slide =
+        rarityFilters[thisRarity] === true ?
         <div className={type} title={name} slidetype="equipment" ammo="false" weight={weight} slots={slots}>
             <div className="slide-icon"><img src="img/HeatSinkSymbol.png" alt="Heat Sink Icon" /></div>
             <div className="slide-left">
@@ -171,12 +200,16 @@ export const heatsinkSlide = (type, name, manufacture, mods, mods2, slots, weigh
                 <span className="slide-mods-text1">{mods}</span><br/>
                 <span className="slide-mods-text2">{mods2}</span>
             </div>
-        </div>
-    )
+        </div> : null
+    
+    
+    return slide
 }
 
-export const jumpjetSlide = (type, name, manufacture, mods, mods2, slots, weight) => {
-    return (
+export const jumpjetSlide = (type, name, manufacture, mods, mods2, slots, weight, rarityFilters) => {
+    let thisRarity = rarity(name);
+    let slide =
+        rarityFilters[thisRarity] === true ?
         <div className={type} title={name} slidetype="equipment" ammo="false" weight={weight} slots={slots}>
             <div className="slide-icon"><img src="img/JumpJetSymbol.png" alt="Jump Jet Icon" /></div>
             <div className="slide-left">
@@ -192,12 +225,16 @@ export const jumpjetSlide = (type, name, manufacture, mods, mods2, slots, weight
                 <span className="slide-mods-text1">{mods}</span><br/>
                 <span className="slide-mods-text2">{mods2}</span>
             </div>
-        </div>
-    )
+        </div> : null
+    
+    
+    return slide
 }
 
-export const modSlide = (type, name, manufacture, mods, mods2, slots, weight, restricted) => {
-    return (
+export const modSlide = (type, name, manufacture, mods, mods2, slots, weight, restricted, rarityFilters) => {
+    let thisRarity = rarity(name);
+    let slide =
+        rarityFilters[thisRarity] === true ?
         <div className={type} title={name} slidetype="equipment" ammo="false" restricted={restricted} weight={weight} slots={slots}>
             <div className="slide-icon">{modType(type)}</div>
             <div className="slide-left">
@@ -213,6 +250,8 @@ export const modSlide = (type, name, manufacture, mods, mods2, slots, weight, re
                 <span className="slide-mods-text1">{mods}</span><br/>
                 <span className="slide-mods-text2">{mods2}</span>
             </div>
-        </div>
-    )
+        </div> : null
+    
+    
+    return slide
 }
