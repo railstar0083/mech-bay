@@ -31,6 +31,7 @@ export class Rack extends Component {
               "restricted": this.props.children.props.restricted,
               "weight": this.props.children.props.weight,
               "slots": this.props.children.props.slots,
+              "shots": this.props.children.props.shots,
               "ammo": this.props.children.props.ammo,
               "origin": "rack"
           })}

@@ -26,7 +26,10 @@ class EquipmentSlots extends Component {
     }
     
     componentDidUpdate(prevProps) {
+      
+         
       const {updateHardpoints, defaultLoadout, mechName} = this.props;
+      //let totalDamage = 0
       //console.log(mechName)
       //console.log(this.state.currentVariant)
       //load default equipment
@@ -34,6 +37,22 @@ class EquipmentSlots extends Component {
         if(defaultLoadout === undefined && this.state.defaultRender === true){
           return false;
         } else {
+          //calculate alpha strike
+          //TODO!! Fix This!
+          //if(defaultLoadout[0] !== undefined && Object.keys(defaultLoadout[0]).includes("shots")){
+            //let shots = defaultLoadout[0].shots;
+            //let damage = defaultLoadout[0].damage;
+            //totalDamage = totalDamage + parseInt(shots * damage);
+            //console.log(totalDamage)
+            //this.props.calculateAlphaStrike(totalDamage);
+            //for(let i = 0; i < this.state.currentInventory.length; i++ ){
+            //  let shots = this.state.currentInventory[i].shots;
+            //  let damage = this.state.currentInventory[i].damage;
+            //  let stab = this.state.currentInventory[i].stabdamage;
+            //  totalDamage = totalDamage + parseInt(shots * damage);
+            //  console.log(totalDamage)
+            //}
+          //}
           //count slots used
           let slotsUsed = 0;
           for(let i=0; i < defaultLoadout.length; i++){
@@ -64,7 +83,7 @@ class EquipmentSlots extends Component {
       }
     }
     
-    boxInventory = (name, title, category, restricted, weight, slots, ammo, index, location) => {
+    boxInventory = (name, title, category, restricted, weight, slots, shots, damage, stabdamage, ammo, index, location) => {
       let thisColor = 'transparent';
       switch(category) {
         case "energy":
@@ -85,7 +104,8 @@ class EquipmentSlots extends Component {
         default:
           thisColor = "red"
       }
-      let calculatedHeight = (slots * 25);
+      //use a different calculation for tablet views.
+      let calculatedHeight = window.innerWidth > 1024 ? (slots * 25) : (slots * 20);
       let plateStyle = {
          backgroundColor: thisColor,
          height: calculatedHeight + "px"
@@ -128,11 +148,11 @@ class EquipmentSlots extends Component {
     }
     
     isSlotsFull(evt){
-      console.log(evt.target.id)
+      //console.log(evt.target.id)
       this.setState({
           destination: evt.target.id
       }, function(){
-        console.log(this.state.destination)
+        //console.log(this.state.destination)
       })
       if (evt.target.className.indexOf("slots0") > -1){
         this.props.validDropToggle(evt, "exit");
@@ -152,9 +172,9 @@ class EquipmentSlots extends Component {
     }
     
     onDragEnd(evt, index, category, weight, ammo, location){
-        console.log(location)
+        //console.log(location)
         //why is this state changing on drop?
-        console.log(this.state.destination)
+        //console.log(this.state.destination)
         const {updateHardpoints, isDropValid, calculateTonnage} = this.props;
         let boxLocation = this.props.slotType + "Inventory";
         if(isDropValid === true){
@@ -232,7 +252,10 @@ class EquipmentSlots extends Component {
                                  this.state.currentInventory[index].category,
                                  this.state.currentInventory[index].restricted,
                                  this.state.currentInventory[index].weight, 
-                                 this.state.currentInventory[index].slots, 
+                                 this.state.currentInventory[index].slots,
+                                 this.state.currentInventory[index].shots,
+                                 this.state.currentInventory[index].damage,
+                                 this.state.currentInventory[index].stabdamage, 
                                  this.state.currentInventory[index].ammo,
                                  index, 
                                  location
@@ -253,7 +276,10 @@ class EquipmentSlots extends Component {
                                  this.state.currentInventory[index].category,
                                  this.state.currentInventory[index].restricted,
                                  this.state.currentInventory[index].weight, 
-                                 this.state.currentInventory[index].slots, 
+                                 this.state.currentInventory[index].slots,
+                                 this.state.currentInventory[index].shots,
+                                 this.state.currentInventory[index].damage,
+                                 this.state.currentInventory[index].stabdamage,
                                  this.state.currentInventory[index].ammo,
                                  index, 
                                  location
