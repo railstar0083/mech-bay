@@ -1,0 +1,198 @@
+@media only screen and (max-width: 1024px) {
+    #mainContainer {
+        max-width: 1024px;
+    }
+    
+    #mechArmory, .weaponRack {
+        width: 100%;
+    }
+    
+    .inventorySelector button {
+        width: 100px;
+        height: 25px;
+    }
+    
+    .rarityGroupWrapper {
+        float: none;
+    }
+    
+    .rarityGroupWrapper, .inventoryGroupWrapper {
+        display: block;
+        margin-top: 5px;
+    }
+    
+    .rarityGroupWrapper img, .inventoryGroupWrapper img {
+        height: 27px;
+    }
+    
+    .weaponRack {
+        height: 345px;
+    }
+    
+    .inventory-slide {
+        height: 27px;
+        width: 235px;
+    }
+    
+    .inventory-slide .slide-icon {
+        width: 31px;
+    }
+    
+    .inventory-slide .slide-icon img {
+        height: 27px;
+    }
+    
+    .inventory-slide .slide-name span {
+        font-size: 6px;
+    }
+    
+    .inventory-slide .slide-left {
+        width: 82px;
+    }
+    
+    .inventory-slide .slide-manufacture {
+        height: 10px;
+    }
+    
+    .inventory-slide .slide-manufacture-endcap{
+        height: 10px;
+    }
+    
+    .inventory-slide .slide-manufacture-name {
+        padding-top: 2px;
+        padding-left: 5px;
+        width: 68px;
+    }
+    
+    .inventory-slide .slide-mods {
+        width: 47px;
+        height: 27px;
+        padding-top: 0;
+    }
+    
+    .inventory-slide .slide-mods span {
+        font-size: 5px
+    }
+    
+    .inventory-slide .slide-stats {
+        padding-top: 5px;
+        width: 75px;
+        font-size: 8px
+    }
+    
+    .inventory-slide .slide-stats span {
+        font-size: 5px
+    }
+    
+    .component-box {
+        font-size: 10px;
+    }
+    
+    .hardpoint-counter img {
+        height: 20px;
+    }
+    
+    .hardpoint-counter span {
+        vertical-align: top;
+        padding: 4px 3px 8px 3px;
+    }
+    
+    .counter-buttons button img {
+        height: 20px;
+    }
+    
+    .paper-doll {
+        height: 715px;
+    }
+    
+    #trashcan.component-box {
+        top: 15px;
+        right: 80px;
+        height: 50px;
+        width: 50px;
+    }
+    
+    #headBox.component-box {
+        top: 0;
+        left: 250px;
+        text-align: center;
+    }
+    
+    #centerTorsoBox.component-box {
+        top: 260px;
+        left: 250px;
+        text-align: center;
+    }
+    
+    #rightTorsoBox.component-box {
+        top: 45px;
+        left: 90px;
+    }
+    
+    #leftTorsoBox.component-box {
+        top: 45px;
+        left: 410px;
+        text-align: right;
+    }
+    
+    #rightArmBox.component-box {
+        top: 360px;
+        left: 10px;
+    }
+    
+    #leftArmBox.component-box {
+        top: 360px;
+        left: 495px;
+        text-align: right;
+    }
+    
+    #rightLegBox.component-box {
+        top: 470px;
+        left: 155px;
+        text-align: right;
+    }
+    
+    #leftLegBox.component-box {
+        top: 470px;
+        left: 350px;
+    }
+    
+    .box-slots {
+        width: 130px;
+        background-image: url(../img/inventory-bkgrd-tablet.png);
+    }
+    
+    #headInventory.box-slots {
+        height: 20px;
+    }
+    
+    #centerTorsoInventory.box-slots {
+        height: 80px;
+    }
+    
+    #rightTorsoInventory.box-slots {
+        height: 200px;
+    }
+    
+    #leftTorsoInventory.box-slots {
+        height: 200px;
+    }
+    
+    #rightArmInventory.box-slots {
+        height: 160px;
+    }
+    
+    #leftArmInventory.box-slots {
+        height: 160px;
+    }
+    
+    #rightLegInventory.box-slots {
+        height: 80px;
+    }
+    
+    #leftLegInventory.box-slots {
+        height: 80px;
+    }
+    
+    
+}
