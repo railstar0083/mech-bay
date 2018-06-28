@@ -47,6 +47,10 @@
          "variant": "CN9-A"
         },
         {
+         "name": "Centurion",
+         "variant": "CN9-AL"
+        },
+        {
          "name": "Cicada",
          "variant": "CDA-2A"
         },
@@ -159,6 +163,10 @@
     ],
     "assault": [
         {
+         "name": "Atlas",
+         "variant": "AS7-D"
+        },
+        {
          "name": "Atlas II",
          "variant": "AS7-D-HT"
         },
@@ -169,6 +177,10 @@
         {
          "name": "Awesome",
          "variant": "AWS-8T"
+        },
+        {
+         "name": "Banshee",
+         "variant": "BNC-3E"
         },
         {
          "name": "Banshee",
