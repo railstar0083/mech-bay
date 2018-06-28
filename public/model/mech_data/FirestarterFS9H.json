@@ -109,7 +109,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Flamer",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 5,
+                "stabdamage": 0,
+                "heat": 0
             },
             {
                 "ammo": "false",
@@ -118,7 +122,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Flamer",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 5,
+                "stabdamage": 0,
+                "heat": 0
             },
             {
                 "ammo": "true",
@@ -138,7 +146,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Machine Gun",
-                "weight": 1
+                "weight": 1,
+                "shots": 5,
+                "damage": 3,
+                "stabdamage": 0,
+                "heat": 0
             }
         ],
         "rightTorso": [
@@ -149,7 +161,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Machine Gun",
-                "weight": 1
+                "weight": 1,
+                "shots": 5,
+                "damage": 3,
+                "stabdamage": 0,
+                "heat": 0
             }
         ],
         "leftArm": [
@@ -160,7 +176,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Flamer",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 5,
+                "stabdamage": 0,
+                "heat": 0
             },
             {
                 "ammo": "false",
@@ -169,7 +189,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             }
         ],
         "rightArm": [
@@ -180,7 +204,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Flamer",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 5,
+                "stabdamage": 0,
+                "heat": 0
             },
             {
                 "ammo": "false",
@@ -189,7 +217,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             }
         ]
         

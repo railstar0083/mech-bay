@@ -109,7 +109,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "SRM-4",
-                "weight": 2
+                "weight": 2,
+                "shots": 4,
+                "damage": 8,
+                "stabdamage": 3,
+                "heat": 8
             }
         ],
         "rightTorso": [
@@ -120,7 +124,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             },
             {
                 "ammo": "false",
@@ -129,7 +137,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             },
             {
                 "ammo": "true",
@@ -158,7 +170,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             },
             {
                 "ammo": "false",
@@ -167,7 +183,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             }
         ],
         "leftArm": [
@@ -178,7 +198,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             }   
         ],
         "rightArm": [
@@ -189,7 +213,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             }  
         ]
     }

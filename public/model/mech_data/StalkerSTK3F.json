@@ -109,7 +109,11 @@
                 "origin": "default",
                 "slots": 2,
                 "title": "Large Laser",
-                "weight": 5
+                "weight": 5,
+                "shots": 1,
+                "damage": 40,
+                "stabdamage": 0,
+                "heat": 18
             },
             {
                 "ammo": "false",
@@ -118,7 +122,11 @@
                 "origin": "default",
                 "slots": 2,
                 "title": "LRM 10",
-                "weight": 5
+                "weight": 5,
+                "shots": 10,
+                "damage": 4,
+                "stabdamage": 2,
+                "heat": 10
             },
             {
                 "ammo": "true",
@@ -138,7 +146,11 @@
                 "origin": "default",
                 "slots": 2,
                 "title": "Large Laser",
-                "weight": 5
+                "weight": 5,
+                "shots": 1,
+                "damage": 40,
+                "stabdamage": 0,
+                "heat": 18
             },
             {
                 "ammo": "false",
@@ -147,7 +159,11 @@
                 "origin": "default",
                 "slots": 2,
                 "title": "LRM 10",
-                "weight": 5
+                "weight": 5,
+                "shots": 10,
+                "damage": 4,
+                "stabdamage": 2,
+                "heat": 10
             },
             {
                 "ammo": "true",
@@ -167,7 +183,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             },
             {
                 "ammo": "false",
@@ -176,7 +196,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             },
             {
                 "ammo": "false",
@@ -205,7 +229,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             },
             {
                 "ammo": "false",
@@ -214,7 +242,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             },
             {
                 "ammo": "false",

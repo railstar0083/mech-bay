@@ -109,7 +109,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "SRM-4",
-                "weight": 2
+                "weight": 2,
+                "shots": 4,
+                "damage": 8,
+                "stabdamage": 3,
+                "heat": 8
             }
         ],
         "leftTorso": [
@@ -131,7 +135,11 @@
                 "origin": "default",
                 "slots": 3,
                 "title": "PPC",
-                "weight": 7
+                "weight": 7,
+                "shots": 1,
+                "damage": 50,
+                "stabdamage": 20,
+                "heat": 35
             }
         ]
     }

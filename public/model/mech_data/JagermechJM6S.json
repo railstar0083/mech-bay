@@ -129,7 +129,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             }
         ],
         "leftTorso": [
@@ -149,7 +153,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             }
         ],
         "rightArm": [
@@ -160,7 +168,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "AC/2",
-                "weight": 6
+                "weight": 6,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 5,
+                "heat": 5
             },
             {
                 "ammo": "false",
@@ -169,7 +181,11 @@
                 "origin": "default",
                 "slots": 2,
                 "title": "AC/5",
-                "weight": 8
+                "weight": 8,
+                "shots": 1,
+                "damage": 45,
+                "stabdamage": 10,
+                "heat": 8
             }    
         ],
         "leftArm": [
@@ -180,7 +196,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "AC/2",
-                "weight": 6
+                "weight": 6,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 5,
+                "heat": 5
             },
             {
                 "ammo": "false",
@@ -189,7 +209,11 @@
                 "origin": "default",
                 "slots": 2,
                 "title": "AC/5",
-                "weight": 8
+                "weight": 8,
+                "shots": 1,
+                "damage": 45,
+                "stabdamage": 10,
+                "heat": 8
             }
         ]
     }

@@ -1,6 +1,6 @@
 {
-    "name": "Atlas II",
-    "variant": "AS7-D-HT",
+    "name": "Atlas",
+    "variant": "AS7-D",
     "maxTons": 100,
     "currentTons": 100,
     "armor": {
@@ -38,7 +38,7 @@
             "energy": 2,
             "ballistic": 0,
             "missile": 0,
-            "support": 2
+            "support": 0
         },
         "rightTorso": {
             "energy": 0,
@@ -53,13 +53,13 @@
             "support": 0
         },
         "rightArm": {
-            "energy": 2,
+            "energy": 1,
             "ballistic": 0,
             "missile": 0,
             "support": 1
         },
         "leftArm": {
-            "energy": 2,
+            "energy": 1,
             "ballistic": 0,
             "missile": 0,
             "support": 1
@@ -78,14 +78,14 @@
         }
     },
     "defaultHeatsinks": {
-        "head": 0,
+        "head": 1,
         "centerTorso": 0,
-        "rightTorso": 0,
+        "rightTorso": 1,
         "leftTorso": 0,
-        "rightArm": 0,
-        "leftArm": 0,
-        "rightLeg": 4,
-        "leftLeg": 4
+        "rightArm": 2,
+        "leftArm": 2,
+        "rightLeg": 2,
+        "leftLeg": 2
     },
     "defaultJumpJets": {
         "head": 0,
@@ -98,77 +98,35 @@
         "leftLeg": 0
     },
     "defaultEquipment": {
-        "rightTorso": [
-            {
-                "ammo": "false",
-                "category": "equipment",
-                "name": "doubleHeatSink0",
-                "origin": "default",
-                "slots": 3,
-                "title": "Double Heat Sink",
-                "weight": 1
-            }
-        ],
-        "rightArm": [
-            {
-                "ammo": "false",
-                "category": "equipment",
-                "name": "doubleHeatSink0",
-                "origin": "default",
-                "slots": 3,
-                "title": "Double Heat Sink",
-                "weight": 1
-            },
-            {
-                "ammo": "false",
-                "category": "equipment",
-                "name": "doubleHeatSink0",
-                "origin": "default",
-                "slots": 3,
-                "title": "Double Heat Sink",
-                "weight": 1
-            }
-        ],
-        "leftArm": [
-            {
-                "ammo": "false",
-                "category": "equipment",
-                "name": "doubleHeatSink0",
-                "origin": "default",
-                "slots": 3,
-                "title": "Double Heat Sink",
-                "weight": 1
-            },
-            {
-                "ammo": "false",
-                "category": "equipment",
-                "name": "doubleHeatSink0",
-                "origin": "default",
-                "slots": 3,
-                "title": "Double Heat Sink",
-                "weight": 1
-            }
-        ]
+        
     },
     "defaultWeapons": {
         "centerTorso": [
             {
                 "ammo": "false",
                 "category": "energy",
-                "name": "mediumPulseLaser0",
+                "name": "mediumLaser0",
                 "origin": "default",
                 "slots": 1,
-                "title": "Medium Pulse Laser",
-                "weight": 2
+                "title": "Medium Laser",
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             },
             {
                 "ammo": "false",
                 "category": "energy",
-                "name": "mediumPulseLaser0",
+                "name": "mediumLaser0",
                 "origin": "default",
                 "slots": 1,
-                "title": "Medium Pulse Laser",
-                "weight": 2
+                "title": "Medium Laser",
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             }
         ],
         "leftTorso": [
@@ -191,7 +149,7 @@
                 "name": "srm6-0",
                 "origin": "default",
                 "slots": 2,
-                "title": "SRM 6",
+                "title": "SRM-6",
                 "weight": 3,
                 "shots": 6,
                 "damage": 8,
@@ -239,46 +197,58 @@
                 "damage": 100,
                 "stabdamage": 40,
                 "heat": 24
-            },
-            {
-                "ammo": "true",
-                "category": "ballistic",
-                "name": "ac20ammo",
-                "origin": "default",
-                "slots": 1,
-                "title": "AC/20 Ammo",
-                "weight": 1
-            },
-            {
-                "ammo": "true",
-                "category": "ballistic",
-                "name": "ac20ammo",
-                "origin": "default",
-                "slots": 1,
-                "title": "AC/20 Ammo",
-                "weight": 1
             }
         ],
         "leftArm": [
             {
                 "ammo": "false",
                 "category": "energy",
-                "name": "largeERLaser0",
+                "name": "mediumLaser0",
                 "origin": "default",
-                "slots": 2,
-                "title": "ER Large Laser",
-                "weight": 5
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             }
         ],
         "rightArm": [
             {
                 "ammo": "false",
                 "category": "energy",
-                "name": "largeERLaser0",
+                "name": "mediumLaser0",
                 "origin": "default",
-                "slots": 2,
-                "title": "ER Large Laser",
-                "weight": 5
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
+            }
+        ],
+        "leftLeg": [
+            {
+                "ammo": "true",
+                "category": "ballistic",
+                "name": "ac20ammo",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/20 Ammo",
+                "weight": 1
+            }
+        ],
+        "rightLeg": [
+            {
+                "ammo": "true",
+                "category": "ballistic",
+                "name": "ac20ammo",
+                "origin": "default",
+                "slots": 1,
+                "title": "AC/20 Ammo",
+                "weight": 1
             }
         ]
     }

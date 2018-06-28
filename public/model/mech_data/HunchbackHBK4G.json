@@ -109,7 +109,11 @@
                 "origin": "default",
                 "slots": 4,
                 "title": "AC/20",
-                "weight": 14
+                "weight": 14,
+                "shots": 1,
+                "damage": 100,
+                "stabdamage": 40,
+                "heat": 24
             }
         ],
         "leftTorso": [
@@ -140,7 +144,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             }
         ],
         "rightArm": [
@@ -151,7 +159,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             }
         ]
     }

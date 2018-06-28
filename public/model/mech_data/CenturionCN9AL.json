@@ -1,30 +1,30 @@
 {
-    "name": "Hunchback",
-    "variant": "HBK-4P",
+    "name": "Centurion",
+    "variant": "CN9-AL",
     "maxTons": 50,
     "currentTons": 50,
     "armor": {
         "head": 45,
         "headMax": 45,
-        "centerTorso": 130,
+        "centerTorso": 125,
         "centerTorsoMax": 160,
-        "centerTorsoRear": 25,
+        "centerTorsoRear": 50,
         "centerTorsoRearMax": 80,
-        "rightTorso": 100,
+        "rightTorso": 95,
         "rightTorsoMax": 120,
-        "rightTorsoRear": 20,
+        "rightTorsoRear": 35,
         "rightTorsoRearMax": 60,
-        "leftTorso": 100,
+        "leftTorso": 95,
         "leftTorsoMax": 120,
-        "leftTorsoRear": 20,
+        "leftTorsoRear": 35,
         "leftTorsoRearMax": 60,
         "rightArm": 80,
         "rightArmMax": 80,
         "leftArm": 80,
         "leftArmMax": 80,
-        "rightLeg": 100,
+        "rightLeg": 120,
         "rightLegMax": 120,
-        "leftLeg": 100,
+        "leftLeg": 120,
         "leftLegMax": 120
     },
     "hardPoints": {
@@ -32,16 +32,16 @@
             "energy": 0,
             "ballistic": 0,
             "missile": 0,
-            "support": 1
-        },
-        "centerTorso": {
-            "energy": 0,
-            "ballistic": 0,
-            "missile": 0,
             "support": 0
         },
+        "centerTorso": {
+            "energy": 2,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 2
+        },
         "rightTorso": {
-            "energy": 6,
+            "energy": 0,
             "ballistic": 0,
             "missile": 0,
             "support": 0
@@ -49,20 +49,20 @@
         "leftTorso": {
             "energy": 0,
             "ballistic": 0,
-            "missile": 0,
+            "missile": 2,
             "support": 0
         },
         "rightArm": {
-            "energy": 1,
+            "energy": 2,
             "ballistic": 0,
             "missile": 0,
-            "support": 1
+            "support": 0
         },
         "leftArm": {
-            "energy": 1,
+            "energy": 0,
             "ballistic": 0,
             "missile": 0,
-            "support": 1
+            "support": 0
         },
         "rightLeg": {
             "energy": 0,
@@ -79,13 +79,13 @@
     },
     "defaultHeatsinks": {
         "head": 0,
-        "centerTorso": 2,
-        "rightTorso": 1,
-        "leftTorso": 4,
+        "centerTorso": 0,
+        "rightTorso": 2,
+        "leftTorso": 0,
         "rightArm": 0,
         "leftArm": 0,
-        "rightLeg": 3,
-        "leftLeg": 3
+        "rightLeg": 2,
+        "leftLeg": 2
     },
     "defaultJumpJets": {
         "head": 0,
@@ -101,59 +101,7 @@
         
     },
     "defaultWeapons": {
-        "rightTorso": [
-            {
-                "ammo": "false",
-                "category": "energy",
-                "name": "mediumLaser0",
-                "origin": "default",
-                "slots": 1,
-                "title": "Medium Laser",
-                "weight": 1,
-                "shots": 1,
-                "damage": 25,
-                "stabdamage": 0,
-                "heat": 12
-            },
-            {
-                "ammo": "false",
-                "category": "energy",
-                "name": "mediumLaser0",
-                "origin": "default",
-                "slots": 1,
-                "title": "Medium Laser",
-                "weight": 1,
-                "shots": 1,
-                "damage": 25,
-                "stabdamage": 0,
-                "heat": 12
-            },
-            {
-                "ammo": "false",
-                "category": "energy",
-                "name": "mediumLaser0",
-                "origin": "default",
-                "slots": 1,
-                "title": "Medium Laser",
-                "weight": 1,
-                "shots": 1,
-                "damage": 25,
-                "stabdamage": 0,
-                "heat": 12
-            },
-            {
-                "ammo": "false",
-                "category": "energy",
-                "name": "mediumLaser0",
-                "origin": "default",
-                "slots": 1,
-                "title": "Medium Laser",
-                "weight": 1,
-                "shots": 1,
-                "damage": 25,
-                "stabdamage": 0,
-                "heat": 12
-            },
+        "centerTorso": [
             {
                 "ammo": "false",
                 "category": "energy",
@@ -181,34 +129,61 @@
                 "heat": 12
             }
         ],
-        "leftArm": [
+        "leftTorso": [
             {
                 "ammo": "false",
-                "category": "energy",
-                "name": "mediumLaser0",
+                "category": "missile",
+                "name": "lrm10-0",
+                "origin": "default",
+                "slots": 2,
+                "title": "LRM-10",
+                "weight": 5
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
                 "origin": "default",
                 "slots": 1,
-                "title": "Medium Laser",
-                "weight": 1,
-                "shots": 1,
-                "damage": 25,
-                "stabdamage": 0,
-                "heat": 12
+                "title": "LRM Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "lrmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "LRM Ammo",
+                "weight": 1
             }
         ],
         "rightArm": [
             {
                 "ammo": "false",
-                "category": "energy",
-                "name": "mediumLaser0",
+                "category": "support",
+                "name": "smallLaser0",
                 "origin": "default",
                 "slots": 1,
-                "title": "Medium Laser",
+                "title": "Small Laser",
                 "weight": 1,
                 "shots": 1,
-                "damage": 25,
+                "damage": 20,
                 "stabdamage": 0,
-                "heat": 12
+                "heat": 6
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "largeLaser0",
+                "origin": "default",
+                "slots": 2,
+                "title": "Large Laser",
+                "weight": 5,
+                "shots": 1,
+                "damage": 40,
+                "stabdamage": 0,
+                "heat": 18
             }
         ]
     }

@@ -109,7 +109,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             },
             {
                 "ammo": "false",
@@ -118,7 +122,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             }
         ],
         "leftTorso": [
@@ -128,8 +136,12 @@
                 "name": "lrm10-0",
                 "origin": "default",
                 "slots": 2,
-                "title": "LRM-10",
-                "weight": 5
+                "title": "LRM 10",
+                "weight": 5,
+                "shots": 10,
+                "damage": 4,
+                "stabdamage": 2,
+                "heat": 10
             },
             {
                 "ammo": "true",
@@ -178,7 +190,11 @@
                 "origin": "default",
                 "slots": 3,
                 "title": "AC/10",
-                "weight": 12
+                "weight": 12,
+                "shots": 1,
+                "damage": 60,
+                "stabdamage": 20,
+                "heat": 12
             }
         ]
     }

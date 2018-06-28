@@ -120,7 +120,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Small Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 20,
+                "stabdamage": 0,
+                "heat": 6
             }
         ],
         "leftArm": [
@@ -131,7 +135,11 @@
                 "origin": "default",
                 "slots": 2,
                 "title": "Large Laser",
-                "weight": 5
+                "weight": 5,
+                "shots": 1,
+                "damage": 40,
+                "stabdamage": 0,
+                "heat": 18
             }
         ],
         "rightArm": [
@@ -142,7 +150,11 @@
                 "origin": "default",
                 "slots": 3,
                 "title": "AC/10",
-                "weight": 12
+                "weight": 12,
+                "shots": 1,
+                "damage": 60,
+                "stabdamage": 20,
+                "heat": 12
             }
         ]
     }

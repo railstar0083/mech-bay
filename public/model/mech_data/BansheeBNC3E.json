@@ -1,6 +1,6 @@
 {
     "name": "Banshee",
-    "variant": "BNC-3M",
+    "variant": "BNC-3E",
     "maxTons": 95,
     "currentTons": 95,
     "armor": {
@@ -41,16 +41,16 @@
             "support": 0
         },
         "rightTorso": {
-            "energy": 4,
-            "ballistic": 0,
-            "missile": 0,
-            "support": 2
-        },
-        "leftTorso": {
-            "energy": 3,
+            "energy": 1,
             "ballistic": 0,
             "missile": 0,
             "support": 3
+        },
+        "leftTorso": {
+            "energy": 0,
+            "ballistic": 1,
+            "missile": 0,
+            "support": 0
         },
         "rightArm": {
             "energy": 0,
@@ -79,8 +79,8 @@
     },
     "defaultHeatsinks": {
         "head": 0,
-        "centerTorso": 2,
-        "rightTorso": 1,
+        "centerTorso": 0,
+        "rightTorso": 3,
         "leftTorso": 1,
         "rightArm": 0,
         "leftArm": 0,
@@ -119,29 +119,21 @@
         "leftTorso": [
             {
                 "ammo": "false",
-                "category": "energy",
-                "name": "ppc0",
+                "category": "ballistic",
+                "name": "ac5-0",
                 "origin": "default",
-                "slots": 3,
-                "title": "PPC",
-                "weight": 7,
-                "shots": 1,
-                "damage": 50,
-                "stabdamage": 20,
-                "heat": 35
+                "slots": 2,
+                "title": "AC/5",
+                "weight": 8
             },
             {
-                "ammo": "false",
-                "category": "energy",
-                "name": "mediumLaser0",
+                "ammo": "true",
+                "category": "ballistic",
+                "name": "ac5ammo",
                 "origin": "default",
                 "slots": 1,
-                "title": "Medium Laser",
-                "weight": 1,
-                "shots": 1,
-                "damage": 25,
-                "stabdamage": 0,
-                "heat": 12
+                "title": "AC/5 Ammo",
+                "weight": 1
             }
         ],
         "rightTorso": [
@@ -157,19 +149,6 @@
                 "damage": 50,
                 "stabdamage": 20,
                 "heat": 35
-            },
-            {
-                "ammo": "false",
-                "category": "energy",
-                "name": "mediumLaser0",
-                "origin": "default",
-                "slots": 1,
-                "title": "Medium Laser",
-                "weight": 1,
-                "shots": 1,
-                "damage": 25,
-                "stabdamage": 0,
-                "heat": 12
             }
         ]
     }

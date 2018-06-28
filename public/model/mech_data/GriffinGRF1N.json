@@ -108,8 +108,12 @@
                 "name": "lrm10-0",
                 "origin": "default",
                 "slots": 2,
-                "title": "LRM-10",
-                "weight": 5
+                "title": "LRM 10",
+                "weight": 5,
+                "shots": 10,
+                "damage": 4,
+                "stabdamage": 2,
+                "heat": 10
             },
             {
                 "ammo": "true",
@@ -138,7 +142,11 @@
                 "origin": "default",
                 "slots": 3,
                 "title": "PPC",
-                "weight": 7
+                "weight": 7,
+                "shots": 1,
+                "damage": 50,
+                "stabdamage": 20,
+                "heat": 35
             }
         ]
     }

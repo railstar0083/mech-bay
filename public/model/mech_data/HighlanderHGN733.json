@@ -108,8 +108,12 @@
                 "name": "lrm20-0",
                 "origin": "default",
                 "slots": 4,
-                "title": "LRM-20",
-                "weight": 10
+                "title": "LRM 20",
+                "weight": 10,
+                "shots": 20,
+                "damage": 4,
+                "stabdamage": 2,
+                "heat": 18
             },
             {
                 "ammo": "true",
@@ -156,7 +160,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             },
             {
                 "ammo": "false",
@@ -165,7 +173,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             }
         ],
         "leftArm": [
@@ -176,7 +188,11 @@
                 "origin": "default",
                 "slots": 2,
                 "title": "SRM 6",
-                "weight": 3
+                "weight": 3,
+                "shots": 6,
+                "damage": 8,
+                "stabdamage": 3,
+                "heat": 12
             },
             {
                 "ammo": "true",
@@ -205,7 +221,11 @@
                 "origin": "default",
                 "slots": 3,
                 "title": "AC/10",
-                "weight": 12
+                "weight": 12,
+                "shots": 1,
+                "damage": 60,
+                "stabdamage": 20,
+                "heat": 12
             }
         ]
     }

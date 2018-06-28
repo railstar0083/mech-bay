@@ -109,7 +109,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             }
         ],
         "leftTorso": [
@@ -120,7 +124,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "LRM-5",
-                "weight": 2
+                "weight": 2,
+                "shots": 5,
+                "damage": 4,
+                "stabdamage": 2,
+                "heat": 6
             },
             {
                 "ammo": "true",
@@ -140,7 +148,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Small Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 20,
+                "stabdamage": 0,
+                "heat": 6
             }
         ],
         "rightArm": [
@@ -151,7 +163,11 @@
                 "origin": "default",
                 "slots": 3,
                 "title": "PPC",
-                "weight": 7
+                "weight": 7,
+                "shots": 1,
+                "damage": 50,
+                "stabdamage": 20,
+                "heat": 35
             }
         ]
     }

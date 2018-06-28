@@ -109,7 +109,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Small Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 20,
+                "stabdamage": 0,
+                "heat": 6
             }
         ],
         "leftTorso": [
@@ -120,7 +124,11 @@
                 "origin": "default",
                 "slots": 3,
                 "title": "PPC",
-                "weight": 7
+                "weight": 7,
+                "shots": 1,
+                "damage": 50,
+                "stabdamage": 20,
+                "heat": 35
             }
         ],
         "rightTorso": [
@@ -131,7 +139,11 @@
                 "origin": "default",
                 "slots": 3,
                 "title": "PPC",
-                "weight": 7
+                "weight": 7,
+                "shots": 1,
+                "damage": 50,
+                "stabdamage": 20,
+                "heat": 35
             }
         ],
         "rightArm": [
@@ -142,7 +154,11 @@
                 "origin": "default",
                 "slots": 3,
                 "title": "PPC",
-                "weight": 7
+                "weight": 7,
+                "shots": 1,
+                "damage": 50,
+                "stabdamage": 20,
+                "heat": 35
             }
         ]
     }

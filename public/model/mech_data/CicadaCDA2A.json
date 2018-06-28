@@ -109,7 +109,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Small Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 20,
+                "stabdamage": 0,
+                "heat": 6
             }
         ],
         "rightTorso": [
@@ -120,7 +124,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             }
         ],
         "leftTorso": [
@@ -131,7 +139,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             }
         ]
     }

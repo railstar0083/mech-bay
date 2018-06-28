@@ -174,7 +174,11 @@
                 "origin": "default",
                 "slots": 4,
                 "title": "LRM-20",
-                "weight": 10
+                "weight": 10,
+                "shots": 20,
+                "damage": 4,
+                "stabdamage": 2,
+                "heat": 18
             },
             {
                 "ammo": "true",
@@ -212,7 +216,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             },
             {
                 "ammo": "false",
@@ -221,7 +229,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             },
             {
                 "ammo": "false",
@@ -230,7 +242,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Laser",
-                "weight": 1
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
             }
         ],
         "leftArm": [
@@ -240,8 +256,12 @@
                 "name": "srm6-0",
                 "origin": "default",
                 "slots": 2,
-                "title": "SRM 6",
-                "weight": 3
+                "title": "SRM-6",
+                "weight": 3,
+                "shots": 6,
+                "damage": 8,
+                "stabdamage": 3,
+                "heat": 12
             },
             {
                 "ammo": "true",
@@ -261,7 +281,11 @@
                 "origin": "default",
                 "slots": 5,
                 "title": "Gauss Rifle",
-                "weight": 15
+                "weight": 15,
+                "shots": 1,
+                "damage": 75,
+                "stabdamage": 40,
+                "heat": 5
             },
             {
                 "ammo": "true",
