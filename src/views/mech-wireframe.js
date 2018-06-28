@@ -54,12 +54,15 @@ class MechWireframe extends Component {
             currentLeftLegArmor: props.currentMechData.armor.leftLeg,
             currentRightLegArmor: props.currentMechData.armor.rightLeg,
             currentHardpoints: initializeHardpoints,
+            currentAlphaStrike: 0,
             transferActive: false,
+            validDrop: false,
             defaultLoadout: []
         }
         this.updateArmorTotal = this.updateArmorTotal.bind(this);
         this.updateHardpoints = this.updateHardpoints.bind(this);
         this.calculateTonnage = this.calculateTonnage.bind(this);
+        this.calculateAlphaStrike = this.calculateAlphaStrike.bind(this);
         this.createDefaultLoadout= this.createDefaultLoadout.bind(this);
         this.validDropToggle = this.validDropToggle.bind(this);
     }
@@ -87,6 +90,7 @@ class MechWireframe extends Component {
                 currentLeftLegArmor: this.props.currentMechData.armor.leftLeg,
                 currentRightLegArmor: this.props.currentMechData.armor.rightLeg,
                 currentHardpoints: initializeHardpoints,
+                //currentAlphaStrike: 0,
                 transferActive: false,
                 validDrop: false,
                 defaultLoadout: []
@@ -259,6 +263,17 @@ class MechWireframe extends Component {
         }
     }
     
+    calculateAlphaStrike(damage) {
+        console.log(damage)
+        const {currentAlphaStrike} = this.state;
+        //totalDamage = totalDamage + damage;
+        this.setState({
+            currentAlphaStrike: currentAlphaStrike + damage
+        }, function(){
+            console.log(this.state.currentAlphaStrike)
+        })
+    }
+    
     render() {
         //console.log("Rendering Paperdoll with this state:")
         //console.log(this.state)
@@ -349,6 +364,7 @@ class MechWireframe extends Component {
                                                 calculateTonnage={this.calculateTonnage} 
                                                 isDropValid={validDrop}
                                                 validDropToggle={this.validDropToggle}
+                                                calculateAlphaStrike={this.calculateAlphaStrike}
                                                 defaultLoadout={defaultLoadout[0]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -394,6 +410,7 @@ class MechWireframe extends Component {
                                                 calculateTonnage={this.calculateTonnage}
                                                 isDropValid={validDrop}
                                                 validDropToggle={this.validDropToggle}
+                                                calculateAlphaStrike={this.calculateAlphaStrike}
                                                 defaultLoadout={this.state.defaultLoadout[1]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -439,6 +456,7 @@ class MechWireframe extends Component {
                                                 calculateTonnage={this.calculateTonnage}
                                                 isDropValid={validDrop}
                                                 validDropToggle={this.validDropToggle}
+                                                calculateAlphaStrike={this.calculateAlphaStrike}
                                                 defaultLoadout={this.state.defaultLoadout[2]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -484,6 +502,7 @@ class MechWireframe extends Component {
                                                 calculateTonnage={this.calculateTonnage}
                                                 isDropValid={validDrop}
                                                 validDropToggle={this.validDropToggle}
+                                                calculateAlphaStrike={this.calculateAlphaStrike}
                                                 defaultLoadout={this.state.defaultLoadout[3]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -522,6 +541,7 @@ class MechWireframe extends Component {
                                                 calculateTonnage={this.calculateTonnage}
                                                 isDropValid={validDrop}
                                                 validDropToggle={this.validDropToggle}
+                                                calculateAlphaStrike={this.calculateAlphaStrike}
                                                 defaultLoadout={this.state.defaultLoadout[5]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -560,6 +580,7 @@ class MechWireframe extends Component {
                                                 calculateTonnage={this.calculateTonnage}
                                                 isDropValid={validDrop}
                                                 validDropToggle={this.validDropToggle}
+                                                calculateAlphaStrike={this.calculateAlphaStrike}
                                                 defaultLoadout={this.state.defaultLoadout[4]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -598,6 +619,7 @@ class MechWireframe extends Component {
                                                 calculateTonnage={this.calculateTonnage}
                                                 isDropValid={validDrop}
                                                 validDropToggle={this.validDropToggle}
+                                                calculateAlphaStrike={this.calculateAlphaStrike}
                                                 defaultLoadout={this.state.defaultLoadout[7]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -636,6 +658,7 @@ class MechWireframe extends Component {
                                                 calculateTonnage={this.calculateTonnage}
                                                 isDropValid={validDrop}
                                                 validDropToggle={this.validDropToggle}
+                                                calculateAlphaStrike={this.calculateAlphaStrike}
                                                 defaultLoadout={this.state.defaultLoadout[6]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
