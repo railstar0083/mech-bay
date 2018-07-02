@@ -3,6 +3,12 @@
     "variant": "KGC-0000",
     "maxTons": 100,
     "currentTons": 100,
+    "defaultAlphaStrike": 300,
+    "defaultAlphaStrikeStab": 110,
+    "defaultAlphaHeatTotal": 80,
+    "defaultHeatDisp": 45,
+    "currentTotalArmor": 1360,
+    "maxTotalArmor": 1915,
     "armor": {
         "head": 45,
         "headMax": 45,

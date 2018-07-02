@@ -3,6 +3,12 @@
     "variant": "UM-R60",
     "maxTons": 30,
     "currentTons": 30,
+    "defaultAlphaStrike": 80,
+    "defaultAlphaStrikeStab": 40,
+    "defaultAlphaHeatTotal": 18,
+    "defaultHeatDisp": 33,
+    "currentTotalArmor": 480,
+    "maxTotalArmor": 630,
     "armor": {
         "head": 45,
         "headMax": 45,

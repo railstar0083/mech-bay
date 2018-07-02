@@ -3,6 +3,12 @@
     "variant": "TDR-5SE",
     "maxTons": 65,
     "currentTons": 65,
+    "defaultAlphaStrike": 155,
+    "defaultAlphaStrikeStab": 20,
+    "defaultAlphaHeatTotal": 64,
+    "defaultHeatDisp": 51,
+    "currentTotalArmor": 1040,
+    "maxTotalArmor": 1310,
     "armor": {
         "head": 45,
         "headMax": 45,

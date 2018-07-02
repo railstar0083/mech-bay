@@ -3,6 +3,12 @@
     "variant": "JR7-D",
     "maxTons": 35,
     "currentTons": 35,
+    "defaultAlphaStrike": 132,
+    "defaultAlphaStrikeStab": 12,
+    "defaultAlphaHeatTotal": 56,
+    "defaultHeatDisp": 30,
+    "currentTotalArmor": 320,
+    "maxTotalArmor": 730,
     "armor": {
         "head": 35,
         "headMax": 45,

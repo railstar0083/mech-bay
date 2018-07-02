@@ -3,6 +3,12 @@
     "variant": "TBT-5N",
     "maxTons": 50,
     "currentTons": 50,
+    "defaultAlphaStrike": 195,
+    "defaultAlphaStrikeStab": 60,
+    "defaultAlphaHeatTotal": 64,
+    "defaultHeatDisp": 30,
+    "currentTotalArmor": 600,
+    "maxTotalArmor": 1045,
     "armor": {
         "head": 45,
         "headMax": 45,

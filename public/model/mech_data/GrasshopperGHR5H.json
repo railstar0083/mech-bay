@@ -3,6 +3,12 @@
     "variant": "GHR-5H",
     "maxTons": 70,
     "currentTons": 70,
+    "defaultAlphaStrike": 160,
+    "defaultAlphaStrikeStab": 10,
+    "defaultAlphaHeatTotal": 72,
+    "defaultHeatDisp": 66,
+    "currentTotalArmor": 640,
+    "maxTotalArmor": 1345,
     "armor": {
         "head": 45,
         "headMax": 45,

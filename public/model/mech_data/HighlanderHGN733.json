@@ -3,6 +3,12 @@
     "variant": "HGN-733",
     "maxTons": 90,
     "currentTons": 90,
+    "defaultAlphaStrike": 198,
+    "defaultAlphaStrikeStab": 78,
+    "defaultAlphaHeatTotal": 66,
+    "defaultHeatDisp": 42,
+    "currentTotalArmor": 1400,
+    "maxTotalArmor": 1730,
     "armor": {
         "head": 45,
         "headMax": 45,

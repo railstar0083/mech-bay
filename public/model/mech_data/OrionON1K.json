@@ -3,6 +3,12 @@
     "variant": "ON1-K",
     "maxTons": 75,
     "currentTons": 75,
+    "defaultAlphaStrike": 202,
+    "defaultAlphaStrikeStab": 62,
+    "defaultAlphaHeatTotal": 58,
+    "defaultHeatDisp": 30,
+    "currentTotalArmor": 1160,
+    "maxTotalArmor": 1430,
     "armor": {
         "head": 45,
         "headMax": 45,

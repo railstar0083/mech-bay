@@ -3,6 +3,12 @@
     "variant": "JM6-S",
     "maxTons": 65,
     "currentTons": 65,
+    "defaultAlphaStrike": 190,
+    "defaultAlphaStrikeStab": 30,
+    "defaultAlphaHeatTotal": 50,
+    "defaultHeatDisp": 30,
+    "currentTotalArmor": 480,
+    "maxTotalArmor": 1310,
     "armor": {
         "head": 45,
         "headMax": 45,

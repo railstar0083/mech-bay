@@ -3,6 +3,12 @@
     "variant": "CN9-AL",
     "maxTons": 50,
     "currentTons": 50,
+    "defaultAlphaStrike": 150,
+    "defaultAlphaStrikeStab": 20,
+    "defaultAlphaHeatTotal": 58,
+    "defaultHeatDisp": 48,
+    "currentTotalArmor": 880,
+    "maxTotalArmor": 1045,
     "armor": {
         "head": 45,
         "headMax": 45,
@@ -136,8 +142,12 @@
                 "name": "lrm10-0",
                 "origin": "default",
                 "slots": 2,
-                "title": "LRM-10",
-                "weight": 5
+                "title": "LRM 10",
+                "weight": 5,
+                "shots": 10,
+                "damage": 4,
+                "stabdamage": 2,
+                "heat": 10
             },
             {
                 "ammo": "true",

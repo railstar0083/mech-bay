@@ -3,6 +3,12 @@
     "variant": "AWS-8T",
     "maxTons": 80,
     "currentTons": 80,
+    "defaultAlphaStrike": 220,
+    "defaultAlphaStrikeStab": 60,
+    "defaultAlphaHeatTotal": 70,
+    "defaultHeatDisp": 69,
+    "currentTotalArmor": 1200,
+    "maxTotalArmor": 1530,
     "armor": {
         "head": 45,
         "headMax": 45,

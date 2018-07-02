@@ -3,6 +3,12 @@
     "variant": "KTO-18",
     "maxTons": 55,
     "currentTons": 55,
+    "defaultAlphaStrike": 214,
+    "defaultAlphaStrikeStab": 64,
+    "defaultAlphaHeatTotal": 66,
+    "defaultHeatDisp": 30,
+    "currentTotalArmor": 880,
+    "maxTotalArmor": 1145,
     "armor": {
         "head": 45,
         "headMax": 45,

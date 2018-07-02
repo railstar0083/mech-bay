@@ -3,6 +3,12 @@
     "variant": "QKD-5A",
     "maxTons": 60,
     "currentTons": 60,
+    "defaultAlphaStrike": 182,
+    "defaultAlphaStrikeStab": 12,
+    "defaultAlphaHeatTotal": 80,
+    "defaultHeatDisp": 45,
+    "currentTotalArmor": 640,
+    "maxTotalArmor": 1245,
     "armor": {
         "head": 45,
         "headMax": 45,

@@ -3,6 +3,12 @@
     "variant": "DRG-1N",
     "maxTons": 60,
     "currentTons": 60,
+    "defaultAlphaStrike": 135,
+    "defaultAlphaStrikeStab": 30,
+    "defaultAlphaHeatTotal": 42,
+    "defaultHeatDisp": 30,
+    "currentTotalArmor": 780,
+    "maxTotalArmor": 1245,
     "armor": {
         "head": 45,
         "headMax": 45,

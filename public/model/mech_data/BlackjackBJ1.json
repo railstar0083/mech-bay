@@ -3,6 +3,12 @@
     "variant": "BJ-1",
     "maxTons": 45,
     "currentTons": 45,
+    "defaultAlphaStrike": 150,
+    "defaultAlphaStrikeStab": 10,
+    "defaultAlphaHeatTotal": 58,
+    "defaultHeatDisp": 33,
+    "currentTotalArmor": 680,
+    "maxTotalArmor": 945,
     "armor": {
         "head": 45,
         "headMax": 45,

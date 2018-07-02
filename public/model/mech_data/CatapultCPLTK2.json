@@ -3,6 +3,12 @@
     "variant": "CPLT-K2",
     "maxTons": 65,
     "currentTons": 65,
+    "defaultAlphaStrike": 180,
+    "defaultAlphaStrikeStab": 40,
+    "defaultAlphaHeatTotal": 94,
+    "defaultHeatDisp": 60,
+    "currentTotalArmor": 880,
+    "maxTotalArmor": 1310,
     "armor": {
         "head": 45,
         "headMax": 45,

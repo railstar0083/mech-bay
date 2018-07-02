@@ -3,6 +3,12 @@
     "variant": "PNT-9R",
     "maxTons": 35,
     "currentTons": 35,
+    "defaultAlphaStrike": 82,
+    "defaultAlphaStrikeStab": 32,
+    "defaultAlphaHeatTotal": 43,
+    "defaultHeatDisp": 36,
+    "currentTotalArmor": 520,
+    "maxTotalArmor": 730,
     "armor": {
         "head": 45,
         "headMax": 45,

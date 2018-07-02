@@ -3,6 +3,12 @@
     "variant": "GRF-1N",
     "maxTons": 55,
     "currentTons": 55,
+    "defaultAlphaStrike": 90,
+    "defaultAlphaStrikeStab": 40,
+    "defaultAlphaHeatTotal": 45,
+    "defaultHeatDisp": 36,
+    "currentTotalArmor": 760,
+    "maxTotalArmor": 1145,
     "armor": {
         "head": 45,
         "headMax": 45,

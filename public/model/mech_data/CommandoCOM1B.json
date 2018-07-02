@@ -3,6 +3,12 @@
     "variant": "COM-1B",
     "maxTons": 25,
     "currentTons": 25,
+    "defaultAlphaStrike": 81,
+    "defaultAlphaStrikeStab": 6,
+    "defaultAlphaHeatTotal": 34,
+    "defaultHeatDisp": 30,
+    "currentTotalArmor": 320,
+    "maxTotalArmor": 530,
     "armor": {
         "head": 30,
         "headMax": 30,

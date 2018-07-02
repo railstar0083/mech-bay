@@ -3,6 +3,12 @@
     "variant": "VND-1R",
     "maxTons": 45,
     "currentTons": 45,
+    "defaultAlphaStrike": 115,
+    "defaultAlphaStrikeStab": 30,
+    "defaultAlphaHeatTotal": 59,
+    "defaultHeatDisp": 42,
+    "currentTotalArmor": 720,
+    "maxTotalArmor": 945,
     "armor": {
         "head": 45,
         "headMax": 45,

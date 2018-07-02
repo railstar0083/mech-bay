@@ -3,6 +3,12 @@
     "variant": "FS9-H",
     "maxTons": 35,
     "currentTons": 35,
+    "defaultAlphaStrike": 100,
+    "defaultAlphaStrikeStab": 0,
+    "defaultAlphaHeatTotal": 24,
+    "defaultHeatDisp": 30,
+    "currentTotalArmor": 440,
+    "maxTotalArmor": 730,
     "armor": {
         "head": 45,
         "headMax": 45,

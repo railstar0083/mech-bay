@@ -3,6 +3,12 @@
     "variant": "AS7-D-HT",
     "maxTons": 100,
     "currentTons": 100,
+    "defaultAlphaStrike": 392,
+    "defaultAlphaStrikeStab": 98,
+    "defaultAlphaHeatTotal": 136,
+    "defaultHeatDisp": 84,
+    "currentTotalArmor": 1520,
+    "maxTotalArmor": 1915,
     "armor": {
         "head": 45,
         "headMax": 45,
@@ -159,7 +165,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Pulse Laser",
-                "weight": 2
+                "weight": 2,
+                "shots": 1,
+                "damage": 30,
+                "stabdamage": 0,
+                "heat": 16
             },
             {
                 "ammo": "false",
@@ -168,7 +178,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Medium Pulse Laser",
-                "weight": 2
+                "weight": 2,
+                "shots": 1,
+                "damage": 30,
+                "stabdamage": 0,
+                "heat": 16
             }
         ],
         "leftTorso": [
@@ -267,7 +281,11 @@
                 "origin": "default",
                 "slots": 2,
                 "title": "ER Large Laser",
-                "weight": 5
+                "weight": 5,
+                "shots": 1,
+                "damage": 40,
+                "stabdamage": 0,
+                "heat": 25
             }
         ],
         "rightArm": [
@@ -278,7 +296,11 @@
                 "origin": "default",
                 "slots": 2,
                 "title": "ER Large Laser",
-                "weight": 5
+                "weight": 5,
+                "shots": 1,
+                "damage": 40,
+                "stabdamage": 0,
+                "heat": 25
             }
         ]
     }

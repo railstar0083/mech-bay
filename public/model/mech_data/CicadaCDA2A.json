@@ -3,6 +3,12 @@
     "variant": "CDA-2A",
     "maxTons": 40,
     "currentTons": 40,
+    "defaultAlphaStrike": 75,
+    "defaultAlphaStrikeStab": 0,
+    "defaultAlphaHeatTotal": 30,
+    "defaultHeatDisp": 30,
+    "currentTotalArmor": 320,
+    "maxTotalArmor": 845,
     "armor": {
         "head": 45,
         "headMax": 45,

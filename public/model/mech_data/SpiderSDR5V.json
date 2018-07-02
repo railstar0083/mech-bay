@@ -3,6 +3,12 @@
     "variant": "SDR-5V",
     "maxTons": 30,
     "currentTons": 30,
+    "defaultAlphaStrike": 50,
+    "defaultAlphaStrikeStab": 0,
+    "defaultAlphaHeatTotal": 24,
+    "defaultHeatDisp": 30,
+    "currentTotalArmor": 280,
+    "maxTotalArmor": 630,
     "armor": {
         "head": 30,
         "headMax": 30,

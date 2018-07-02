@@ -3,6 +3,12 @@
     "variant": "CN9-A",
     "maxTons": 50,
     "currentTons": 50,
+    "defaultAlphaStrike": 150,
+    "defaultAlphaStrikeStab": 40,
+    "defaultAlphaHeatTotal": 46,
+    "defaultHeatDisp": 30,
+    "currentTotalArmor": 680,
+    "maxTotalArmor": 1045,
     "armor": {
         "head": 45,
         "headMax": 45,

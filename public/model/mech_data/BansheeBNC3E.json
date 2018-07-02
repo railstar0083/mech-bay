@@ -3,6 +3,12 @@
     "variant": "BNC-3E",
     "maxTons": 95,
     "currentTons": 95,
+    "defaultAlphaStrike": 115,
+    "defaultAlphaStrikeStab": 30,
+    "defaultAlphaHeatTotal": 49,
+    "defaultHeatDisp": 48,
+    "currentTotalArmor": 1200,
+    "maxTotalArmor": 1815,
     "armor": {
         "head": 45,
         "headMax": 45,
@@ -124,7 +130,11 @@
                 "origin": "default",
                 "slots": 2,
                 "title": "AC/5",
-                "weight": 8
+                "weight": 8,
+                "shots": 1,
+                "damage": 45,
+                "stabdamage": 10,
+                "heat": 8
             },
             {
                 "ammo": "true",

@@ -3,6 +3,12 @@
     "variant": "ENF-4R",
     "maxTons": 50,
     "currentTons": 50,
+    "defaultAlphaStrike": 120,
+    "defaultAlphaStrikeStab": 20,
+    "defaultAlphaHeatTotal": 36,
+    "defaultHeatDisp": 36,
+    "currentTotalArmor": 720,
+    "maxTotalArmor": 1045,
     "armor": {
         "head": 45,
         "headMax": 45,

@@ -3,6 +3,12 @@
     "variant": "COM-2D",
     "maxTons": 25,
     "currentTons": 25,
+    "defaultAlphaStrike": 105,
+    "defaultAlphaStrikeStab": 30,
+    "defaultAlphaHeatTotal": 32,
+    "defaultHeatDisp": 30,
+    "currentTotalArmor": 320,
+    "maxTotalArmor": 530,
     "armor": {
         "head": 30,
         "headMax": 30,
@@ -109,7 +115,11 @@
                 "origin": "default",
                 "slots": 2,
                 "title": "SRM-6",
-                "weight": 3
+                "weight": 3,
+                "shots": 6,
+                "damage": 8,
+                "stabdamage": 3,
+                "heat": 12
             }
         ],
         "leftTorso": [

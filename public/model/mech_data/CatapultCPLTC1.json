@@ -3,6 +3,12 @@
     "variant": "CPLT-C1",
     "maxTons": 65,
     "currentTons": 65,
+    "defaultAlphaStrike": 200,
+    "defaultAlphaStrikeStab": 60,
+    "defaultAlphaHeatTotal": 52,
+    "defaultHeatDisp": 45,
+    "currentTotalArmor": 800,
+    "maxTotalArmor": 1310,
     "armor": {
         "head": 45,
         "headMax": 45,

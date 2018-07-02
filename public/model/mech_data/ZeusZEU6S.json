@@ -3,6 +3,12 @@
     "variant": "ZEU-6S",
     "maxTons": 80,
     "currentTons": 80,
+    "defaultAlphaStrike": 195,
+    "defaultAlphaStrikeStab": 40,
+    "defaultAlphaHeatTotal": 64,
+    "defaultHeatDisp": 51,
+    "currentTotalArmor": 920,
+    "maxTotalArmor": 1530,
     "armor": {
         "head": 45,
         "headMax": 45,

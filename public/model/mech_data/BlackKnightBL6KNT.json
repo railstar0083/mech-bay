@@ -3,6 +3,12 @@
     "variant": "BL-6-KNT",
     "maxTons": 75,
     "currentTons": 75,
+    "defaultAlphaStrike": 250,
+    "defaultAlphaStrikeStab": 0,
+    "defaultAlphaHeatTotal": 125,
+    "defaultHeatDisp": 60,
+    "currentTotalArmor": 880,
+    "maxTotalArmor": 1430,
     "armor": {
         "head": 45,
         "headMax": 45,
@@ -109,7 +115,11 @@
                 "origin": "default",
                 "slots": 1,
                 "title": "Small Laser",
-                "weight": 0.5
+                "weight": 1,
+                "shots": 1,
+                "damage": 20,
+                "stabdamage": 0,
+                "heat": 6
             }
         ],
         "rightTorso": [

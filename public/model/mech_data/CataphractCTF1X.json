@@ -3,6 +3,12 @@
     "variant": "CTF-1X",
     "maxTons": 70,
     "currentTons": 70,
+    "defaultAlphaStrike": 210,
+    "defaultAlphaStrikeStab": 40,
+    "defaultAlphaHeatTotal": 95,
+    "defaultHeatDisp": 48,
+    "currentTotalArmor": 880,
+    "maxTotalArmor": 1345,
     "armor": {
         "head": 45,
         "headMax": 45,

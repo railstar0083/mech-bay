@@ -3,6 +3,12 @@
     "variant": "VTR-9S",
     "maxTons": 80,
     "currentTons": 80,
+    "defaultAlphaStrike": 198,
+    "defaultAlphaStrikeStab": 58,
+    "defaultAlphaHeatTotal": 60,
+    "defaultHeatDisp": 45,
+    "currentTotalArmor": 840,
+    "maxTotalArmor": 1530,
     "armor": {
         "head": 45,
         "headMax": 45,

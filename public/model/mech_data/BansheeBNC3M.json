@@ -3,6 +3,12 @@
     "variant": "BNC-3M",
     "maxTons": 95,
     "currentTons": 95,
+    "defaultAlphaStrike": 170,
+    "defaultAlphaStrikeStab": 40,
+    "defaultAlphaHeatTotal": 100,
+    "defaultHeatDisp": 48,
+    "currentTotalArmor": 1200,
+    "maxTotalArmor": 1815,
     "armor": {
         "head": 45,
         "headMax": 45,

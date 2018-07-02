@@ -3,6 +3,12 @@
     "variant": "LCT-1M",
     "maxTons": 20,
     "currentTons": 20,
+    "defaultAlphaStrike": 65,
+    "defaultAlphaStrikeStab": 20,
+    "defaultAlphaHeatTotal": 24,
+    "defaultHeatDisp": 30,
+    "currentTotalArmor": 80,
+    "maxTotalArmor": 425,
     "armor": {
         "head": 15,
         "headMax": 45,

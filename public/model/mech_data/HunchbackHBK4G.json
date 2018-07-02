@@ -3,6 +3,12 @@
     "variant": "HBK-4G",
     "maxTons": 50,
     "currentTons": 50,
+    "defaultAlphaStrike": 150,
+    "defaultAlphaStrikeStab": 40,
+    "defaultAlphaHeatTotal": 48,
+    "defaultHeatDisp": 42,
+    "currentTotalArmor": 900,
+    "maxTotalArmor": 1045,
     "armor": {
         "head": 45,
         "headMax": 45,

@@ -3,6 +3,12 @@
     "variant": "SHD-2H",
     "maxTons": 55,
     "currentTons": 55,
+    "defaultAlphaStrike": 106,
+    "defaultAlphaStrikeStab": 26,
+    "defaultAlphaHeatTotal": 30,
+    "defaultHeatDisp": 36,
+    "currentTotalArmor": 760,
+    "maxTotalArmor": 1145,
     "armor": {
         "head": 45,
         "headMax": 45,
