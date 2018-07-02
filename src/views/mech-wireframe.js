@@ -53,8 +53,8 @@ class MechWireframe extends Component {
             currentRightArmArmor: props.currentMechData.armor.rightArm,
             currentLeftLegArmor: props.currentMechData.armor.leftLeg,
             currentRightLegArmor: props.currentMechData.armor.rightLeg,
+            currentAlphaStrike: props.currentMechData.defaultAlphaStrike,
             currentHardpoints: initializeHardpoints,
-            currentAlphaStrike: 0,
             transferActive: false,
             validDrop: false,
             defaultLoadout: []
@@ -62,7 +62,7 @@ class MechWireframe extends Component {
         this.updateArmorTotal = this.updateArmorTotal.bind(this);
         this.updateHardpoints = this.updateHardpoints.bind(this);
         this.calculateTonnage = this.calculateTonnage.bind(this);
-        this.calculateAlphaStrike = this.calculateAlphaStrike.bind(this);
+        this.updateAlphaStrike = this.updateAlphaStrike.bind(this);
         this.createDefaultLoadout= this.createDefaultLoadout.bind(this);
         this.validDropToggle = this.validDropToggle.bind(this);
     }
@@ -89,6 +89,7 @@ class MechWireframe extends Component {
                 currentRightArmArmor: this.props.currentMechData.armor.rightArm,
                 currentLeftLegArmor: this.props.currentMechData.armor.leftLeg,
                 currentRightLegArmor: this.props.currentMechData.armor.rightLeg,
+                currentAlphaStrike: this.props.currentMechData.defaultAlphaStrike,
                 currentHardpoints: initializeHardpoints,
                 //currentAlphaStrike: 0,
                 transferActive: false,
@@ -263,15 +264,23 @@ class MechWireframe extends Component {
         }
     }
     
-    calculateAlphaStrike(damage) {
-        console.log(damage)
+    updateAlphaStrike(operation, damage) {
+        //console.log(this.state.currentAlphaStrike)
         const {currentAlphaStrike} = this.state;
-        //totalDamage = totalDamage + damage;
-        this.setState({
-            currentAlphaStrike: currentAlphaStrike + damage
-        }, function(){
-            console.log(this.state.currentAlphaStrike)
-        })
+        let updatedAlphaStrike = currentAlphaStrike;
+        //update
+        if (operation === "add"){
+            updatedAlphaStrike = updatedAlphaStrike + damage
+        } else if (operation === "subtract"){
+            updatedAlphaStrike = updatedAlphaStrike - damage
+        }
+        if (updatedAlphaStrike !== currentAlphaStrike) {
+            this.setState({
+                currentAlphaStrike: updatedAlphaStrike
+            }, function(){
+                //console.log(this.state.currentAlphaStrike)
+            })
+        }
     }
     
     render() {
@@ -364,7 +373,7 @@ class MechWireframe extends Component {
                                                 calculateTonnage={this.calculateTonnage} 
                                                 isDropValid={validDrop}
                                                 validDropToggle={this.validDropToggle}
-                                                calculateAlphaStrike={this.calculateAlphaStrike}
+                                                updateAlphaStrike={this.updateAlphaStrike}
                                                 defaultLoadout={defaultLoadout[0]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -410,7 +419,7 @@ class MechWireframe extends Component {
                                                 calculateTonnage={this.calculateTonnage}
                                                 isDropValid={validDrop}
                                                 validDropToggle={this.validDropToggle}
-                                                calculateAlphaStrike={this.calculateAlphaStrike}
+                                                updateAlphaStrike={this.updateAlphaStrike}
                                                 defaultLoadout={this.state.defaultLoadout[1]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -456,7 +465,7 @@ class MechWireframe extends Component {
                                                 calculateTonnage={this.calculateTonnage}
                                                 isDropValid={validDrop}
                                                 validDropToggle={this.validDropToggle}
-                                                calculateAlphaStrike={this.calculateAlphaStrike}
+                                                updateAlphaStrike={this.updateAlphaStrike}
                                                 defaultLoadout={this.state.defaultLoadout[2]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -502,7 +511,7 @@ class MechWireframe extends Component {
                                                 calculateTonnage={this.calculateTonnage}
                                                 isDropValid={validDrop}
                                                 validDropToggle={this.validDropToggle}
-                                                calculateAlphaStrike={this.calculateAlphaStrike}
+                                                updateAlphaStrike={this.updateAlphaStrike}
                                                 defaultLoadout={this.state.defaultLoadout[3]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -541,7 +550,7 @@ class MechWireframe extends Component {
                                                 calculateTonnage={this.calculateTonnage}
                                                 isDropValid={validDrop}
                                                 validDropToggle={this.validDropToggle}
-                                                calculateAlphaStrike={this.calculateAlphaStrike}
+                                                updateAlphaStrike={this.updateAlphaStrike}
                                                 defaultLoadout={this.state.defaultLoadout[5]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -580,7 +589,7 @@ class MechWireframe extends Component {
                                                 calculateTonnage={this.calculateTonnage}
                                                 isDropValid={validDrop}
                                                 validDropToggle={this.validDropToggle}
-                                                calculateAlphaStrike={this.calculateAlphaStrike}
+                                                updateAlphaStrike={this.updateAlphaStrike}
                                                 defaultLoadout={this.state.defaultLoadout[4]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -619,7 +628,7 @@ class MechWireframe extends Component {
                                                 calculateTonnage={this.calculateTonnage}
                                                 isDropValid={validDrop}
                                                 validDropToggle={this.validDropToggle}
-                                                calculateAlphaStrike={this.calculateAlphaStrike}
+                                                updateAlphaStrike={this.updateAlphaStrike}
                                                 defaultLoadout={this.state.defaultLoadout[7]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -658,7 +667,7 @@ class MechWireframe extends Component {
                                                 calculateTonnage={this.calculateTonnage}
                                                 isDropValid={validDrop}
                                                 validDropToggle={this.validDropToggle}
-                                                calculateAlphaStrike={this.calculateAlphaStrike}
+                                                updateAlphaStrike={this.updateAlphaStrike}
                                                 defaultLoadout={this.state.defaultLoadout[6]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
