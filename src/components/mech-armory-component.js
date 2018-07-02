@@ -246,7 +246,7 @@ class MechArmory extends Component {
                                     (
                                         <Rack key={index}>
                                             {/*<p id={energy[weapon].type + "_" + index} type={energy[weapon].type} className="energyWeaponDetail">{energy[weapon].name}</p>*/}
-                                            {energySlide(energy[weapon].type, energy[weapon].name, energy[weapon].manufacturer, energy[weapon].damage, energy[weapon].stabdamage, energy[weapon].heat, energy[weapon].modifier1, energy[weapon].modifier2, energy[weapon].slots, energy[weapon].weight, rarityFilters)}
+                                            {energySlide(energy[weapon].type, energy[weapon].name, energy[weapon].manufacturer, energy[weapon].damage, energy[weapon].stabdamage, energy[weapon].heat, energy[weapon].shots, energy[weapon].modifier1, energy[weapon].modifier2, energy[weapon].slots, energy[weapon].weight, rarityFilters)}
                                         </Rack>
                                     )                       
                                 )
@@ -259,7 +259,7 @@ class MechArmory extends Component {
                                 Object.keys(ballistic).map((weapon, index) =>
                                     (
                                         <Rack key={index}>
-                                            {ballisticSlide(ballistic[weapon].type, ballistic[weapon].name, ballistic[weapon].manufacturer, ballistic[weapon].damage, ballistic[weapon].stabdamage, ballistic[weapon].heat, ballistic[weapon].modifier1, ballistic[weapon].modifier2, ballistic[weapon].slots, ballistic[weapon].weight, ballistic[weapon].shotsper, rarityFilters)}
+                                            {ballisticSlide(ballistic[weapon].type, ballistic[weapon].name, ballistic[weapon].manufacturer, ballistic[weapon].damage, ballistic[weapon].stabdamage, ballistic[weapon].heat, ballistic[weapon].shots, ballistic[weapon].modifier1, ballistic[weapon].modifier2, ballistic[weapon].slots, ballistic[weapon].weight, ballistic[weapon].shotsper, rarityFilters)}
                                         </Rack>
                                     )                       
                                 )
@@ -272,7 +272,7 @@ class MechArmory extends Component {
                                 Object.keys(missile).map((weapon, index) =>
                                     (
                                         <Rack key={index}>
-                                            {missileSlide(missile[weapon].type, missile[weapon].name, missile[weapon].manufacturer, missile[weapon].damage, missile[weapon].stabdamage, missile[weapon].heat, missile[weapon].modifier1, missile[weapon].modifier2, missile[weapon].slots, missile[weapon].weight, missile[weapon].shotsper, rarityFilters)}
+                                            {missileSlide(missile[weapon].type, missile[weapon].name, missile[weapon].manufacturer, missile[weapon].damage, missile[weapon].stabdamage, missile[weapon].heat, missile[weapon].shots, missile[weapon].modifier1, missile[weapon].modifier2, missile[weapon].slots, missile[weapon].weight, missile[weapon].shotsper, rarityFilters)}
                                         </Rack>
                                     )                       
                                 )
@@ -285,7 +285,7 @@ class MechArmory extends Component {
                                 Object.keys(support).map((weapon, index) =>
                                     (
                                         <Rack key={index}>
-                                            {supportSlide(support[weapon].type, support[weapon].name, support[weapon].manufacturer, support[weapon].damage, support[weapon].stabdamage, support[weapon].heat, support[weapon].modifier1, support[weapon].modifier2, support[weapon].slots, support[weapon].weight, support[weapon].shotsper, rarityFilters)}
+                                            {supportSlide(support[weapon].type, support[weapon].name, support[weapon].manufacturer, support[weapon].damage, support[weapon].stabdamage, support[weapon].heat, support[weapon].shots, support[weapon].modifier1, support[weapon].modifier2, support[weapon].slots, support[weapon].weight, support[weapon].shotsper, rarityFilters)}
                                         </Rack>
                                     )                       
                                 )

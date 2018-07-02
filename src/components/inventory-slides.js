@@ -32,11 +32,11 @@ function rarity(name) {
     }
 }
 
-export const energySlide = (type, name, manufacture, damage, stab, heat, mods, mods2, slots, weight, rarityFilters) => {
+export const energySlide = (type, name, manufacture, damage, stab, heat, shots, mods, mods2, slots, weight, rarityFilters) => {
     let thisRarity = rarity(name);
     let slide =
         rarityFilters[thisRarity] === true ?
-        <div className={type} title={name} slidetype="energy" ammo="false" weight={weight} slots={slots}>
+        <div className={type} title={name} slidetype="energy" ammo="false" weight={weight} slots={slots} damage={damage} shots={shots}>
             <div className="slide-icon"><img src="img/EnergyWeaponSymbol.png" alt="Energy Icon" /></div>
             <div className="slide-left">
                 <div className="slide-manufacture green">
@@ -68,11 +68,11 @@ export const energySlide = (type, name, manufacture, damage, stab, heat, mods, m
      return slide;
 }
 
-export const ballisticSlide = (type, name, manufacture, damage, stab, heat, mods, mods2, slots, weight, isAmmo, rarityFilters) => {
+export const ballisticSlide = (type, name, manufacture, damage, stab, heat, shots, mods, mods2, slots, weight, isAmmo, rarityFilters) => {
     let thisRarity = rarity(name);
     let slide =
         rarityFilters[thisRarity] === true ?
-        <div className={type} title={name} slidetype="ballistic" ammo={isAmmo? "true" : "false"} weight={weight} slots={slots}>
+        <div className={type} title={name} slidetype="ballistic" ammo={isAmmo? "true" : "false"} weight={weight} slots={slots} damage={damage} shots={shots}>
             <div className="slide-icon">{isAmmo ? <img src="img/BallisticAmmoSymbol.png" alt="Ballistic Icon" /> : <img src="img/BallisticWeaponSymbol.png" alt="Ballistic Icon" />}</div>
             <div className="slide-left">
                 <div className="slide-manufacture blue">
@@ -105,11 +105,11 @@ export const ballisticSlide = (type, name, manufacture, damage, stab, heat, mods
     return slide
 }
 
-export const missileSlide = (type, name, manufacture, damage, stab, heat, mods, mods2, slots, weight, isAmmo, rarityFilters) => {
+export const missileSlide = (type, name, manufacture, damage, stab, heat, shots, mods, mods2, slots, weight, isAmmo, rarityFilters) => {
     let thisRarity = rarity(name);
     let slide =
         rarityFilters[thisRarity] === true ?
-        <div className={type} title={name} slidetype="missile" ammo={isAmmo? "true" : "false"} weight={weight} slots={slots}>
+        <div className={type} title={name} slidetype="missile" ammo={isAmmo? "true" : "false"} weight={weight} slots={slots} damage={damage} shots={shots}>
             <div className="slide-icon">{isAmmo ? <img src="img/MissileAmmoSymbol.png" alt="Missile Icon" /> : <img src="img/MissileWeaponSymbol.png" alt="Missile Icon" />}</div>
             <div className="slide-left">
                 <div className="slide-manufacture purple">
@@ -143,11 +143,11 @@ export const missileSlide = (type, name, manufacture, damage, stab, heat, mods, 
     return slide
 }
 
-export const supportSlide = (type, name, manufacture, damage, stab, heat, mods, mods2, slots, weight, isAmmo, rarityFilters) => {
+export const supportSlide = (type, name, manufacture, damage, stab, heat, shots, mods, mods2, slots, weight, isAmmo, rarityFilters) => {
     let thisRarity = rarity(name);
     let slide =
         rarityFilters[thisRarity] === true ?
-        <div className={type} title={name} slidetype="support" ammo={isAmmo? "true" : "false"} weight={weight} slots={slots}>
+        <div className={type} title={name} slidetype="support" ammo={isAmmo? "true" : "false"} weight={weight} slots={slots} damage={damage} shots={shots}>
             <div className="slide-icon">{isAmmo ? <img src="img/SupportAmmoSymbol.png" alt="Support Icon" /> : <img src="img/SupportWeaponSymbol.png" alt="Support Icon" />}</div>
             <div className="slide-left">
                 <div className="slide-manufacture tan">

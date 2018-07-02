@@ -29,7 +29,6 @@ class EquipmentSlots extends Component {
       
          
       const {updateHardpoints, defaultLoadout, mechName} = this.props;
-      //let totalDamage = 0
       //console.log(mechName)
       //console.log(this.state.currentVariant)
       //load default equipment
@@ -37,22 +36,6 @@ class EquipmentSlots extends Component {
         if(defaultLoadout === undefined && this.state.defaultRender === true){
           return false;
         } else {
-          //calculate alpha strike
-          //TODO!! Fix This!
-          //if(defaultLoadout[0] !== undefined && Object.keys(defaultLoadout[0]).includes("shots")){
-            //let shots = defaultLoadout[0].shots;
-            //let damage = defaultLoadout[0].damage;
-            //totalDamage = totalDamage + parseInt(shots * damage);
-            //console.log(totalDamage)
-            //this.props.calculateAlphaStrike(totalDamage);
-            //for(let i = 0; i < this.state.currentInventory.length; i++ ){
-            //  let shots = this.state.currentInventory[i].shots;
-            //  let damage = this.state.currentInventory[i].damage;
-            //  let stab = this.state.currentInventory[i].stabdamage;
-            //  totalDamage = totalDamage + parseInt(shots * damage);
-            //  console.log(totalDamage)
-            //}
-          //}
           //count slots used
           let slotsUsed = 0;
           for(let i=0; i < defaultLoadout.length; i++){
@@ -122,10 +105,12 @@ class EquipmentSlots extends Component {
                     "weight": weight,
                     "slots": slots,
                     "ammo": ammo,
+                    "damage": damage,
+                    "shots": shots,
                     "origin": "doll",
                     "location": location
                   }); this.props.validDropToggle(evt, "exit")}}
-                  onDragEnd={(evt)=>this.onDragEnd(evt, index, category, weight, ammo, location)}
+                  onDragEnd={(evt)=>this.onDragEnd(evt, index, category, weight, ammo, damage, shots, location)}
                   onDragEnter={(evt)=>this.props.validDropToggle(evt, "exit")} 
                   onDragLeave={(evt)=>this.props.validDropToggle(evt, "enter")}
                   onDrop={(evt)=>evt.preventDefault()}><span>{title}</span></div>
@@ -171,11 +156,11 @@ class EquipmentSlots extends Component {
         })
     }
     
-    onDragEnd(evt, index, category, weight, ammo, location){
+    onDragEnd(evt, index, category, weight, ammo, damage, shots, location){
         //console.log(location)
         //why is this state changing on drop?
         //console.log(this.state.destination)
-        const {updateHardpoints, isDropValid, calculateTonnage} = this.props;
+        const {updateHardpoints, isDropValid, calculateTonnage, updateAlphaStrike} = this.props;
         let boxLocation = this.props.slotType + "Inventory";
         if(isDropValid === true){
             let newInventory = this.state.currentInventory;
@@ -187,7 +172,8 @@ class EquipmentSlots extends Component {
             if(ammo === "false"){
               updateHardpoints(category, this.props.slotType, "subtract");
             }
-            calculateTonnage("subtract", weight)
+            calculateTonnage("subtract", weight);
+            updateAlphaStrike("subtract", (damage * shots));
             return true;
         } else {
           //return false;
@@ -196,9 +182,10 @@ class EquipmentSlots extends Component {
     }
     
     onDrop(evt, location){
-        const {updateHardpoints, calculateTonnage} = this.props;
+        const {updateHardpoints, calculateTonnage, updateAlphaStrike} = this.props;
         let boxLocation = this.props.slotType + "Inventory";
         let id = JSON.parse(evt.dataTransfer.getData("text/html"));
+        //console.log(id)
         let thisSlot = this.props.slotType.toLowerCase();
         //Do Slots remain?
         if(this.state.slotsRemaining > 0 && id.location !== boxLocation){
@@ -216,6 +203,7 @@ class EquipmentSlots extends Component {
                     })
                     updateHardpoints(id.category, this.props.slotType, "add");
                     calculateTonnage("add", id.weight);
+                    updateAlphaStrike("add", (id.damage * id.shots));
                 } else {
                   //No hardpoint is available
                 }
