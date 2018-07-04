@@ -2103,7 +2103,7 @@
          "manufacturer": "generic",
          "weight": 1,
          "slots": 1,
-         "heat": 0,
+         "heatdisp": 3,
          "modifier1": "-3 Heat/Turn",
          "modifier2": ""
         },
@@ -2113,7 +2113,7 @@
          "manufacturer": "SCI",
          "weight": 1,
          "slots": 3,
-         "heat": 0,
+         "heatdisp": 6,
          "modifier1": "-6 Heat/Turn",
          "modifier2": ""
         },
@@ -2153,7 +2153,7 @@
          "manufacturer": "Generic",
          "weight": 2,
          "slots": 1,
-         "heat": 0,
+         "heatdisp": 0,
          "modifier1": "-10% Weapon Heat",
          "modifier2": ""
         }

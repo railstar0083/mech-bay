@@ -298,7 +298,7 @@ class MechArmory extends Component {
                                 Object.keys(heatsinks).map((equipment, index) =>
                                     (
                                         <Rack key={index}>
-                                            {heatsinkSlide(heatsinks[equipment].type, heatsinks[equipment].name, heatsinks[equipment].manufacturer, heatsinks[equipment].modifier1, heatsinks[equipment].modifier2, heatsinks[equipment].slots, heatsinks[equipment].weight, rarityFilters)}
+                                            {heatsinkSlide(heatsinks[equipment].type, heatsinks[equipment].name, heatsinks[equipment].manufacturer, heatsinks[equipment].heatdisp, heatsinks[equipment].modifier1, heatsinks[equipment].modifier2, heatsinks[equipment].slots, heatsinks[equipment].weight, rarityFilters)}
                                         </Rack>
                                     )                       
                                 )

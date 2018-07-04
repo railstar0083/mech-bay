@@ -66,7 +66,7 @@ class EquipmentSlots extends Component {
       }
     }
     
-    boxInventory = (name, title, category, restricted, weight, slots, shots, damage, stabdamage, ammo, index, location) => {
+    boxInventory = (name, title, category, restricted, weight, slots, shots, damage, stabdamage, heat, heatdisp, ammo, index, location) => {
       let thisColor = 'transparent';
       switch(category) {
         case "energy":
@@ -106,11 +106,14 @@ class EquipmentSlots extends Component {
                     "slots": slots,
                     "ammo": ammo,
                     "damage": damage,
+                    "stabdamage": stabdamage,
+                    "heat": heat,
+                    "heatdisp": heatdisp,
                     "shots": shots,
                     "origin": "doll",
                     "location": location
                   }); this.props.validDropToggle(evt, "exit")}}
-                  onDragEnd={(evt)=>this.onDragEnd(evt, index, category, weight, ammo, damage, shots, location)}
+                  onDragEnd={(evt)=>this.onDragEnd(evt, index, category, weight, ammo, damage, stabdamage, heat, heatdisp, shots, location)}
                   onDragEnter={(evt)=>this.props.validDropToggle(evt, "exit")} 
                   onDragLeave={(evt)=>this.props.validDropToggle(evt, "enter")}
                   onDrop={(evt)=>evt.preventDefault()}><span>{title}</span></div>
@@ -150,17 +153,18 @@ class EquipmentSlots extends Component {
     onDragStart(evt, index){
         let element = JSON.stringify(index);
         evt.dataTransfer.setData("text/html",element);
-        //console.log(evt.dataTransfer.getData("text/html"))
+        console.log(evt.dataTransfer.getData("text/html"))
         this.setState({
           origin: index.location
         })
     }
     
-    onDragEnd(evt, index, category, weight, ammo, damage, shots, location){
+    onDragEnd(evt, index, category, weight, ammo, damage, stabdamage, heat, heatdisp, shots, location){
         //console.log(location)
+        console.log(heatdisp)
         //why is this state changing on drop?
         //console.log(this.state.destination)
-        const {updateHardpoints, isDropValid, calculateTonnage, updateAlphaStrike} = this.props;
+        const {updateHardpoints, isDropValid, calculateTonnage, updateAlphaStrike, updateStabAlphaStrike, updateAlphaStrikeHeat, updateHeatDispersion} = this.props;
         let boxLocation = this.props.slotType + "Inventory";
         if(isDropValid === true){
             let newInventory = this.state.currentInventory;
@@ -173,7 +177,14 @@ class EquipmentSlots extends Component {
               updateHardpoints(category, this.props.slotType, "subtract");
             }
             calculateTonnage("subtract", weight);
-            updateAlphaStrike("subtract", (damage * shots));
+            if(category !== "equipment"){
+              updateAlphaStrike("subtract", (damage * shots));
+              updateStabAlphaStrike("subtract", (stabdamage * shots));
+              updateAlphaStrikeHeat("subtract", heat);
+            }
+            if(heatdisp !== undefined){
+              updateHeatDispersion("subtract", heatdisp);
+            }
             return true;
         } else {
           //return false;
@@ -182,10 +193,10 @@ class EquipmentSlots extends Component {
     }
     
     onDrop(evt, location){
-        const {updateHardpoints, calculateTonnage, updateAlphaStrike} = this.props;
+        const {updateHardpoints, calculateTonnage, updateAlphaStrike, updateStabAlphaStrike, updateAlphaStrikeHeat, updateHeatDispersion} = this.props;
         let boxLocation = this.props.slotType + "Inventory";
         let id = JSON.parse(evt.dataTransfer.getData("text/html"));
-        //console.log(id)
+        console.log(id)
         let thisSlot = this.props.slotType.toLowerCase();
         //Do Slots remain?
         if(this.state.slotsRemaining > 0 && id.location !== boxLocation){
@@ -203,7 +214,14 @@ class EquipmentSlots extends Component {
                     })
                     updateHardpoints(id.category, this.props.slotType, "add");
                     calculateTonnage("add", id.weight);
-                    updateAlphaStrike("add", (id.damage * id.shots));
+                    if(id.category !== "equipment"){
+                      updateAlphaStrike("add", (id.damage * id.shots));
+                      updateStabAlphaStrike("add", (id.stabdamage * id.shots));
+                      updateAlphaStrikeHeat("add", id.heat);
+                    }
+                    if(id.heatdisp !== undefined){
+                      updateHeatDispersion("add", id.heatdisp);
+                    }
                 } else {
                   //No hardpoint is available
                 }
@@ -243,7 +261,9 @@ class EquipmentSlots extends Component {
                                  this.state.currentInventory[index].slots,
                                  this.state.currentInventory[index].shots,
                                  this.state.currentInventory[index].damage,
-                                 this.state.currentInventory[index].stabdamage, 
+                                 this.state.currentInventory[index].stabdamage,
+                                 this.state.currentInventory[index].heat,
+                                 this.state.currentInventory[index].heatdisp,
                                  this.state.currentInventory[index].ammo,
                                  index, 
                                  location
@@ -268,6 +288,8 @@ class EquipmentSlots extends Component {
                                  this.state.currentInventory[index].shots,
                                  this.state.currentInventory[index].damage,
                                  this.state.currentInventory[index].stabdamage,
+                                 this.state.currentInventory[index].heat,
+                                 this.state.currentInventory[index].heatdisp,
                                  this.state.currentInventory[index].ammo,
                                  index, 
                                  location

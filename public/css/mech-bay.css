@@ -339,6 +339,37 @@ p.component-name {
     opacity: 0.6;
 }
 
+.metrics-box {
+    position: absolute;
+    top: 230px;
+    left: 272px;
+    padding: 5px;
+    width: 123px;
+    height: 195px;
+    background: url('../img/metric-border.png') top center no-repeat;
+}
+
+.total-armor {
+    margin-top: 10px;
+}
+
+.alphaStrike span {
+    padding-left: 15px;
+}
+
+.data-point {
+    font-size: 10px;
+    color: orange;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.data-point span {
+    color: lightgrey;    
+}
+
 #trashcan.component-box {
     top: 15px;
     right: 15px;

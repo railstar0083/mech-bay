@@ -33,6 +33,9 @@ export class Rack extends Component {
               "slots": this.props.children.props.slots,
               "shots": this.props.children.props.shots,
               "damage": this.props.children.props.damage,
+              "stabdamage": this.props.children.props.stabdamage,
+              "heat": this.props.children.props.heat,
+              "heatdisp": this.props.children.props.heatdisp,
               "ammo": this.props.children.props.ammo,
               "origin": "rack"
           })}

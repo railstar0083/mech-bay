@@ -42,6 +42,8 @@ class MechWireframe extends Component {
             currentName: props.currentMechData.name,
             currentVariant: props.currentMechData.variant,
             currentTons: props.currentMechData.currentTons,
+            currentTotalArmor: props.currentMechData.currentTotalArmor,
+            currentMaxTotalArmor: props.currentMechData.maxTotalArmor,
             currentHeadArmor: props.currentMechData.armor.head,
             currentCenterTorsoArmor: props.currentMechData.armor.centerTorso,
             currentCenterTorsoRearArmor: props.currentMechData.armor.centerTorsoRear,
@@ -54,6 +56,9 @@ class MechWireframe extends Component {
             currentLeftLegArmor: props.currentMechData.armor.leftLeg,
             currentRightLegArmor: props.currentMechData.armor.rightLeg,
             currentAlphaStrike: props.currentMechData.defaultAlphaStrike,
+            currentStabAlphaStrike: props.currentMechData.defaultAlphaStrikeStab,
+            currentAlphaStrikeHeat: props.currentMechData.defaultAlphaHeatTotal,
+            currentHeatDispersion: props.currentMechData.defaultHeatDisp,
             currentHardpoints: initializeHardpoints,
             transferActive: false,
             validDrop: false,
@@ -63,6 +68,9 @@ class MechWireframe extends Component {
         this.updateHardpoints = this.updateHardpoints.bind(this);
         this.calculateTonnage = this.calculateTonnage.bind(this);
         this.updateAlphaStrike = this.updateAlphaStrike.bind(this);
+        this.updateStabAlphaStrike = this.updateStabAlphaStrike.bind(this);
+        this.updateAlphaStrikeHeat = this.updateAlphaStrikeHeat.bind(this);
+        this.updateHeatDispersion = this.updateHeatDispersion.bind(this);
         this.createDefaultLoadout= this.createDefaultLoadout.bind(this);
         this.validDropToggle = this.validDropToggle.bind(this);
     }
@@ -78,6 +86,8 @@ class MechWireframe extends Component {
                 currentName: this.props.currentMechData.name,
                 currentVariant: this.props.currentMechData.variant,
                 currentTons: this.props.currentMechData.currentTons,
+                currentTotalArmor: this.props.currentMechData.currentTotalArmor,
+                currentMaxTotalArmor: this.props.currentMechData.maxTotalArmor,
                 currentHeadArmor: this.props.currentMechData.armor.head,
                 currentCenterTorsoArmor: this.props.currentMechData.armor.centerTorso,
                 currentCenterTorsoRearArmor: this.props.currentMechData.armor.centerTorsoRear,
@@ -90,6 +100,9 @@ class MechWireframe extends Component {
                 currentLeftLegArmor: this.props.currentMechData.armor.leftLeg,
                 currentRightLegArmor: this.props.currentMechData.armor.rightLeg,
                 currentAlphaStrike: this.props.currentMechData.defaultAlphaStrike,
+                currentStabAlphaStrike: this.props.currentMechData.defaultAlphaStrikeStab,
+                currentAlphaStrikeHeat: this.props.currentMechData.defaultAlphaHeatTotal,
+                currentHeatDispersion: this.props.currentMechData.defaultHeatDisp,
                 currentHardpoints: initializeHardpoints,
                 //currentAlphaStrike: 0,
                 transferActive: false,
@@ -116,6 +129,7 @@ class MechWireframe extends Component {
                 "category": "equipment",
                 "name": "heaSink0",
                 "origin": "default",
+                "heatdisp": 3,
                 "slots": 1,
                 "title": "Heat Sink",
                 "weight": 1
@@ -222,7 +236,7 @@ class MechWireframe extends Component {
         if (operation === "increment"){
             currentValue = ++currentValue;
             console.log(currentValue)
-            let newState = {[armorLocation]:currentValue};
+            let newState = {[armorLocation]:currentValue, currentTotalArmor: this.state.currentTotalArmor + 1};
             this.setState(
                 newState
             )
@@ -230,7 +244,7 @@ class MechWireframe extends Component {
             return true
         } else if (operation === "decrement") {
             currentValue = --currentValue;
-            let newState = {[armorLocation]:currentValue};
+            let newState = {[armorLocation]:currentValue, currentTotalArmor: this.state.currentTotalArmor - 1};
             this.setState(
                 newState
             )
@@ -283,6 +297,63 @@ class MechWireframe extends Component {
         }
     }
     
+    updateStabAlphaStrike(operation, damage) {
+        //console.log(this.state.currentStabAlphaStrike)
+        const {currentStabAlphaStrike} = this.state;
+        let updatedStabAlphaStrike = currentStabAlphaStrike;
+        //update
+        if (operation === "add"){
+            updatedStabAlphaStrike = updatedStabAlphaStrike + damage
+        } else if (operation === "subtract"){
+            updatedStabAlphaStrike = updatedStabAlphaStrike - damage
+        }
+        if (updatedStabAlphaStrike !== currentStabAlphaStrike) {
+            this.setState({
+                currentStabAlphaStrike: updatedStabAlphaStrike
+            }, function(){
+                //console.log(this.state.currentStabAlphaStrike)
+            })
+        }
+    }
+    
+    updateAlphaStrikeHeat(operation, heat) {
+        //console.log(this.state.currentAlphaStrikeHeat)
+        const {currentAlphaStrikeHeat} = this.state;
+        let updatedAlphaStrikeHeat = currentAlphaStrikeHeat;
+        //update
+        if (operation === "add"){
+            updatedAlphaStrikeHeat = updatedAlphaStrikeHeat + heat
+        } else if (operation === "subtract"){
+            updatedAlphaStrikeHeat = updatedAlphaStrikeHeat - heat
+        }
+        if (updatedAlphaStrikeHeat !== currentAlphaStrikeHeat) {
+            this.setState({
+                currentAlphaStrikeHeat: updatedAlphaStrikeHeat
+            }, function(){
+                //console.log(this.state.currentAlphaStrikeHeat)
+            })
+        }
+    }
+    
+    updateHeatDispersion(operation, disp) {
+        console.log(this.state.currentHeatDispersion)
+        const {currentHeatDispersion} = this.state;
+        let updatedHeatDispersion = currentHeatDispersion;
+        //update
+        if (operation === "add"){
+            updatedHeatDispersion = updatedHeatDispersion + disp
+        } else if (operation === "subtract"){
+            updatedHeatDispersion = updatedHeatDispersion - disp
+        }
+        if (updatedHeatDispersion !== currentHeatDispersion) {
+            this.setState({
+                currentHeatDispersion: updatedHeatDispersion
+            }, function(){
+                console.log(this.state.currentHeatDispersion)
+            })
+        }
+    }
+    
     render() {
         //console.log("Rendering Paperdoll with this state:")
         //console.log(this.state)
@@ -300,6 +371,8 @@ class MechWireframe extends Component {
                rightLegMax, 
                leftLegMax} = this.props.currentMechData.armor;
         const {currentTons,
+               currentTotalArmor,
+               currentMaxTotalArmor,
                currentHeadArmor,
                currentCenterTorsoArmor,
                currentCenterTorsoRearArmor,
@@ -314,7 +387,10 @@ class MechWireframe extends Component {
                currentName,
                currentVariant,
                currentHardpoints,
-               transferActive,
+               currentAlphaStrike,
+               currentStabAlphaStrike,
+               currentAlphaStrikeHeat,
+               currentHeatDispersion,
                validDrop,
                defaultLoadout} = this.state;
         const redText = {
@@ -337,6 +413,15 @@ class MechWireframe extends Component {
                         { currentTons < currentMechData.maxTons &&
                         <span className="status-icon"><img src="img/lightwarning.png" alt="Battlemech Is Too Light" /></span>}
                         <p className="tonnage-display" style={currentTons > currentMechData.maxTons ? redText : null}>Tonnage: {currentTons}/{currentMechData.maxTons}</p>
+                        <div className="metrics-box">
+                            <span className="total-armor data-point">Total Armor: <span>{currentTotalArmor} / {currentMaxTotalArmor}</span></span><br/>
+                            <span className="alphaStrike data-point">Alpha Strike: <br/>
+                                <span>{currentAlphaStrike} damage</span><br/>
+                                <span>{currentStabAlphaStrike} stability damage</span><br/>
+                                <span>{currentAlphaStrikeHeat} heat</span>
+                            </span><br/>
+                            <span className="heatDispersion data-point">Heat Disp.: <span>{currentHeatDispersion} heat/turn</span></span>
+                        </div>
                         <div className="paper-doll">
                             <Trashcan  isDropValid={validDrop} validDropToggle={this.validDropToggle} />
                             <div id="headBox" className="component-box">
@@ -374,6 +459,9 @@ class MechWireframe extends Component {
                                                 isDropValid={validDrop}
                                                 validDropToggle={this.validDropToggle}
                                                 updateAlphaStrike={this.updateAlphaStrike}
+                                                updateStabAlphaStrike={this.updateStabAlphaStrike}
+                                                updateAlphaStrikeHeat={this.updateAlphaStrikeHeat}
+                                                updateHeatDispersion={this.updateHeatDispersion}
                                                 defaultLoadout={defaultLoadout[0]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -420,6 +508,9 @@ class MechWireframe extends Component {
                                                 isDropValid={validDrop}
                                                 validDropToggle={this.validDropToggle}
                                                 updateAlphaStrike={this.updateAlphaStrike}
+                                                updateStabAlphaStrike={this.updateStabAlphaStrike}
+                                                updateAlphaStrikeHeat={this.updateAlphaStrikeHeat}
+                                                updateHeatDispersion={this.updateHeatDispersion}
                                                 defaultLoadout={this.state.defaultLoadout[1]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -466,6 +557,9 @@ class MechWireframe extends Component {
                                                 isDropValid={validDrop}
                                                 validDropToggle={this.validDropToggle}
                                                 updateAlphaStrike={this.updateAlphaStrike}
+                                                updateStabAlphaStrike={this.updateStabAlphaStrike}
+                                                updateAlphaStrikeHeat={this.updateAlphaStrikeHeat}
+                                                updateHeatDispersion={this.updateHeatDispersion}
                                                 defaultLoadout={this.state.defaultLoadout[2]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -512,6 +606,9 @@ class MechWireframe extends Component {
                                                 isDropValid={validDrop}
                                                 validDropToggle={this.validDropToggle}
                                                 updateAlphaStrike={this.updateAlphaStrike}
+                                                updateStabAlphaStrike={this.updateStabAlphaStrike}
+                                                updateAlphaStrikeHeat={this.updateAlphaStrikeHeat}
+                                                updateHeatDispersion={this.updateHeatDispersion}
                                                 defaultLoadout={this.state.defaultLoadout[3]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -551,6 +648,9 @@ class MechWireframe extends Component {
                                                 isDropValid={validDrop}
                                                 validDropToggle={this.validDropToggle}
                                                 updateAlphaStrike={this.updateAlphaStrike}
+                                                updateStabAlphaStrike={this.updateStabAlphaStrike}
+                                                updateAlphaStrikeHeat={this.updateAlphaStrikeHeat}
+                                                updateHeatDispersion={this.updateHeatDispersion}
                                                 defaultLoadout={this.state.defaultLoadout[5]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -590,6 +690,9 @@ class MechWireframe extends Component {
                                                 isDropValid={validDrop}
                                                 validDropToggle={this.validDropToggle}
                                                 updateAlphaStrike={this.updateAlphaStrike}
+                                                updateStabAlphaStrike={this.updateStabAlphaStrike}
+                                                updateAlphaStrikeHeat={this.updateAlphaStrikeHeat}
+                                                updateHeatDispersion={this.updateHeatDispersion}
                                                 defaultLoadout={this.state.defaultLoadout[4]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -629,6 +732,9 @@ class MechWireframe extends Component {
                                                 isDropValid={validDrop}
                                                 validDropToggle={this.validDropToggle}
                                                 updateAlphaStrike={this.updateAlphaStrike}
+                                                updateStabAlphaStrike={this.updateStabAlphaStrike}
+                                                updateAlphaStrikeHeat={this.updateAlphaStrikeHeat}
+                                                updateHeatDispersion={this.updateHeatDispersion}
                                                 defaultLoadout={this.state.defaultLoadout[7]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
@@ -668,6 +774,9 @@ class MechWireframe extends Component {
                                                 isDropValid={validDrop}
                                                 validDropToggle={this.validDropToggle}
                                                 updateAlphaStrike={this.updateAlphaStrike}
+                                                updateStabAlphaStrike={this.updateStabAlphaStrike}
+                                                updateAlphaStrikeHeat={this.updateAlphaStrikeHeat}
+                                                updateHeatDispersion={this.updateHeatDispersion}
                                                 defaultLoadout={this.state.defaultLoadout[6]}
                                                 mechName={this.props.currentMechData.variant}
                                 />
