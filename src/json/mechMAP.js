@@ -23,6 +23,7 @@ export const mechMAP = {
     "SHD-2H": "ShadowhawkSHD2H.json",
     "TBT-5N": "TrebuchetTBT5N.json",
     "VND-1R": "VindicatorVND1R.json",
+    "WVR-6K": "WolverineWVR6K.json",
     "WVR-6R": "WolverineWVR6R.json",
     "BL-6-KNT": "BlackKnightBL6KNT.json",
     "CTF-1X": "CataphractCTF1X.json",
