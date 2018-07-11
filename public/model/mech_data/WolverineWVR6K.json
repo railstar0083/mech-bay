@@ -1,0 +1,202 @@
+{
+    "name": "Wolverine",
+    "variant": "WVR-6K",
+    "maxTons": 55,
+    "currentTons": 55,
+    "defaultAlphaStrike": 158,
+    "defaultAlphaStrikeStab": 18,
+    "defaultAlphaHeatTotal": 60,
+    "defaultHeatDisp": 42,
+    "currentTotalArmor": 920,
+    "maxTotalArmor": 1145,
+    "armor": {
+        "head": 45,
+        "headMax": 45,
+        "centerTorso": 125,
+        "centerTorsoMax": 180,
+        "centerTorsoRear": 50,
+        "centerTorsoRearMax": 90,
+        "rightTorso": 100,
+        "rightTorsoMax": 130,
+        "rightTorsoRear": 30,
+        "rightTorsoRearMax": 65,
+        "leftTorso": 100,
+        "leftTorsoMax": 130,
+        "leftTorsoRear": 30,
+        "leftTorsoRearMax": 65,
+        "rightArm": 90,
+        "rightArmMax": 90,
+        "leftArm": 90,
+        "leftArmMax": 90,
+        "rightLeg": 130,
+        "rightLegMax": 130,
+        "leftLeg": 130,
+        "leftLegMax": 130
+    },
+    "hardPoints": {
+        "head": {
+            "energy": 1,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "centerTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftTorso": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 1,
+            "support": 0
+        },
+        "rightArm": {
+            "energy": 4,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 1
+        },
+        "leftArm": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "rightLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        },
+        "leftLeg": {
+            "energy": 0,
+            "ballistic": 0,
+            "missile": 0,
+            "support": 0
+        }
+    },
+    "defaultHeatsinks": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 2,
+        "leftLeg": 2
+    },
+    "defaultJumpJets": {
+        "head": 0,
+        "centerTorso": 0,
+        "rightTorso": 0,
+        "leftTorso": 0,
+        "rightArm": 0,
+        "leftArm": 0,
+        "rightLeg": 0,
+        "leftLeg": 0
+    },
+    "defaultEquipment": {
+        
+    },
+    "defaultWeapons": {
+        "head": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
+            }
+        ],
+        "leftTorso": [
+            {
+                "ammo": "false",
+                "category": "missile",
+                "name": "srm6-0",
+                "origin": "default",
+                "slots": 2,
+                "title": "SRM-6",
+                "weight": 3,
+                "shots": 6,
+                "damage": 8,
+                "stabdamage": 3,
+                "heat": 12
+            }
+        ],
+        "rightTorso": [
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "srmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "SRM Ammo",
+                "weight": 1
+            },
+            {
+                "ammo": "true",
+                "category": "missile",
+                "name": "srmAmmo",
+                "origin": "default",
+                "slots": 1,
+                "title": "SRM Ammo",
+                "weight": 1
+            }
+        ],
+        "rightArm": [
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "largeLaser0",
+                "origin": "default",
+                "slots": 2,
+                "title": "Large Laser",
+                "weight": 5,
+                "shots": 1,
+                "damage": 40,
+                "stabdamage": 0,
+                "heat": 18
+            },
+            {
+                "ammo": "false",
+                "category": "energy",
+                "name": "mediumLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Medium Laser",
+                "weight": 1,
+                "shots": 1,
+                "damage": 25,
+                "stabdamage": 0,
+                "heat": 12
+            },
+            {
+                "ammo": "false",
+                "category": "support",
+                "name": "smallLaser0",
+                "origin": "default",
+                "slots": 1,
+                "title": "Small Laser",
+                "weight": 1,
+                "shots": 1,
+                "damage": 20,
+                "stabdamage": 0,
+                "heat": 6
+            }
+        ]
+    }
+}
