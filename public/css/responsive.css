@@ -1,4 +1,54 @@
+/*Control Landscape Mode*/
+@media only screen and (max-width: 666px) {
+    #landscapeModal {
+        display: block;
+        color: #ffffff;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        background-color: #CCCCCC;
+    }
+    
+    #root {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
+    
+    /*This style helps prevent screen drag on iOS tablets*/
+    html, body {
+      overflow: hidden;
+      height: 100%;
+    }
+    
+    ::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 25px;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: rgba(100,100,100,1);
+        background-image: url('/img/scrollBarArrows.png');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    ::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background-color: transparent;
+      /*box-shadow: 0 0 1px rgba(255,255,255,.5);*/
+    }
+    
+    .metrics-box {
+        position: absolute;
+        top: 205px;
+        left: 555px;
+        padding: 5px;
+        width: 123px;
+        height: 195px;
+        background: url(../img/metric-border.png) top center no-repeat;
+    }
+    
     #mainContainer {
         max-width: 1024px;
     }
@@ -44,6 +94,7 @@
     
     .inventory-slide .slide-name span {
         font-size: 6px;
+        padding-top: 6px;
     }
     
     .inventory-slide .slide-left {
@@ -59,7 +110,7 @@
     }
     
     .inventory-slide .slide-manufacture-name {
-        padding-top: 2px;
+        padding-top: 0px;
         padding-left: 5px;
         width: 68px;
     }
@@ -67,15 +118,21 @@
     .inventory-slide .slide-mods {
         width: 47px;
         height: 27px;
-        padding-top: 0;
+        padding-top: 5px;
+       
+    }
+    
+    .inventory-slide .slide-mods br {
+        display: none;
     }
     
     .inventory-slide .slide-mods span {
-        font-size: 5px
+        font-size: 5px;
+        display: block;
     }
     
     .inventory-slide .slide-stats {
-        padding-top: 5px;
+        padding-top: 0px;
         width: 75px;
         font-size: 8px
     }
@@ -119,7 +176,7 @@
     }
     
     #centerTorsoBox.component-box {
-        top: 260px;
+        top: 165px;
         left: 250px;
         text-align: center;
     }
@@ -147,13 +204,13 @@
     }
     
     #rightLegBox.component-box {
-        top: 470px;
+        top: 370px;
         left: 155px;
         text-align: right;
     }
     
     #leftLegBox.component-box {
-        top: 470px;
+        top: 370px;
         left: 350px;
     }
     
@@ -196,3 +253,4 @@
     
     
 }
+

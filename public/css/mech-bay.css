@@ -9,6 +9,10 @@ body{
     user-select: none;          /* Likely future */      
 }
 
+#landscapeModal {
+    display: none;
+}
+
 #AppWrapper {
     max-width: 100%;
     min-width: 400px;
