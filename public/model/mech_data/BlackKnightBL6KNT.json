@@ -4,7 +4,7 @@
     "maxTons": 75,
     "currentTons": 75,
     "defaultAlphaStrike": 250,
-    "defaultAlphaStrikeStab": 0,
+    "defaultAlphaStrikeStab": 20,
     "defaultAlphaHeatTotal": 125,
     "defaultHeatDisp": 60,
     "currentTotalArmor": 880,
