@@ -412,7 +412,7 @@ class MechWireframe extends Component {
                         <span className="status-icon"><img src="img/heavywarning.png" alt="Battlemech Is Too Heavy" /></span>}
                         { currentTons < currentMechData.maxTons &&
                         <span className="status-icon"><img src="img/lightwarning.png" alt="Battlemech Is Too Light" /></span>}
-                        <p className="tonnage-display" style={currentTons > currentMechData.maxTons ? redText : null}>Tonnage: {currentTons}/{currentMechData.maxTons}</p>
+                        <p className="tonnage-display" style={currentTons > currentMechData.maxTons ? redText : null}>Tonnage: {currentTons.toFixed(3)}/{currentMechData.maxTons}</p>
                         <div className="metrics-box">
                             <span className="total-armor data-point">Total Armor: <span>{currentTotalArmor} / {currentMaxTotalArmor}</span></span><br/>
                             <span className="alphaStrike data-point">Alpha Strike: <br/>
