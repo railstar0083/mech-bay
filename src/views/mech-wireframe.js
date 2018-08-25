@@ -240,7 +240,7 @@ class MechWireframe extends Component {
             this.setState(
                 newState
             )
-            this.calculateTonnage("add", 0.0625);
+            this.calculateTonnage("add", 0.0125);
             return true
         } else if (operation === "decrement") {
             currentValue = --currentValue;
@@ -248,7 +248,7 @@ class MechWireframe extends Component {
             this.setState(
                 newState
             )
-            this.calculateTonnage("subtract", 0.0625);
+            this.calculateTonnage("subtract", 0.0125);
             return true
         } else {
             return false

@@ -177,7 +177,7 @@ class EquipmentSlots extends Component {
               updateHardpoints(category, this.props.slotType, "subtract");
             }
             calculateTonnage("subtract", weight);
-            if(category !== "equipment"){
+            if(category !== "equipment" && ammo === "false"){
               updateAlphaStrike("subtract", (damage * shots));
               updateStabAlphaStrike("subtract", (stabdamage * shots));
               updateAlphaStrikeHeat("subtract", heat);
